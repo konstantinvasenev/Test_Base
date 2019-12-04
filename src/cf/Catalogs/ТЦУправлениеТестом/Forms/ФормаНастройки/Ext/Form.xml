@@ -1,0 +1,487 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.7">
+	<Title>
+		<v8:item>
+			<v8:lang>ru</v8:lang>
+			<v8:content>Управление нагрузочным тестированием</v8:content>
+		</v8:item>
+	</Title>
+	<AutoTitle>false</AutoTitle>
+	<Customizable>false</Customizable>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<Autofill>false</Autofill>
+	</AutoCommandBar>
+	<ChildItems>
+		<UsualGroup name="КлиентскиеПриложения" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Клиентские приложения</v8:content>
+				</v8:item>
+			</Title>
+			<TitleFont ref="style:LargeTextFont" kind="StyleItem"/>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Клиентские приложения</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>Vertical</Group>
+			<Behavior>Collapsible</Behavior>
+			<Representation>NormalSeparation</Representation>
+			<ExtendedTooltip name="КлиентскиеПриложенияРасширеннаяПодсказка" id="2"/>
+			<ChildItems>
+				<Table name="УправлениеТестом" id="3">
+					<Height>10</Height>
+					<UseAlternationRowColor>true</UseAlternationRowColor>
+					<EnableStartDrag>true</EnableStartDrag>
+					<FileDragMode>AsFile</FileDragMode>
+					<DataPath>КлиентскиеПриложения</DataPath>
+					<RowPictureDataPath>КлиентскиеПриложения.DefaultPicture</RowPictureDataPath>
+					<SearchStringLocation>None</SearchStringLocation>
+					<ViewStatusLocation>None</ViewStatusLocation>
+					<SearchControlLocation>None</SearchControlLocation>
+					<AutoRefresh>true</AutoRefresh>
+					<AutoRefreshPeriod>5</AutoRefreshPeriod>
+					<Period>
+						<v8:variant xsi:type="v8:StandardPeriodVariant">Custom</v8:variant>
+						<v8:startDate>0001-01-01T00:00:00</v8:startDate>
+						<v8:endDate>0001-01-01T00:00:00</v8:endDate>
+					</Period>
+					<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+					<RestoreCurrentRow>false</RestoreCurrentRow>
+					<TopLevelParent xsi:nil="true"/>
+					<ShowRoot>true</ShowRoot>
+					<AllowRootChoice>false</AllowRootChoice>
+					<UpdateOnDataChange>Auto</UpdateOnDataChange>
+					<ContextMenu name="УправлениеТестомКонтекстноеМеню" id="4"/>
+					<AutoCommandBar name="УправлениеТестомКоманднаяПанель" id="5">
+						<Autofill>false</Autofill>
+						<ChildItems>
+							<ButtonGroup name="УправлениеТестомГруппа1" id="41">
+								<ExtendedTooltip name="УправлениеТестомГруппа1РасширеннаяПодсказка" id="42"/>
+								<ChildItems>
+									<Button name="Запустить" id="43">
+										<Type>CommandBarButton</Type>
+										<CommandName>Form.Command.Запустить</CommandName>
+										<Title>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Запустить</v8:content>
+											</v8:item>
+										</Title>
+										<ExtendedTooltip name="ЗапуститьРасширеннаяПодсказка" id="44"/>
+									</Button>
+								</ChildItems>
+							</ButtonGroup>
+						</ChildItems>
+					</AutoCommandBar>
+					<ExtendedTooltip name="УправлениеТестомРасширеннаяПодсказка" id="6"/>
+					<SearchStringAddition name="УправлениеТестомСтрокаПоиска" id="104">
+						<AdditionSource>
+							<Item>УправлениеТестом</Item>
+							<Type>SearchStringRepresentation</Type>
+						</AdditionSource>
+						<ContextMenu name="УправлениеТестомСтрокаПоискаКонтекстноеМеню" id="105"/>
+						<ExtendedTooltip name="УправлениеТестомСтрокаПоискаРасширеннаяПодсказка" id="106"/>
+					</SearchStringAddition>
+					<ViewStatusAddition name="УправлениеТестомСостояниеПросмотра" id="107">
+						<AdditionSource>
+							<Item>УправлениеТестом</Item>
+							<Type>ViewStatusRepresentation</Type>
+						</AdditionSource>
+						<ContextMenu name="УправлениеТестомСостояниеПросмотраКонтекстноеМеню" id="108"/>
+						<ExtendedTooltip name="УправлениеТестомСостояниеПросмотраРасширеннаяПодсказка" id="109"/>
+					</ViewStatusAddition>
+					<SearchControlAddition name="УправлениеТестомУправлениеПоиском" id="110">
+						<AdditionSource>
+							<Item>УправлениеТестом</Item>
+							<Type>SearchControl</Type>
+						</AdditionSource>
+						<ContextMenu name="УправлениеТестомУправлениеПоискомКонтекстноеМеню" id="111"/>
+						<ExtendedTooltip name="УправлениеТестомУправлениеПоискомРасширеннаяПодсказка" id="112"/>
+					</SearchControlAddition>
+					<ChildItems>
+						<LabelField name="Наименование" id="13">
+							<DataPath>КлиентскиеПриложения.Description</DataPath>
+							<Width>30</Width>
+							<ContextMenu name="НаименованиеКонтекстноеМеню" id="14"/>
+							<ExtendedTooltip name="НаименованиеРасширеннаяПодсказка" id="15"/>
+						</LabelField>
+						<LabelField name="Хост" id="16">
+							<DataPath>КлиентскиеПриложения.Хост</DataPath>
+							<ContextMenu name="ХостКонтекстноеМеню" id="17"/>
+							<ExtendedTooltip name="ХостРасширеннаяПодсказка" id="18"/>
+						</LabelField>
+						<LabelField name="ТипКлиента" id="19">
+							<DataPath>КлиентскиеПриложения.ТипКлиента</DataPath>
+							<ContextMenu name="ТипКлиентаКонтекстноеМеню" id="20"/>
+							<ExtendedTooltip name="ТипКлиентаРасширеннаяПодсказка" id="21"/>
+						</LabelField>
+						<LabelField name="ТипПриложения" id="22">
+							<DataPath>КлиентскиеПриложения.ТипПриложения</DataPath>
+							<ContextMenu name="ТипПриложенияКонтекстноеМеню" id="23"/>
+							<ExtendedTooltip name="ТипПриложенияРасширеннаяПодсказка" id="24"/>
+						</LabelField>
+						<LabelField name="ДатаНачала" id="25">
+							<DataPath>КлиентскиеПриложения.ДатаНачала</DataPath>
+							<ContextMenu name="ДатаНачалаКонтекстноеМеню" id="26"/>
+							<ExtendedTooltip name="ДатаНачалаРасширеннаяПодсказка" id="27"/>
+						</LabelField>
+						<LabelField name="ДатаОкончания" id="28">
+							<DataPath>КлиентскиеПриложения.ДатаОкончания</DataPath>
+							<ContextMenu name="ДатаОкончанияКонтекстноеМеню" id="29"/>
+							<ExtendedTooltip name="ДатаОкончанияРасширеннаяПодсказка" id="30"/>
+						</LabelField>
+						<LabelField name="Сценарий" id="31">
+							<DataPath>КлиентскиеПриложения.Сценарий</DataPath>
+							<ContextMenu name="СценарийКонтекстноеМеню" id="32"/>
+							<ExtendedTooltip name="СценарийРасширеннаяПодсказка" id="33"/>
+						</LabelField>
+						<CheckBoxField name="Выполнение" id="34">
+							<DataPath>КлиентскиеПриложения.Выполнение</DataPath>
+							<CheckBoxType>Auto</CheckBoxType>
+							<ContextMenu name="ВыполнениеКонтекстноеМеню" id="35"/>
+							<ExtendedTooltip name="ВыполнениеРасширеннаяПодсказка" id="36"/>
+						</CheckBoxField>
+						<LabelField name="Результат" id="113">
+							<DataPath>КлиентскиеПриложения.Результат</DataPath>
+							<ContextMenu name="РезультатКонтекстноеМеню" id="114"/>
+							<ExtendedTooltip name="РезультатРасширеннаяПодсказка" id="115"/>
+						</LabelField>
+					</ChildItems>
+				</Table>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="ВыборАгентаТЦ" id="37">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>1. Настройте агентов ТЦ</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выберите из всплывающего списка доступные клиентские приложения</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>Vertical</Group>
+			<ExtendedTooltip name="ВыборАгентаТЦРасширеннаяПодсказка" id="38"/>
+			<ChildItems>
+				<InputField name="Агент" id="88">
+					<DataPath>Агент</DataPath>
+					<ContextMenu name="АгентКонтекстноеМеню" id="89"/>
+					<ExtendedTooltip name="АгентРасширеннаяПодсказка" id="90"/>
+					<Events>
+						<Event name="OnChange">АгентПриИзменении</Event>
+						<Event name="StartChoice">АгентНачалоВыбора</Event>
+					</Events>
+				</InputField>
+				<InputField name="ДатаОкончанияАгент" id="91">
+					<DataPath>ДатаОкончанияАгент</DataPath>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>По наступлению этой даты агент прекратит свою работу, все запущенные им приложения будут остановлены.</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ContextMenu name="ДатаОкончанияАгентКонтекстноеМеню" id="92"/>
+					<ExtendedTooltip name="ДатаОкончанияАгентРасширеннаяПодсказка" id="93"/>
+				</InputField>
+				<UsualGroup name="ГруппаКнопокАгент" id="96">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа кнопок агент</v8:content>
+						</v8:item>
+					</Title>
+					<Group>Horizontal</Group>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаКнопокАгентРасширеннаяПодсказка" id="97"/>
+					<ChildItems>
+						<Button name="ДобавитьАгента" id="94">
+							<Type>UsualButton</Type>
+							<CommandName>Form.Command.ДобавитьАгента</CommandName>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Добавить</v8:content>
+								</v8:item>
+							</Title>
+							<ExtendedTooltip name="ДобавитьАгентаРасширеннаяПодсказка" id="95"/>
+						</Button>
+						<Button name="ОстановитьАгента" id="98">
+							<Type>UsualButton</Type>
+							<Enabled>false</Enabled>
+							<CommandName>Form.Command.ОстановитьАгента</CommandName>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Остановить</v8:content>
+								</v8:item>
+							</Title>
+							<ExtendedTooltip name="ОстановитьАгентаРасширеннаяПодсказка" id="99"/>
+						</Button>
+					</ChildItems>
+				</UsualGroup>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="НастроитьЗапускСценария" id="67">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>2. Настройте запуск сценария</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выберите из всплывающего списка доступный сценарий, определите для него управляющее приложение и задайте время начала и окончания теста.</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>Vertical</Group>
+			<ExtendedTooltip name="НастроитьЗапускСценарияРасширеннаяПодсказка" id="68"/>
+			<ChildItems>
+				<InputField name="УправлениеТестом1" id="72">
+					<DataPath>УправлениеТестом</DataPath>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Выберите клиентское приложение, которое будет управлять тестом.</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ContextMenu name="УправлениеТестом1КонтекстноеМеню" id="73"/>
+					<ExtendedTooltip name="УправлениеТестом1РасширеннаяПодсказка" id="74"/>
+					<Events>
+						<Event name="StartChoice">УправлениеТестом1НачалоВыбора</Event>
+					</Events>
+				</InputField>
+				<InputField name="СценарийНастройка" id="69">
+					<DataPath>Сценарий</DataPath>
+					<ContextMenu name="СценарийНастройкаКонтекстноеМеню" id="70"/>
+					<ExtendedTooltip name="СценарийНастройкаРасширеннаяПодсказка" id="71"/>
+				</InputField>
+				<UsualGroup name="Группа1" id="75">
+					<Group>Horizontal</Group>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="Группа1РасширеннаяПодсказка" id="76"/>
+					<ChildItems>
+						<InputField name="ДатаНачлаСценарий" id="80">
+							<DataPath>ДатаНачалаСценарий</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Дата начала</v8:content>
+								</v8:item>
+							</Title>
+							<ContextMenu name="ДатаНачлаСценарийКонтекстноеМеню" id="81"/>
+							<ExtendedTooltip name="ДатаНачлаСценарийРасширеннаяПодсказка" id="82"/>
+						</InputField>
+					</ChildItems>
+				</UsualGroup>
+				<UsualGroup name="Группа2" id="100">
+					<Group>Horizontal</Group>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="Группа2РасширеннаяПодсказка" id="101"/>
+					<ChildItems>
+						<Button name="ДобавитьСценарий" id="86">
+							<Type>UsualButton</Type>
+							<CommandName>Form.Command.ДобавитьСценарий</CommandName>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Добавить</v8:content>
+								</v8:item>
+							</Title>
+							<ExtendedTooltip name="ДобавитьСценарийРасширеннаяПодсказка" id="87"/>
+						</Button>
+					</ChildItems>
+				</UsualGroup>
+			</ChildItems>
+		</UsualGroup>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="КлиентскиеПриложения" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Клиентские приложения</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:DynamicList</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<Settings xsi:type="DynamicList">
+				<ManualQuery>false</ManualQuery>
+				<DynamicDataRead>true</DynamicDataRead>
+				<MainTable>Catalog.ТЦУправлениеТестом</MainTable>
+				<ListSettings>
+					<dcsset:filter>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>dfcece9d-5077-440b-b6b3-45a5cb4538eb</dcsset:userSettingID>
+					</dcsset:filter>
+					<dcsset:order>
+						<dcsset:item xsi:type="dcsset:OrderItemField">
+							<dcsset:field>ДатаНачала</dcsset:field>
+							<dcsset:orderType>Asc</dcsset:orderType>
+						</dcsset:item>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>88619765-ccb3-46c6-ac52-38e9c992ebd4</dcsset:userSettingID>
+					</dcsset:order>
+					<dcsset:conditionalAppearance>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>b75fecce-942b-4aed-abc9-e6a02e460fb3</dcsset:userSettingID>
+					</dcsset:conditionalAppearance>
+					<dcsset:itemsViewMode>Normal</dcsset:itemsViewMode>
+					<dcsset:itemsUserSettingID>911b6018-f537-43e8-a417-da56b22f9aec</dcsset:itemsUserSettingID>
+				</ListSettings>
+			</Settings>
+		</Attribute>
+		<Attribute name="Сценарий" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сценарий</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:CatalogRef.ТЦСценарии</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="УправлениеТестом" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Управление тестом</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:CatalogRef.ТЦУправлениеТестом</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="Агент" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Агент</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:CatalogRef.ТЦУправлениеТестом</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ДатаОкончанияАгент" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Дата окончания</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:dateTime</v8:Type>
+				<v8:DateQualifiers>
+					<v8:DateFractions>DateTime</v8:DateFractions>
+				</v8:DateQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ДатаНачалаСценарий" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Дата начала</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:dateTime</v8:Type>
+				<v8:DateQualifiers>
+					<v8:DateFractions>DateTime</v8:DateFractions>
+				</v8:DateQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ДатаОкончанияСценарий" id="7">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Дата окончания</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:dateTime</v8:Type>
+				<v8:DateQualifiers>
+					<v8:DateFractions>DateTime</v8:DateFractions>
+				</v8:DateQualifiers>
+			</Type>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="Запустить" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Запустить</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Запустить</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>Запустить</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ДобавитьСценарий" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Добавить сценарий</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Добавить сценарий</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ДобавитьСценарий</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ДобавитьАгента" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Добавить агента</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Добавить агента</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ДобавитьАгента</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ОстановитьАгента" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Остановить Агента ТЦ</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Остановить Агента ТЦ</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ОстановитьАгента</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+	</Commands>
+</Form>

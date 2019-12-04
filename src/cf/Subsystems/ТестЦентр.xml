@@ -1,0 +1,116 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.7">
+	<Subsystem uuid="2ff71704-63ca-4489-9072-934e6b540971">
+		<Properties>
+			<Name>ТестЦентр</Name>
+			<Synonym>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Тест-центр</v8:content>
+				</v8:item>
+			</Synonym>
+			<Comment/>
+			<IncludeHelpInContents>true</IncludeHelpInContents>
+			<IncludeInCommandInterface>true</IncludeInCommandInterface>
+			<Explanation>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Инструмент автоматизации многопользовательских нагрузочных испытаний информационных систем на платформе 1С:Предприятие 8</v8:content>
+				</v8:item>
+			</Explanation>
+			<Picture>
+				<xr:Ref>CommonPicture.ТестЦентр</xr:Ref>
+				<xr:LoadTransparent>false</xr:LoadTransparent>
+			</Picture>
+			<Content>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ТЦКлиент</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.ТЦОбработки</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.ТЦСценарии</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Enum.ТЦТипОбработки</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.ТЦШаблонТестовойОбработки</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.ТЦАгенты</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.ТЦОчередьСообщений</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Enum.ТЦСообщение</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.ТЦТест</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.ТЦРоли</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.ТЦПользователи</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonForm.ТЦСостояниеВыполненияТеста</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Enum.ТЦСостояние</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Enum.ТЦРезультатВыполнения</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.ТЦВП</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.ТЦИмпорт</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.ТЦВыполнение1</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.ТЦВыполнение2</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.ТЦВыполнение3</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.ТЦЗаписьРезультатов1</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.ТЦЗаписьРезультатов2</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.ТЦЗаписьРезультатов3</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.ТЦИнициализация1</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.ТЦИнициализация2</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.ТЦИнициализация3</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.ТЦПодготовка1</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.ТЦПодготовка2</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.ТЦПодготовка3</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.ТЦУдалениеДанных1</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.ТЦУдалениеДанных2</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.ТЦУдалениеДанных3</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ТЦСервер</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ТЦОбщий</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.ТЦКомпьютеры</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Enum.ТЦТипКлиента</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Enum.ТЦТипАутентификации</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.ТЦКлиенты</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Enum.ТЦТипБраузера</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Enum.ТЦСтатусСообщения</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.ТЦРезультаты</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.ТЦНастройкиВП</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Enum.ТЦТипЗапускаКлиента</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Enum.ТЦТипПрокси</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Enum.ТЦТипАутентификацииВеб</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.ТЦЭкспорт</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.ТестЦентр</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.ТЦАгент</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.ТЦВП</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.ТЦКлиент</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.ТЦКомпьютер</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.ТЦОбработка</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.ТЦПользователь</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.ТЦРоль</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.ТЦСценарий</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonForm.ТЦОшибка</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.ТЦИдентификаторыКлоновИБ</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonForm.ТЦОшибкаПодробнее</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonTemplate.ТЦПротокол</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Role.ТестЦентр</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.ТЦУправлениеТестом</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">WebService.RemoteManagement</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.ТЦШаблонРаботыСВебСервисом</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Enum.ТЦТипКлиентскогоПриложения</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Constant.ТЦИнтервалОпросаУправленияТестированием</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">SessionParameter.ТЦИдКлиентскогоПриложения</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">SessionParameter.ТЦТипКлиентскогоПриложения</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ТЦКлиентГлобальный</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonForm.ТЦИнтервалОпросаУправленияТестированием</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommandGroup.ТЦКомпьютеры</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">XDTOPackage.ДанныеУправленияТестом</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.ТЦОбработкаРоли</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonTemplate.КипВнешнийКомпонент</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.КипОтладка</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.КипВнешнийКомпонент</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.КипОбщий</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.КипWindows</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonForm.ТЦНастройкаЗапускаТеста</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonTemplate.ТЦСКДОшибкиТеста</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.ТЦСценарийЗапуска</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.ТЦОшибки</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.ТЦКопированиеДокументов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Enum.ТЦСостояниеПодготовкиВРМ</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Report.ТЦАнализЗамеров</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonTemplate.ТЦМакетОтчета</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.ТЦСозданиеПриходнойНакладной</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.ТЦСозданиеРасходнойНакладной</xr:Item>
+			</Content>
+		</Properties>
+		<ChildObjects/>
+	</Subsystem>
+</MetaDataObject>

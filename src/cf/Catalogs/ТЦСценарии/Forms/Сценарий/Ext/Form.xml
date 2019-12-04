@@ -1,0 +1,389 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.7">
+	<WindowOpeningMode>LockOwnerWindow</WindowOpeningMode>
+	<VerticalScroll>useIfNecessary</VerticalScroll>
+	<UseForFoldersAndItems>Items</UseForFoldersAndItems>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<Events>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<InputField name="Наименование" id="1">
+			<DataPath>Объект.Description</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<AutoMaxWidth>false</AutoMaxWidth>
+			<ContextMenu name="НаименованиеКонтекстноеМеню" id="2"/>
+			<ExtendedTooltip name="НаименованиеExtendedTooltip" id="70"/>
+		</InputField>
+		<Pages name="Страницы" id="29">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Страницы</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Страницы</v8:content>
+				</v8:item>
+			</ToolTip>
+			<ExtendedTooltip name="СтраницыExtendedTooltip" id="71"/>
+			<ChildItems>
+				<Page name="ЗакладкаСтруктура" id="30">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Структура</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Закладка структура</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="ЗакладкаСтруктураExtendedTooltip" id="72"/>
+					<ChildItems>
+						<Table name="Структура" id="44">
+							<SkipOnInput>false</SkipOnInput>
+							<Footer>true</Footer>
+							<AutoInsertNewRow>true</AutoInsertNewRow>
+							<EnableStartDrag>true</EnableStartDrag>
+							<EnableDrag>true</EnableDrag>
+							<FileDragMode>AsFile</FileDragMode>
+							<DataPath>Объект.Структура</DataPath>
+							<SearchStringLocation>None</SearchStringLocation>
+							<ViewStatusLocation>None</ViewStatusLocation>
+							<SearchControlLocation>None</SearchControlLocation>
+							<RowFilter xsi:nil="true"/>
+							<ContextMenu name="СтруктураКонтекстноеМеню" id="45"/>
+							<AutoCommandBar name="СтруктураКоманднаяПанель" id="46"/>
+							<ExtendedTooltip name="СтруктураExtendedTooltip" id="73"/>
+							<SearchStringAddition name="СтруктураSearchString" id="74">
+								<AdditionSource>
+									<Item>Структура</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="СтруктураSearchStringContextMenu" id="75"/>
+								<ExtendedTooltip name="СтруктураSearchStringExtendedTooltip" id="76"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="СтруктураViewStatus" id="77">
+								<AdditionSource>
+									<Item>Структура</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="СтруктураViewStatusContextMenu" id="78"/>
+								<ExtendedTooltip name="СтруктураViewStatusExtendedTooltip" id="79"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="СтруктураSearchControl" id="80">
+								<AdditionSource>
+									<Item>Структура</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="СтруктураSearchControlContextMenu" id="81"/>
+								<ExtendedTooltip name="СтруктураSearchControlExtendedTooltip" id="82"/>
+							</SearchControlAddition>
+							<ChildItems>
+								<InputField name="СтруктураРоль" id="49">
+									<DataPath>Объект.Структура.Роль</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="СтруктураРольКонтекстноеМеню" id="50"/>
+									<ExtendedTooltip name="СтруктураРольExtendedTooltip" id="83"/>
+								</InputField>
+								<InputField name="СтруктураПользователь" id="51">
+									<DataPath>Объект.Структура.Пользователь</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="СтруктураПользовательКонтекстноеМеню" id="52"/>
+									<ExtendedTooltip name="СтруктураПользовательExtendedTooltip" id="84"/>
+								</InputField>
+								<InputField name="СтруктураКлиент" id="53">
+									<DataPath>Объект.Структура.Клиент</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="СтруктураКлиентКонтекстноеМеню" id="54"/>
+									<ExtendedTooltip name="СтруктураКлиентExtendedTooltip" id="85"/>
+								</InputField>
+								<InputField name="СтруктураКоличество" id="55">
+									<DataPath>Объект.Структура.Количество</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<FooterDataPath>Объект.Структура.TotalКоличество</FooterDataPath>
+									<SpinButton>true</SpinButton>
+									<ContextMenu name="СтруктураКоличествоКонтекстноеМеню" id="56"/>
+									<ExtendedTooltip name="СтруктураКоличествоExtendedTooltip" id="86"/>
+								</InputField>
+							</ChildItems>
+						</Table>
+					</ChildItems>
+				</Page>
+				<Page name="ЗакладкаОписание" id="57">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Описание</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Закладка описание</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="ЗакладкаОписаниеExtendedTooltip" id="87"/>
+					<ChildItems>
+						<TextDocumentField name="Описание" id="5">
+							<DataPath>Объект.Описание</DataPath>
+							<TitleLocation>None</TitleLocation>
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="ОписаниеКонтекстноеМеню" id="6"/>
+							<ExtendedTooltip name="ОписаниеExtendedTooltip" id="88"/>
+						</TextDocumentField>
+					</ChildItems>
+				</Page>
+				<Page name="ЗакладкаОграничения" id="32">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Ограничения</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Закладка ограничения</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="ЗакладкаОграниченияРасширеннаяПодсказка" id="89"/>
+					<ChildItems>
+						<UsualGroup name="ОдновременноЗапускаемые" id="179">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Одновременно запускаемые</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Одновременно запускаемые</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Group>Vertical</Group>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ThroughAlign>DontUse</ThroughAlign>
+							<ExtendedTooltip name="ОдновременноЗапускаемыеРасширеннаяПодсказка" id="180"/>
+							<ChildItems>
+								<InputField name="ОбщееКоличествоЗапускаемыхВРМ" id="173">
+									<DataPath>Объект.ОбщееКоличествоОдновременноЗапускаемыхВРМ</DataPath>
+									<SpinButton>true</SpinButton>
+									<ContextMenu name="ОбщееКоличествоЗапускаемыхВРМКонтекстноеМеню" id="174"/>
+									<ExtendedTooltip name="ОбщееКоличествоЗапускаемыхВРМРасширеннаяПодсказка" id="175"/>
+								</InputField>
+								<InputField name="КоличествоЗапускаемыхВРМАгента" id="176">
+									<DataPath>Объект.КоличествоОдновременноЗапускаемыхВРМАгента</DataPath>
+									<SpinButton>true</SpinButton>
+									<ContextMenu name="КоличествоЗапускаемыхВРМАгентаКонтекстноеМеню" id="177"/>
+									<ExtendedTooltip name="КоличествоЗапускаемыхВРМАгентаРасширеннаяПодсказка" id="178"/>
+								</InputField>
+							</ChildItems>
+						</UsualGroup>
+						<InputField name="ТаймаутОпросаАгента" id="183">
+							<DataPath>Объект.ТаймаутОпросаАгентов</DataPath>
+							<SpinButton>true</SpinButton>
+							<ContextMenu name="ТаймаутОпросаАгентаКонтекстноеМеню" id="184"/>
+							<ExtendedTooltip name="ТаймаутОпросаАгентаРасширеннаяПодсказка" id="185"/>
+						</InputField>
+						<UsualGroup name="ОграниченияЭтапов" id="181">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Ограничения этапов</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Ограничения этапов</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Group>Vertical</Group>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ОграниченияЭтаповРасширеннаяПодсказка" id="182"/>
+							<ChildItems>
+								<InputField name="ТаймаутЗапускаКлиента" id="58">
+									<DataPath>Объект.ТаймаутЗапускаКлиента</DataPath>
+									<SpinButton>true</SpinButton>
+									<ContextMenu name="ТаймаутЗапускаКлиентаКонтекстноеМеню" id="59"/>
+									<ExtendedTooltip name="ТаймаутЗапускаКлиентаExtendedTooltip" id="91"/>
+								</InputField>
+								<InputField name="ПопытокЗапускаКлиентов" id="68">
+									<DataPath>Объект.ПопытокЗапускаКлиентов</DataPath>
+									<SpinButton>true</SpinButton>
+									<ContextMenu name="ПопытокЗапускаКлиентовКонтекстноеМеню" id="69"/>
+									<ExtendedTooltip name="ПопытокЗапускаКлиентовExtendedTooltip" id="92"/>
+								</InputField>
+								<InputField name="ТаймаутОпросаКлиентов" id="60">
+									<DataPath>Объект.ТаймаутОпросаКлиента</DataPath>
+									<SpinButton>true</SpinButton>
+									<ContextMenu name="ТаймаутОпросаКлиентовКонтекстноеМеню" id="61"/>
+									<ExtendedTooltip name="ТаймаутОпросаКлиентовExtendedTooltip" id="93"/>
+								</InputField>
+								<InputField name="ТаймаутЗагрузкиСценарияКлиентами" id="62">
+									<DataPath>Объект.ТаймаутЗагрузкиСценарияКлиентом</DataPath>
+									<SpinButton>true</SpinButton>
+									<ContextMenu name="ТаймаутЗагрузкиСценарияКлиентамиКонтекстноеМеню" id="63"/>
+									<ExtendedTooltip name="ТаймаутЗагрузкиСценарияКлиентамиExtendedTooltip" id="94"/>
+								</InputField>
+								<InputField name="ТаймаутПодготовки" id="33">
+									<DataPath>Объект.ТаймаутПодготовки</DataPath>
+									<SpinButton>true</SpinButton>
+									<ContextMenu name="ТаймаутПодготовкиКонтекстноеМеню" id="34"/>
+									<ExtendedTooltip name="ТаймаутПодготовкиExtendedTooltip" id="95"/>
+								</InputField>
+								<InputField name="ТаймаутИнициализации" id="35">
+									<DataPath>Объект.ТаймаутИнициализации</DataPath>
+									<SpinButton>true</SpinButton>
+									<ContextMenu name="ТаймаутИнициализацииКонтекстноеМеню" id="36"/>
+									<ExtendedTooltip name="ТаймаутИнициализацииExtendedTooltip" id="96"/>
+								</InputField>
+								<InputField name="ТаймаутВыполнения" id="37">
+									<DataPath>Объект.ТаймаутВыполнения</DataPath>
+									<SpinButton>true</SpinButton>
+									<ContextMenu name="ТаймаутВыполненияКонтекстноеМеню" id="38"/>
+									<ExtendedTooltip name="ТаймаутВыполненияExtendedTooltip" id="97"/>
+								</InputField>
+								<InputField name="ТаймаутЗаписиРезультатов" id="39">
+									<DataPath>Объект.ТаймаутЗаписиРезультатов</DataPath>
+									<SpinButton>true</SpinButton>
+									<ContextMenu name="ТаймаутЗаписиРезультатовКонтекстноеМеню" id="40"/>
+									<ExtendedTooltip name="ТаймаутЗаписиРезультатовExtendedTooltip" id="98"/>
+								</InputField>
+								<InputField name="ТаймаутУдаленияДанных" id="41">
+									<DataPath>Объект.ТаймаутУдаленияДанных</DataPath>
+									<SpinButton>true</SpinButton>
+									<ContextMenu name="ТаймаутУдаленияДанныхКонтекстноеМеню" id="42"/>
+									<ExtendedTooltip name="ТаймаутУдаленияДанныхExtendedTooltip" id="99"/>
+								</InputField>
+								<CheckBoxField name="ПаузаПослеЗапускаВРМ" id="64">
+									<DataPath>Объект.ПаузаПослеЗапускаВРМ</DataPath>
+									<TitleLocation>Left</TitleLocation>
+									<CheckBoxType>Auto</CheckBoxType>
+									<ContextMenu name="ПаузаПослеЗапускаВРМКонтекстноеМеню" id="65"/>
+									<ExtendedTooltip name="ПаузаПослеЗапускаВРМExtendedTooltip" id="100"/>
+								</CheckBoxField>
+							</ChildItems>
+						</UsualGroup>
+					</ChildItems>
+				</Page>
+				<Page name="ФактическаяСтруктура" id="137">
+					<Visible>false</Visible>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Фактическая структура</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Фактическая структура</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="ФактическаяСтруктураРасширеннаяПодсказка" id="138"/>
+					<ChildItems>
+						<Table name="СтруктураТекущейИтерации" id="139">
+							<ReadOnly>true</ReadOnly>
+							<AutoInsertNewRow>true</AutoInsertNewRow>
+							<EnableStartDrag>true</EnableStartDrag>
+							<EnableDrag>true</EnableDrag>
+							<FileDragMode>AsFile</FileDragMode>
+							<RowFilter xsi:nil="true"/>
+							<ContextMenu name="СтруктураТекущейИтерацииКонтекстноеМеню" id="140"/>
+							<AutoCommandBar name="СтруктураТекущейИтерацииКоманднаяПанель" id="141"/>
+							<ExtendedTooltip name="СтруктураТекущейИтерацииРасширеннаяПодсказка" id="142"/>
+							<SearchStringAddition name="СтруктураТекущейИтерацииСтрокаПоиска" id="143">
+								<AdditionSource>
+									<Item>СтруктураТекущейИтерации</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="СтруктураТекущейИтерацииСтрокаПоискаКонтекстноеМеню" id="146"/>
+								<ExtendedTooltip name="СтруктураТекущейИтерацииСтрокаПоискаРасширеннаяПодсказка" id="147"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="СтруктураТекущейИтерацииСостояниеПросмотра" id="148">
+								<AdditionSource>
+									<Item>СтруктураТекущейИтерации</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="СтруктураТекущейИтерацииСостояниеПросмотраКонтекстноеМеню" id="151"/>
+								<ExtendedTooltip name="СтруктураТекущейИтерацииСостояниеПросмотраРасширеннаяПодсказка" id="152"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="СтруктураТекущейИтерацииУправлениеПоиском" id="153">
+								<AdditionSource>
+									<Item>СтруктураТекущейИтерации</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="СтруктураТекущейИтерацииУправлениеПоискомКонтекстноеМеню" id="156"/>
+								<ExtendedTooltip name="СтруктураТекущейИтерацииУправлениеПоискомРасширеннаяПодсказка" id="157"/>
+							</SearchControlAddition>
+							<ChildItems>
+								<LabelField name="СтруктураТекущейИтерацииНомерСтроки" id="158">
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="СтруктураТекущейИтерацииНомерСтрокиКонтекстноеМеню" id="159"/>
+									<ExtendedTooltip name="СтруктураТекущейИтерацииНомерСтрокиРасширеннаяПодсказка" id="160"/>
+								</LabelField>
+								<InputField name="СтруктураТекущейИтерацииРоль" id="161">
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="СтруктураТекущейИтерацииРольКонтекстноеМеню" id="162"/>
+									<ExtendedTooltip name="СтруктураТекущейИтерацииРольРасширеннаяПодсказка" id="163"/>
+								</InputField>
+								<InputField name="СтруктураТекущейИтерацииПользователь" id="164">
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="СтруктураТекущейИтерацииПользовательКонтекстноеМеню" id="165"/>
+									<ExtendedTooltip name="СтруктураТекущейИтерацииПользовательРасширеннаяПодсказка" id="166"/>
+								</InputField>
+								<InputField name="СтруктураТекущейИтерацииКлиент" id="167">
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="СтруктураТекущейИтерацииКлиентКонтекстноеМеню" id="168"/>
+									<ExtendedTooltip name="СтруктураТекущейИтерацииКлиентРасширеннаяПодсказка" id="169"/>
+								</InputField>
+								<InputField name="СтруктураТекущейИтерацииКоличество" id="170">
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="СтруктураТекущейИтерацииКоличествоКонтекстноеМеню" id="171"/>
+									<ExtendedTooltip name="СтруктураТекущейИтерацииКоличествоРасширеннаяПодсказка" id="172"/>
+								</InputField>
+							</ChildItems>
+						</Table>
+					</ChildItems>
+				</Page>
+			</ChildItems>
+		</Pages>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:CatalogObject.ТЦСценарии</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="АвтоТаймаутПодготовки" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Авто</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Авто таймаут подготовки</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>АвтоТаймаутПодготовки</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+	</Commands>
+</Form>

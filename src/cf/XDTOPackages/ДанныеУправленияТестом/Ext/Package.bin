@@ -1,0 +1,82 @@
+﻿<package xmlns="http://v8.1c.ru/8.1/xdto" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" targetNamespace="http://v8.1c.ru/testcenter/RemoteManagement/1.0.0.2">
+	<objectType name="Client">
+		<property name="UUID" type="xs:string"/>
+		<property name="Name" type="xs:string"/>
+		<property name="Host" type="xs:string"/>
+		<property name="ClientType" type="xs:string"/>
+		<property xmlns:d3p1="http://v8.1c.ru/testcenter/RemoteManagement/1.0.0.2" name="ClientAppType" type="d3p1:ClientAppType" nillable="true"/>
+		<property name="StartDate" type="xs:dateTime"/>
+		<property name="FinishDate" type="xs:dateTime"/>
+		<property xmlns:d3p1="http://v8.1c.ru/testcenter/RemoteManagement/1.0.0.2" name="Scenario" type="d3p1:Scenario" nillable="true"/>
+		<property name="isExecuted" type="xs:boolean"/>
+		<property name="Result" type="xs:string"/>
+	</objectType>
+	<objectType name="ClientsList">
+		<property xmlns:d3p1="http://v8.1c.ru/testcenter/RemoteManagement/1.0.0.2" name="Items" type="d3p1:Client" lowerBound="0" upperBound="-1"/>
+	</objectType>
+	<objectType name="Scenario">
+		<property name="UUID" type="xs:string"/>
+		<property name="Name" type="xs:string"/>
+	</objectType>
+	<objectType name="ScenariosList">
+		<property xmlns:d3p1="http://v8.1c.ru/testcenter/RemoteManagement/1.0.0.2" name="Items" type="d3p1:Scenario" lowerBound="0" upperBound="-1"/>
+	</objectType>
+	<objectType name="ClientAppType">
+		<property name="ID" type="xs:string"/>
+		<property name="Name" type="xs:string"/>
+	</objectType>
+	<objectType name="ClientAppsTypesList">
+		<property xmlns:d3p1="http://v8.1c.ru/testcenter/RemoteManagement/1.0.0.2" name="Items" type="d3p1:ClientAppType" lowerBound="0" upperBound="-1"/>
+	</objectType>
+	<objectType name="ScenarioParameters">
+		<property name="InitialUsersCount" type="xs:unsignedInt"/>
+		<property name="InitialUsersAdditionStep" type="xs:unsignedInt"/>
+		<property name="FinalUsersAdditionStep" type="xs:unsignedInt"/>
+		<property name="APDEXThreshold" type="xs:float"/>
+		<property name="MaxIterationsCount" type="xs:unsignedInt"/>
+		<property name="MaxErrorsCount" type="xs:unsignedInt"/>
+		<property name="MaxErrorsCountPerIteration" type="xs:unsignedInt"/>
+		<property name="DynamicUserAddition" type="xs:boolean"/>
+		<property name="LauchOnRunningAgents" type="xs:boolean"/>
+		<property name="IntensityFactor" type="xs:float"/>
+		<property name="PublicationURL" type="xs:string"/>
+		<property name="DataSeparationUsed" type="xs:boolean"/>
+		<property name="ComputerWeightTableString" type="xs:string" nillable="true"/>
+		<property name="ConcurrentlyLaunchedVWP" type="xs:unsignedInt"/>
+		<property name="ConcurrentlyLaunchedVWPAgent" type="xs:unsignedInt"/>
+	</objectType>
+	<objectType name="Error">
+		<property name="Number" type="xs:integer"/>
+		<property name="IterationNumber" type="xs:integer"/>
+		<property name="Date" type="xs:dateTime"/>
+		<property name="Text" type="xs:string"/>
+		<property name="Weight" type="xs:integer"/>
+	</objectType>
+	<objectType name="Iteration">
+		<property name="Number" type="xs:integer"/>
+		<property name="OperationCount" type="xs:integer"/>
+		<property name="UserCount" type="xs:integer"/>
+		<property name="Apdex" type="xs:float"/>
+	</objectType>
+	<objectType name="ErrorsList">
+		<property xmlns:d3p1="http://v8.1c.ru/testcenter/RemoteManagement/1.0.0.2" name="Items" type="d3p1:Error" lowerBound="0" upperBound="-1"/>
+	</objectType>
+	<objectType name="IterationsList">
+		<property xmlns:d3p1="http://v8.1c.ru/testcenter/RemoteManagement/1.0.0.2" name="Items" type="d3p1:Iteration" lowerBound="0" upperBound="-1"/>
+	</objectType>
+	<objectType name="TestResults">
+		<property name="StartDate" type="xs:dateTime"/>
+		<property name="EndDate" type="xs:dateTime"/>
+		<property name="Result" type="xs:string"/>
+		<property name="Scenario" type="xs:string"/>
+		<property name="MaxIterationCount" type="xs:integer"/>
+		<property name="LastIteration" type="xs:integer"/>
+		<property name="UserCount" type="xs:integer"/>
+		<property name="IntensityFactor" type="xs:float"/>
+		<property name="APDEXThreshold" type="xs:float"/>
+		<property name="MaxErrorsCount" type="xs:unsignedInt"/>
+		<property name="MaxErrorsCountPerIteration" type="xs:unsignedInt"/>
+		<property xmlns:d3p1="http://v8.1c.ru/testcenter/RemoteManagement/1.0.0.2" name="Iterations" type="d3p1:IterationsList"/>
+		<property xmlns:d3p1="http://v8.1c.ru/testcenter/RemoteManagement/1.0.0.2" name="Errors" type="d3p1:ErrorsList"/>
+	</objectType>
+</package>

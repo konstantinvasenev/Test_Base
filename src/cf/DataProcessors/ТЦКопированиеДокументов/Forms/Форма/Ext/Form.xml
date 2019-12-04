@@ -1,0 +1,546 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.7">
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<ChildItems>
+			<Button name="ФормаВыполнитьКопирование" id="24">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.Command.ВыполнитьКопирование</CommandName>
+				<ExtendedTooltip name="ФормаВыполнитьКопированиеРасширеннаяПодсказка" id="25"/>
+			</Button>
+			<Button name="ФормаВыполнитьКопированиеДоТекущегоМомента" id="34">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.Command.ВыполнитьКопированиеДоТекущегоМомента</CommandName>
+				<ExtendedTooltip name="ФормаВыполнитьКопированиеДоТекущегоМоментаРасширеннаяПодсказка" id="35"/>
+			</Button>
+		</ChildItems>
+	</AutoCommandBar>
+	<Events>
+		<Event name="OnOpen">ПриОткрытии</Event>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<UsualGroup name="ГруппаЗаполнениеПоДаннымОбласти" id="19">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Заполнение по данным области</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа заполнение по данным области</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>Vertical</Group>
+			<ExtendedTooltip name="ГруппаЗаполнениеПоДаннымОбластиРасширеннаяПодсказка" id="20"/>
+			<ChildItems>
+				<RadioButtonField name="РежимЗаполнения" id="26">
+					<DataPath>Объект.РежимЗаполнения</DataPath>
+					<RadioButtonType>Auto</RadioButtonType>
+					<ChoiceList>
+						<xr:Item>
+							<xr:Presentation/>
+							<xr:CheckState>0</xr:CheckState>
+							<xr:Value xsi:type="FormChoiceListDesTimeValue">
+								<Presentation>
+									<v8:item>
+										<v8:lang>ru</v8:lang>
+										<v8:content>По первому месяцу</v8:content>
+									</v8:item>
+								</Presentation>
+								<Value xsi:type="xs:string">ПоПервомуМесяцу</Value>
+							</xr:Value>
+						</xr:Item>
+						<xr:Item>
+							<xr:Presentation/>
+							<xr:CheckState>0</xr:CheckState>
+							<xr:Value xsi:type="FormChoiceListDesTimeValue">
+								<Presentation>
+									<v8:item>
+										<v8:lang>ru</v8:lang>
+										<v8:content>По последнему месяцу</v8:content>
+									</v8:item>
+								</Presentation>
+								<Value xsi:type="xs:string">ПоПоследнемуМесяцу</Value>
+							</xr:Value>
+						</xr:Item>
+					</ChoiceList>
+					<ContextMenu name="РежимЗаполненияКонтекстноеМеню" id="27"/>
+					<ExtendedTooltip name="РежимЗаполненияРасширеннаяПодсказка" id="28"/>
+				</RadioButtonField>
+				<UsualGroup name="ГруппаЗаполнениеПоДаннымОбластиВложенная" id="29">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа заполнение по данным области вложенная</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа заполнение по данным области вложенная</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Group>Horizontal</Group>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаЗаполнениеПоДаннымОбластиВложеннаяРасширеннаяПодсказка" id="30"/>
+					<ChildItems>
+						<InputField name="НомерОбласти" id="21">
+							<DataPath>Объект.НомерОбласти</DataPath>
+							<ContextMenu name="НомерОбластиКонтекстноеМеню" id="22"/>
+							<ExtendedTooltip name="НомерОбластиРасширеннаяПодсказка" id="23"/>
+						</InputField>
+						<Button name="ФормаЗаполнитьНастройки" id="17">
+							<Type>UsualButton</Type>
+							<CommandName>Form.Command.ЗаполнитьНастройки</CommandName>
+							<ExtendedTooltip name="ФормаЗаполнитьНастройкиРасширеннаяПодсказка" id="18"/>
+						</Button>
+					</ChildItems>
+				</UsualGroup>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="ГруппаЭталонныйПериод" id="13">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Эталонный период</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа эталонный период</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>Horizontal</Group>
+			<ExtendedTooltip name="ГруппаЭталонныйПериодРасширеннаяПодсказка" id="14"/>
+			<ChildItems>
+				<InputField name="НачалоЭталонногоПериода" id="1">
+					<DataPath>Объект.НачалоЭталонногоПериода</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Начало периода</v8:content>
+						</v8:item>
+					</Title>
+					<ContextMenu name="НачалоЭталонногоПериодаКонтекстноеМеню" id="2"/>
+					<ExtendedTooltip name="НачалоЭталонногоПериодаРасширеннаяПодсказка" id="3"/>
+				</InputField>
+				<InputField name="ОкончаниеЭталонногоПериода" id="4">
+					<DataPath>Объект.ОкончаниеЭталонногоПериода</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Окончание периода</v8:content>
+						</v8:item>
+					</Title>
+					<ContextMenu name="ОкончаниеЭталонногоПериодаКонтекстноеМеню" id="5"/>
+					<ExtendedTooltip name="ОкончаниеЭталонногоПериодаРасширеннаяПодсказка" id="6"/>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="ГруппаЦелевойПериод" id="15">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Целевой период</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа целевой период</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>Horizontal</Group>
+			<ExtendedTooltip name="ГруппаЦелевойПериодРасширеннаяПодсказка" id="16"/>
+			<ChildItems>
+				<InputField name="НачалоЦелевогоПериода" id="7">
+					<DataPath>Объект.НачалоЦелевогоПериода</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Начало периода</v8:content>
+						</v8:item>
+					</Title>
+					<ContextMenu name="НачалоЦелевогоПериодаКонтекстноеМеню" id="8"/>
+					<ExtendedTooltip name="НачалоЦелевогоПериодаРасширеннаяПодсказка" id="9"/>
+					<Events>
+						<Event name="OnChange">НачалоЦелевогоПериодаПриИзменении</Event>
+					</Events>
+				</InputField>
+				<InputField name="ОкончаниеЦелевогоПериода" id="10">
+					<DataPath>Объект.ОкончаниеЦелевогоПериода</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Окончание периода</v8:content>
+						</v8:item>
+					</Title>
+					<ContextMenu name="ОкончаниеЦелевогоПериодаКонтекстноеМеню" id="11"/>
+					<ExtendedTooltip name="ОкончаниеЦелевогоПериодаРасширеннаяПодсказка" id="12"/>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="ГруппаВидыКопируемыхДокументов" id="66">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Виды копируемых документов</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа виды копируемых документов</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>Vertical</Group>
+			<ExtendedTooltip name="ГруппаВидыКопируемыхДокументовРасширеннаяПодсказка" id="67"/>
+			<ChildItems>
+				<Table name="ВидыДокументов" id="44">
+					<AutoInsertNewRow>true</AutoInsertNewRow>
+					<EnableStartDrag>true</EnableStartDrag>
+					<EnableDrag>true</EnableDrag>
+					<FileDragMode>AsFile</FileDragMode>
+					<DataPath>Объект.ВидыДокументов</DataPath>
+					<RowFilter xsi:nil="true"/>
+					<ContextMenu name="ВидыДокументовКонтекстноеМеню" id="45"/>
+					<AutoCommandBar name="ВидыДокументовКоманднаяПанель" id="46">
+						<ChildItems>
+							<Button name="ВидыДокументовЗаполнить" id="68">
+								<Type>CommandBarButton</Type>
+								<CommandName>Form.Command.ВидыДокументовЗаполнить</CommandName>
+								<Title>
+									<v8:item>
+										<v8:lang>ru</v8:lang>
+										<v8:content>Заполнить</v8:content>
+									</v8:item>
+								</Title>
+								<ExtendedTooltip name="ВидыДокументовЗаполнитьРасширеннаяПодсказка" id="69"/>
+							</Button>
+							<Button name="ВидыДокументовУстановитьФлажки" id="78">
+								<Type>CommandBarButton</Type>
+								<Representation>Picture</Representation>
+								<CommandName>Form.Command.ВидыДокументовУстановитьФлажки</CommandName>
+								<Picture>
+									<xr:Ref>StdPicture.CheckAll</xr:Ref>
+									<xr:LoadTransparent>true</xr:LoadTransparent>
+								</Picture>
+								<ExtendedTooltip name="ВидыДокументовУстановитьФлажкиРасширеннаяПодсказка" id="79"/>
+							</Button>
+							<Button name="ВидыДокументовСнятьФлажки" id="76">
+								<Type>CommandBarButton</Type>
+								<Representation>Picture</Representation>
+								<CommandName>Form.Command.ВидыДокументовСнятьФлажки</CommandName>
+								<Picture>
+									<xr:Ref>StdPicture.UncheckAll</xr:Ref>
+									<xr:LoadTransparent>true</xr:LoadTransparent>
+								</Picture>
+								<ExtendedTooltip name="ВидыДокументовСнятьФлажкиРасширеннаяПодсказка" id="77"/>
+							</Button>
+						</ChildItems>
+					</AutoCommandBar>
+					<ExtendedTooltip name="ВидыДокументовРасширеннаяПодсказка" id="47"/>
+					<SearchStringAddition name="ВидыДокументовСтрокаПоиска" id="48">
+						<AdditionSource>
+							<Item>ВидыДокументов</Item>
+							<Type>SearchStringRepresentation</Type>
+						</AdditionSource>
+						<ContextMenu name="ВидыДокументовСтрокаПоискаКонтекстноеМеню" id="49"/>
+						<ExtendedTooltip name="ВидыДокументовСтрокаПоискаРасширеннаяПодсказка" id="50"/>
+					</SearchStringAddition>
+					<ViewStatusAddition name="ВидыДокументовСостояниеПросмотра" id="51">
+						<AdditionSource>
+							<Item>ВидыДокументов</Item>
+							<Type>ViewStatusRepresentation</Type>
+						</AdditionSource>
+						<ContextMenu name="ВидыДокументовСостояниеПросмотраКонтекстноеМеню" id="52"/>
+						<ExtendedTooltip name="ВидыДокументовСостояниеПросмотраРасширеннаяПодсказка" id="53"/>
+					</ViewStatusAddition>
+					<SearchControlAddition name="ВидыДокументовУправлениеПоиском" id="54">
+						<AdditionSource>
+							<Item>ВидыДокументов</Item>
+							<Type>SearchControl</Type>
+						</AdditionSource>
+						<ContextMenu name="ВидыДокументовУправлениеПоискомКонтекстноеМеню" id="55"/>
+						<ExtendedTooltip name="ВидыДокументовУправлениеПоискомРасширеннаяПодсказка" id="56"/>
+					</SearchControlAddition>
+					<ChildItems>
+						<CheckBoxField name="ВидыДокументовВыбран" id="73">
+							<DataPath>Объект.ВидыДокументов.Выбран</DataPath>
+							<TitleLocation>None</TitleLocation>
+							<EditMode>EnterOnInput</EditMode>
+							<HeaderPicture>
+								<xr:Ref>StdPicture.GrayedAll</xr:Ref>
+								<xr:LoadTransparent>true</xr:LoadTransparent>
+							</HeaderPicture>
+							<CheckBoxType>Auto</CheckBoxType>
+							<ContextMenu name="ВидыДокументовВыбранКонтекстноеМеню" id="74"/>
+							<ExtendedTooltip name="ВидыДокументовВыбранРасширеннаяПодсказка" id="75"/>
+						</CheckBoxField>
+						<LabelField name="ВидыДокументовНомерСтроки" id="57">
+							<DataPath>Объект.ВидыДокументов.LineNumber</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="ВидыДокументовНомерСтрокиКонтекстноеМеню" id="58"/>
+							<ExtendedTooltip name="ВидыДокументовНомерСтрокиРасширеннаяПодсказка" id="59"/>
+						</LabelField>
+						<InputField name="ВидыДокументовВидДокумента" id="60">
+							<DataPath>Объект.ВидыДокументов.ВидДокумента</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="ВидыДокументовВидДокументаКонтекстноеМеню" id="61"/>
+							<ExtendedTooltip name="ВидыДокументовВидДокументаРасширеннаяПодсказка" id="62"/>
+						</InputField>
+						<InputField name="ВидыДокументовРеквизитДокументОснование" id="63">
+							<DataPath>Объект.ВидыДокументов.РеквизитДокументОснование</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="ВидыДокументовРеквизитДокументОснованиеКонтекстноеМеню" id="64"/>
+							<ExtendedTooltip name="ВидыДокументовРеквизитДокументОснованиеРасширеннаяПодсказка" id="65"/>
+						</InputField>
+					</ChildItems>
+				</Table>
+			</ChildItems>
+		</UsualGroup>
+		<CheckBoxField name="ПроводитьСкопированныеДокументы" id="31">
+			<DataPath>Объект.ПроводитьСкопированныеДокументы</DataPath>
+			<CheckBoxType>Auto</CheckBoxType>
+			<ContextMenu name="ПроводитьСкопированныеДокументыКонтекстноеМеню" id="32"/>
+			<ExtendedTooltip name="ПроводитьСкопированныеДокументыРасширеннаяПодсказка" id="33"/>
+		</CheckBoxField>
+		<UsualGroup name="ГруппаРезультатыКопирования" id="39">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Результаты копирования</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа результаты копирования</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>Vertical</Group>
+			<ExtendedTooltip name="ГруппаРезультатыКопированияРасширеннаяПодсказка" id="40"/>
+			<ChildItems>
+				<ProgressBarField name="ЗначениеИндикатораОбластей" id="80">
+					<DataPath>ЗначениеИндикатораОбластей</DataPath>
+					<Visible>false</Visible>
+					<ContextMenu name="ЗначениеИндикатораОбластейКонтекстноеМеню" id="81"/>
+					<ExtendedTooltip name="ЗначениеИндикатораОбластейРасширеннаяПодсказка" id="82"/>
+				</ProgressBarField>
+				<ProgressBarField name="ЗначениеИндикатораКопирования" id="41">
+					<DataPath>ЗначениеИндикатораКопирования</DataPath>
+					<ContextMenu name="ЗначениеИндикатораКопированияКонтекстноеМеню" id="42"/>
+					<ExtendedTooltip name="ЗначениеИндикатораКопированияРасширеннаяПодсказка" id="43"/>
+				</ProgressBarField>
+				<InputField name="СкопированоДокументов" id="36">
+					<DataPath>СкопированоДокументовВсего</DataPath>
+					<TextEdit>false</TextEdit>
+					<ContextMenu name="СкопированоДокументовКонтекстноеМеню" id="37"/>
+					<ExtendedTooltip name="СкопированоДокументовРасширеннаяПодсказка" id="38"/>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:DataProcessorObject.ТЦКопированиеДокументов</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+		</Attribute>
+		<Attribute name="ИнтерактивныйРежим" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Интерактивный режим</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="СкопированоДокументовВсего" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Скопировано документов всего</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>10</v8:Digits>
+					<v8:FractionDigits>0</v8:FractionDigits>
+					<v8:AllowedSign>Any</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ЗначениеИндикатораКопирования" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Прогресс выполнения</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>10</v8:Digits>
+					<v8:FractionDigits>0</v8:FractionDigits>
+					<v8:AllowedSign>Any</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ИдентификаторЗадания" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Идентификатор задания</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:UUID</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="КопироватьДоТекущегоМомента" id="7">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Копировать до текущего момента</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ЗначениеИндикатораОбластей" id="8">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обработано областей</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>10</v8:Digits>
+					<v8:FractionDigits>0</v8:FractionDigits>
+					<v8:AllowedSign>Any</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="РазделениеВключено" id="9">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Разделение включено</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="ЗаполнитьНастройки" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Заполнить настройки</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Заполнить настройки</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ЗаполнитьНастройки</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ВыполнитьКопирование" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выполнить копирование</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выполнить копирование</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ВыполнитьКопирование</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ВыполнитьКопированиеДоТекущегоМомента" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выполнить копирование до текущего момента</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выполнить копирование до текущего момента</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ВыполнитьКопированиеДоТекущегоМомента</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ВидыДокументовЗаполнить" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Виды документов заполнить</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Виды документов заполнить</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ЗаполнитьВидыДокументов</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ВидыДокументовУстановитьФлажки" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Установить все флажки</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Установить все отметки</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ВидыДокументовУстановитьФлажки</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ВидыДокументовСнятьФлажки" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Снять все флажки</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Снять все отметки</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ВидыДокументовСнятьФлажки</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+	</Commands>
+</Form>

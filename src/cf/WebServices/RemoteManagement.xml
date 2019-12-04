@@ -1,0 +1,594 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.7">
+	<WebService uuid="f34b8cdb-a852-4971-9e5a-e4745a4e5268">
+		<Properties>
+			<Name>RemoteManagement</Name>
+			<Synonym>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Remote management</v8:content>
+				</v8:item>
+			</Synonym>
+			<Comment/>
+			<Namespace>http://v8.1c.ru/testcenter/RemoteManagement/1.0.0.2</Namespace>
+			<XDTOPackages>
+				<xr:Item>
+					<xr:Presentation/>
+					<xr:CheckState>0</xr:CheckState>
+					<xr:Value xsi:type="xr:MDObjectRef">XDTOPackage.ДанныеУправленияТестом</xr:Value>
+				</xr:Item>
+				<xr:Item>
+					<xr:Presentation/>
+					<xr:CheckState>0</xr:CheckState>
+					<xr:Value xsi:type="xs:string">http://v8.1c.ru/8.1/data/core</xr:Value>
+				</xr:Item>
+			</XDTOPackages>
+			<DescriptorFileName>RemoteManagement.1cws</DescriptorFileName>
+			<ReuseSessions>DontUse</ReuseSessions>
+			<SessionMaxAge>20</SessionMaxAge>
+		</Properties>
+		<ChildObjects>
+			<Operation uuid="095076c2-4810-43ab-b09a-63bec95b5cc6">
+				<Properties>
+					<Name>GetClientAppsTypes</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Get client apps types</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+					<XDTOReturningValueType xmlns:d6p1="http://v8.1c.ru/testcenter/RemoteManagement/1.0.0.2">d6p1:ClientAppsTypesList</XDTOReturningValueType>
+					<Nillable>false</Nillable>
+					<Transactioned>false</Transactioned>
+					<ProcedureName>GetClientAppsTypes</ProcedureName>
+					<DataLockControlMode>Managed</DataLockControlMode>
+				</Properties>
+				<ChildObjects/>
+			</Operation>
+			<Operation uuid="8c6a9a6d-a83a-4c6c-841e-72758576a364">
+				<Properties>
+					<Name>GetTestManagementList</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Get test management list</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+					<XDTOReturningValueType xmlns:d6p1="http://v8.1c.ru/testcenter/RemoteManagement/1.0.0.2">d6p1:ClientsList</XDTOReturningValueType>
+					<Nillable>true</Nillable>
+					<Transactioned>false</Transactioned>
+					<ProcedureName>GetTestManagmentList</ProcedureName>
+					<DataLockControlMode>Managed</DataLockControlMode>
+				</Properties>
+				<ChildObjects/>
+			</Operation>
+			<Operation uuid="45ba1be4-b7b1-4d81-8e3e-7edd3c4f0b35">
+				<Properties>
+					<Name>GetScenarios</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Get scenarios</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+					<XDTOReturningValueType xmlns:d6p1="http://v8.1c.ru/testcenter/RemoteManagement/1.0.0.2">d6p1:ScenariosList</XDTOReturningValueType>
+					<Nillable>false</Nillable>
+					<Transactioned>false</Transactioned>
+					<ProcedureName>GetScenarios</ProcedureName>
+					<DataLockControlMode>Managed</DataLockControlMode>
+				</Properties>
+				<ChildObjects/>
+			</Operation>
+			<Operation uuid="0c841333-d2e4-44ca-91c4-aef6db5a4d73">
+				<Properties>
+					<Name>SetTestManagementByID</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Set test management by ID</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+					<XDTOReturningValueType>xs:string</XDTOReturningValueType>
+					<Nillable>false</Nillable>
+					<Transactioned>false</Transactioned>
+					<ProcedureName>SetTestManagementByID</ProcedureName>
+					<DataLockControlMode>Managed</DataLockControlMode>
+				</Properties>
+				<ChildObjects>
+					<Parameter uuid="2c908393-7b0f-4b05-9016-a819ac7cf32e">
+						<Properties>
+							<Name>ClientUUID</Name>
+							<Synonym>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Client UUID</v8:content>
+								</v8:item>
+							</Synonym>
+							<Comment>Идентификатор клиента</Comment>
+							<XDTOValueType>v8:UUID</XDTOValueType>
+							<Nillable>false</Nillable>
+							<TransferDirection>In</TransferDirection>
+						</Properties>
+					</Parameter>
+					<Parameter uuid="2a8ea0db-4e62-4840-9843-cd1d0bd8a27d">
+						<Properties>
+							<Name>TypeID</Name>
+							<Synonym>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Type ID</v8:content>
+								</v8:item>
+							</Synonym>
+							<Comment>Тип клиентского приложения</Comment>
+							<XDTOValueType>xs:string</XDTOValueType>
+							<Nillable>true</Nillable>
+							<TransferDirection>In</TransferDirection>
+						</Properties>
+					</Parameter>
+					<Parameter uuid="948249fe-b6eb-4e23-932c-44631bc230f3">
+						<Properties>
+							<Name>StartDate</Name>
+							<Synonym>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Start date</v8:content>
+								</v8:item>
+							</Synonym>
+							<Comment>Дата начала</Comment>
+							<XDTOValueType>xs:dateTime</XDTOValueType>
+							<Nillable>true</Nillable>
+							<TransferDirection>In</TransferDirection>
+						</Properties>
+					</Parameter>
+					<Parameter uuid="a9939fcf-f366-441a-82d8-1e09f19176bb">
+						<Properties>
+							<Name>FinishDate</Name>
+							<Synonym>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Finish date</v8:content>
+								</v8:item>
+							</Synonym>
+							<Comment>Дата окончания</Comment>
+							<XDTOValueType>xs:dateTime</XDTOValueType>
+							<Nillable>true</Nillable>
+							<TransferDirection>In</TransferDirection>
+						</Properties>
+					</Parameter>
+					<Parameter uuid="8301b7d6-b1b7-4932-8b21-06b09743e419">
+						<Properties>
+							<Name>ScenarioUUID</Name>
+							<Synonym>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Scenario UUID</v8:content>
+								</v8:item>
+							</Synonym>
+							<Comment>Идентификатор сценария</Comment>
+							<XDTOValueType>xs:string</XDTOValueType>
+							<Nillable>true</Nillable>
+							<TransferDirection>In</TransferDirection>
+						</Properties>
+					</Parameter>
+				</ChildObjects>
+			</Operation>
+			<Operation uuid="eae59eac-92e6-4396-af9a-88d520d702a6">
+				<Properties>
+					<Name>SetTestManagementByIDUseAllAgents</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Set test management by ID and use all agents</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+					<XDTOReturningValueType>xs:string</XDTOReturningValueType>
+					<Nillable>false</Nillable>
+					<Transactioned>false</Transactioned>
+					<ProcedureName>SetTestManagementByIDUseAllAgents</ProcedureName>
+					<DataLockControlMode>Managed</DataLockControlMode>
+				</Properties>
+				<ChildObjects>
+					<Parameter uuid="d0dfd36b-05f3-4fe8-8476-68ec443e8e10">
+						<Properties>
+							<Name>ClientUUID</Name>
+							<Synonym>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Client UUID</v8:content>
+								</v8:item>
+							</Synonym>
+							<Comment>Идентификатор клиента</Comment>
+							<XDTOValueType>v8:UUID</XDTOValueType>
+							<Nillable>false</Nillable>
+							<TransferDirection>In</TransferDirection>
+						</Properties>
+					</Parameter>
+					<Parameter uuid="0c99bab5-eecf-4699-8c32-af82f38c274d">
+						<Properties>
+							<Name>TypeID</Name>
+							<Synonym>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Type ID</v8:content>
+								</v8:item>
+							</Synonym>
+							<Comment>Тип клиентского приложения</Comment>
+							<XDTOValueType>xs:string</XDTOValueType>
+							<Nillable>true</Nillable>
+							<TransferDirection>In</TransferDirection>
+						</Properties>
+					</Parameter>
+					<Parameter uuid="711987ee-26f9-46fe-b9cd-f8a871776b86">
+						<Properties>
+							<Name>StartDate</Name>
+							<Synonym>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Start date</v8:content>
+								</v8:item>
+							</Synonym>
+							<Comment>Дата начала</Comment>
+							<XDTOValueType>xs:dateTime</XDTOValueType>
+							<Nillable>true</Nillable>
+							<TransferDirection>In</TransferDirection>
+						</Properties>
+					</Parameter>
+					<Parameter uuid="6278fb4e-a08b-4010-9839-fe26f87b85a8">
+						<Properties>
+							<Name>FinishDate</Name>
+							<Synonym>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Finish date</v8:content>
+								</v8:item>
+							</Synonym>
+							<Comment>Дата окончания</Comment>
+							<XDTOValueType>xs:dateTime</XDTOValueType>
+							<Nillable>true</Nillable>
+							<TransferDirection>In</TransferDirection>
+						</Properties>
+					</Parameter>
+					<Parameter uuid="192b2c78-fb67-4154-bcc0-2674fe20d55c">
+						<Properties>
+							<Name>ScenarioUUID</Name>
+							<Synonym>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Scenario UUID</v8:content>
+								</v8:item>
+							</Synonym>
+							<Comment>Идентификатор сценария</Comment>
+							<XDTOValueType>xs:string</XDTOValueType>
+							<Nillable>true</Nillable>
+							<TransferDirection>In</TransferDirection>
+						</Properties>
+					</Parameter>
+				</ChildObjects>
+			</Operation>
+			<Operation uuid="cb98a83c-2b11-449e-b414-aaad76a0a7a2">
+				<Properties>
+					<Name>SetTestManagementByIDUseAllAgentsChangeURL</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Set test management by ID, use all agents and change URL</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+					<XDTOReturningValueType>xs:string</XDTOReturningValueType>
+					<Nillable>false</Nillable>
+					<Transactioned>false</Transactioned>
+					<ProcedureName>SetTestManagementByIDUseAllAgentsChangeURL</ProcedureName>
+					<DataLockControlMode>Managed</DataLockControlMode>
+				</Properties>
+				<ChildObjects>
+					<Parameter uuid="343befc1-1d97-41df-bbfa-4c1658c75643">
+						<Properties>
+							<Name>ClientUUID</Name>
+							<Synonym>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Client UUID</v8:content>
+								</v8:item>
+							</Synonym>
+							<Comment>Идентификатор клиента</Comment>
+							<XDTOValueType>v8:UUID</XDTOValueType>
+							<Nillable>false</Nillable>
+							<TransferDirection>In</TransferDirection>
+						</Properties>
+					</Parameter>
+					<Parameter uuid="a5f3415c-dc0d-436c-9baa-688b02b7b192">
+						<Properties>
+							<Name>TypeID</Name>
+							<Synonym>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Type ID</v8:content>
+								</v8:item>
+							</Synonym>
+							<Comment>Тип клиентского приложения</Comment>
+							<XDTOValueType>xs:string</XDTOValueType>
+							<Nillable>true</Nillable>
+							<TransferDirection>In</TransferDirection>
+						</Properties>
+					</Parameter>
+					<Parameter uuid="00a7d9fb-0773-4b96-a0e4-4fc763ab9356">
+						<Properties>
+							<Name>StartDate</Name>
+							<Synonym>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Start date</v8:content>
+								</v8:item>
+							</Synonym>
+							<Comment>Дата начала</Comment>
+							<XDTOValueType>xs:dateTime</XDTOValueType>
+							<Nillable>true</Nillable>
+							<TransferDirection>In</TransferDirection>
+						</Properties>
+					</Parameter>
+					<Parameter uuid="0edb27b9-a3e2-42a8-b024-e6d32d414ce4">
+						<Properties>
+							<Name>FinishDate</Name>
+							<Synonym>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Finish date</v8:content>
+								</v8:item>
+							</Synonym>
+							<Comment>Дата окончания</Comment>
+							<XDTOValueType>xs:dateTime</XDTOValueType>
+							<Nillable>true</Nillable>
+							<TransferDirection>In</TransferDirection>
+						</Properties>
+					</Parameter>
+					<Parameter uuid="cbade11f-02b7-4224-9618-a27f2fdd3210">
+						<Properties>
+							<Name>ScenarioUUID</Name>
+							<Synonym>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Scenario UUID</v8:content>
+								</v8:item>
+							</Synonym>
+							<Comment>Идентификатор сценария</Comment>
+							<XDTOValueType>xs:string</XDTOValueType>
+							<Nillable>true</Nillable>
+							<TransferDirection>In</TransferDirection>
+						</Properties>
+					</Parameter>
+					<Parameter uuid="2d3c0ab1-333c-4138-923f-92224cc0e99b">
+						<Properties>
+							<Name>PublicationURL</Name>
+							<Synonym>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Publication URL</v8:content>
+								</v8:item>
+							</Synonym>
+							<Comment/>
+							<XDTOValueType>xs:string</XDTOValueType>
+							<Nillable>true</Nillable>
+							<TransferDirection>In</TransferDirection>
+						</Properties>
+					</Parameter>
+					<Parameter uuid="6ed115c5-f939-4e74-a187-6805edca739e">
+						<Properties>
+							<Name>DataSeparationUsed</Name>
+							<Synonym>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Data separation used</v8:content>
+								</v8:item>
+							</Synonym>
+							<Comment/>
+							<XDTOValueType>xs:boolean</XDTOValueType>
+							<Nillable>true</Nillable>
+							<TransferDirection>In</TransferDirection>
+						</Properties>
+					</Parameter>
+				</ChildObjects>
+			</Operation>
+			<Operation uuid="bd87ecd6-d765-488b-b88e-4494a6e18a08">
+				<Properties>
+					<Name>SetTestManagementByIDAdvanced</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Set test management by ID advanced</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+					<XDTOReturningValueType>xs:string</XDTOReturningValueType>
+					<Nillable>false</Nillable>
+					<Transactioned>false</Transactioned>
+					<ProcedureName>SetTestManagementByIDAdvanced</ProcedureName>
+					<DataLockControlMode>Managed</DataLockControlMode>
+				</Properties>
+				<ChildObjects>
+					<Parameter uuid="458ab045-7696-414b-84b5-1aa293d68250">
+						<Properties>
+							<Name>ClientUUID</Name>
+							<Synonym>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Client UUID</v8:content>
+								</v8:item>
+							</Synonym>
+							<Comment>Идентификатор клиента</Comment>
+							<XDTOValueType>v8:UUID</XDTOValueType>
+							<Nillable>false</Nillable>
+							<TransferDirection>In</TransferDirection>
+						</Properties>
+					</Parameter>
+					<Parameter uuid="a9fea025-5a3a-4880-b4c2-fd8de7dbafe7">
+						<Properties>
+							<Name>TypeID</Name>
+							<Synonym>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Type ID</v8:content>
+								</v8:item>
+							</Synonym>
+							<Comment>Тип клиентского приложения</Comment>
+							<XDTOValueType>xs:string</XDTOValueType>
+							<Nillable>true</Nillable>
+							<TransferDirection>In</TransferDirection>
+						</Properties>
+					</Parameter>
+					<Parameter uuid="1f2e08e6-48f3-4a8e-8528-c1eb2b346440">
+						<Properties>
+							<Name>StartDate</Name>
+							<Synonym>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Start date</v8:content>
+								</v8:item>
+							</Synonym>
+							<Comment>Дата начала</Comment>
+							<XDTOValueType>xs:dateTime</XDTOValueType>
+							<Nillable>true</Nillable>
+							<TransferDirection>In</TransferDirection>
+						</Properties>
+					</Parameter>
+					<Parameter uuid="83ebe6c3-6179-4d15-a85b-8d2546549a47">
+						<Properties>
+							<Name>FinishDate</Name>
+							<Synonym>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Finish date</v8:content>
+								</v8:item>
+							</Synonym>
+							<Comment>Дата окончания</Comment>
+							<XDTOValueType>xs:dateTime</XDTOValueType>
+							<Nillable>true</Nillable>
+							<TransferDirection>In</TransferDirection>
+						</Properties>
+					</Parameter>
+					<Parameter uuid="e91f0703-87ff-4a88-b641-fe6eee712c34">
+						<Properties>
+							<Name>ScenarioUUID</Name>
+							<Synonym>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Scenario UUID</v8:content>
+								</v8:item>
+							</Synonym>
+							<Comment>Идентификатор сценария</Comment>
+							<XDTOValueType>xs:string</XDTOValueType>
+							<Nillable>true</Nillable>
+							<TransferDirection>In</TransferDirection>
+						</Properties>
+					</Parameter>
+					<Parameter uuid="349e6d98-90ad-44b7-8d21-e6160d888acc">
+						<Properties>
+							<Name>ScenarioParameters</Name>
+							<Synonym>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Scenario parameters</v8:content>
+								</v8:item>
+							</Synonym>
+							<Comment/>
+							<XDTOValueType xmlns:d8p1="http://v8.1c.ru/testcenter/RemoteManagement/1.0.0.2">d8p1:ScenarioParameters</XDTOValueType>
+							<Nillable>true</Nillable>
+							<TransferDirection>In</TransferDirection>
+						</Properties>
+					</Parameter>
+				</ChildObjects>
+			</Operation>
+			<Operation uuid="dc5f675a-46bd-48fe-ba41-398b0ea51b24">
+				<Properties>
+					<Name>UnloadAgents</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Unload agents</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+					<XDTOReturningValueType>xs:string</XDTOReturningValueType>
+					<Nillable>false</Nillable>
+					<Transactioned>false</Transactioned>
+					<ProcedureName>UnloadAgents</ProcedureName>
+					<DataLockControlMode>Managed</DataLockControlMode>
+				</Properties>
+				<ChildObjects/>
+			</Operation>
+			<Operation uuid="3c968a07-c480-4032-b067-71c650267d73">
+				<Properties>
+					<Name>GetErrorInfoByID</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Get error info by ID</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+					<XDTOReturningValueType>xs:string</XDTOReturningValueType>
+					<Nillable>false</Nillable>
+					<Transactioned>false</Transactioned>
+					<ProcedureName>GetErrorInfoByID</ProcedureName>
+					<DataLockControlMode>Managed</DataLockControlMode>
+				</Properties>
+				<ChildObjects>
+					<Parameter uuid="349f6f9e-0f09-4135-a76c-6efc0e83ae3e">
+						<Properties>
+							<Name>ClientUUID</Name>
+							<Synonym>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Client UUID</v8:content>
+								</v8:item>
+							</Synonym>
+							<Comment>Идентификатор клиента</Comment>
+							<XDTOValueType>v8:UUID</XDTOValueType>
+							<Nillable>false</Nillable>
+							<TransferDirection>In</TransferDirection>
+						</Properties>
+					</Parameter>
+				</ChildObjects>
+			</Operation>
+			<Operation uuid="93a3bbab-c625-4cd0-9367-6f8e2e1e02ae">
+				<Properties>
+					<Name>GetResultsByID</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Get results by ID</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+					<XDTOReturningValueType>xs:string</XDTOReturningValueType>
+					<Nillable>false</Nillable>
+					<Transactioned>false</Transactioned>
+					<ProcedureName>GetResultsByID</ProcedureName>
+					<DataLockControlMode>Managed</DataLockControlMode>
+				</Properties>
+				<ChildObjects>
+					<Parameter uuid="6844a8f9-284a-486a-8cfd-2de981fb3050">
+						<Properties>
+							<Name>ClientUUID</Name>
+							<Synonym>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Client UUID</v8:content>
+								</v8:item>
+							</Synonym>
+							<Comment>Идентификатор клиента</Comment>
+							<XDTOValueType>v8:UUID</XDTOValueType>
+							<Nillable>false</Nillable>
+							<TransferDirection>In</TransferDirection>
+						</Properties>
+					</Parameter>
+				</ChildObjects>
+			</Operation>
+		</ChildObjects>
+	</WebService>
+</MetaDataObject>

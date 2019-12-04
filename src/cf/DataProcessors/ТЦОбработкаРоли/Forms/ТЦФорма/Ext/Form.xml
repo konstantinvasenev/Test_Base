@@ -1,0 +1,309 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.7">
+	<VerticalScroll>useIfNecessary</VerticalScroll>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<ChildItems>
+		<UsualGroup name="ГруппаДлительностьИПауза" id="56">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа длительность и пауза</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа длительность и пауза</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>Vertical</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаДлительностьИПаузаРасширеннаяПодсказка" id="57"/>
+			<ChildItems>
+				<UsualGroup name="Параметры" id="36">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Параметры</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Параметры</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Group>Horizontal</Group>
+					<ExtendedTooltip name="ПараметрыРасширеннаяПодсказка" id="37"/>
+					<ChildItems>
+						<InputField name="ДлительностьМинут" id="38">
+							<DataPath>ТЦОбъект.ДлительностьМинут</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Длительность (мин)</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Если значение равно 0, то выполнится одна итерация.</v8:content>
+								</v8:item>
+							</ToolTip>
+							<ContextMenu name="ДлительностьМинутКонтекстноеМеню" id="39"/>
+							<ExtendedTooltip name="ДлительностьМинутРасширеннаяПодсказка" id="40"/>
+						</InputField>
+						<InputField name="Пауза" id="33">
+							<DataPath>ТЦОбъект.Пауза</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Пауза после выполнения всей последовательности (с)</v8:content>
+								</v8:item>
+							</Title>
+							<ContextMenu name="ПаузаКонтекстноеМеню" id="34"/>
+							<ExtendedTooltip name="ПаузаРасширеннаяПодсказка" id="35"/>
+						</InputField>
+					</ChildItems>
+				</UsualGroup>
+				<CheckBoxField name="ВыполнятьВПрямомПорядке" id="53">
+					<DataPath>ТЦОбъект.ВыполнятьВПрямомПорядке</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Выполнять операции в прямом порядке</v8:content>
+						</v8:item>
+					</Title>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="ВыполнятьВПрямомПорядкеКонтекстноеМеню" id="54"/>
+					<ExtendedTooltip name="ВыполнятьВПрямомПорядкеРасширеннаяПодсказка" id="55"/>
+				</CheckBoxField>
+			</ChildItems>
+		</UsualGroup>
+		<Button name="Заполнить" id="9">
+			<Type>UsualButton</Type>
+			<CommandName>0</CommandName>
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Заполнить параметры</v8:content>
+				</v8:item>
+			</Title>
+			<ExtendedTooltip name="ЗаполнитьРасширеннаяПодсказка" id="10"/>
+		</Button>
+		<Table name="ИнтенсивностьОпераций" id="11">
+			<AutoInsertNewRow>true</AutoInsertNewRow>
+			<EnableStartDrag>true</EnableStartDrag>
+			<EnableDrag>true</EnableDrag>
+			<FileDragMode>AsFile</FileDragMode>
+			<DataPath>ТЦОбъект.ИнтенсивностьОпераций</DataPath>
+			<SearchStringLocation>None</SearchStringLocation>
+			<ViewStatusLocation>None</ViewStatusLocation>
+			<SearchControlLocation>None</SearchControlLocation>
+			<RowFilter xsi:nil="true"/>
+			<ContextMenu name="ИнтенсивностьОперацийКонтекстноеМеню" id="12"/>
+			<AutoCommandBar name="ИнтенсивностьОперацийКоманднаяПанель" id="13"/>
+			<ExtendedTooltip name="ИнтенсивностьОперацийРасширеннаяПодсказка" id="14"/>
+			<SearchStringAddition name="ИнтенсивностьОперацийСтрокаПоиска" id="44">
+				<AdditionSource>
+					<Item>ИнтенсивностьОпераций</Item>
+					<Type>SearchStringRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="ИнтенсивностьОперацийСтрокаПоискаКонтекстноеМеню" id="45"/>
+				<ExtendedTooltip name="ИнтенсивностьОперацийСтрокаПоискаРасширеннаяПодсказка" id="46"/>
+			</SearchStringAddition>
+			<ViewStatusAddition name="ИнтенсивностьОперацийСостояниеПросмотра" id="47">
+				<AdditionSource>
+					<Item>ИнтенсивностьОпераций</Item>
+					<Type>ViewStatusRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="ИнтенсивностьОперацийСостояниеПросмотраКонтекстноеМеню" id="48"/>
+				<ExtendedTooltip name="ИнтенсивностьОперацийСостояниеПросмотраРасширеннаяПодсказка" id="49"/>
+			</ViewStatusAddition>
+			<SearchControlAddition name="ИнтенсивностьОперацийУправлениеПоиском" id="50">
+				<AdditionSource>
+					<Item>ИнтенсивностьОпераций</Item>
+					<Type>SearchControl</Type>
+				</AdditionSource>
+				<ContextMenu name="ИнтенсивностьОперацийУправлениеПоискомКонтекстноеМеню" id="51"/>
+				<ExtendedTooltip name="ИнтенсивностьОперацийУправлениеПоискомРасширеннаяПодсказка" id="52"/>
+			</SearchControlAddition>
+			<Events>
+				<Event name="BeforeEditEnd">ТЦИнтенсивностьОперацийПередОкончаниемРедактирования</Event>
+			</Events>
+			<ChildItems>
+				<LabelField name="ИнтенсивностьОперацийНомерСтроки" id="15">
+					<DataPath>ТЦОбъект.ИнтенсивностьОпераций.LineNumber</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ИнтенсивностьОперацийНомерСтрокиКонтекстноеМеню" id="16"/>
+					<ExtendedTooltip name="ИнтенсивностьОперацийНомерСтрокиРасширеннаяПодсказка" id="17"/>
+				</LabelField>
+				<InputField name="ИнтенсивностьОперацийРоль" id="30">
+					<DataPath>ТЦОбъект.ИнтенсивностьОпераций.Роль</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ИнтенсивностьОперацийРольКонтекстноеМеню" id="31"/>
+					<ExtendedTooltip name="ИнтенсивностьОперацийРольРасширеннаяПодсказка" id="32"/>
+				</InputField>
+				<InputField name="ИнтенсивностьОперацийКоличество" id="21">
+					<DataPath>ТЦОбъект.ИнтенсивностьОпераций.Количество</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ИнтенсивностьОперацийКоличествоКонтекстноеМеню" id="22"/>
+					<ExtendedTooltip name="ИнтенсивностьОперацийКоличествоРасширеннаяПодсказка" id="23"/>
+				</InputField>
+				<InputField name="ИнтенсивностьОперацийПауза" id="41">
+					<DataPath>ТЦОбъект.ИнтенсивностьОпераций.Пауза</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Пауза (с)</v8:content>
+						</v8:item>
+					</Title>
+					<EditMode>EnterOnInput</EditMode>
+					<Width>10</Width>
+					<HorizontalStretch>false</HorizontalStretch>
+					<ContextMenu name="ИнтенсивностьОперацийПаузаКонтекстноеМеню" id="42"/>
+					<ExtendedTooltip name="ИнтенсивностьОперацийПаузаРасширеннаяПодсказка" id="43"/>
+				</InputField>
+			</ChildItems>
+		</Table>
+		<CommandBar name="ТЦКоманды" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Команды</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>ТЦКоманды</v8:content>
+				</v8:item>
+			</ToolTip>
+			<HorizontalLocation>Right</HorizontalLocation>
+			<ExtendedTooltip name="ТЦКомандыExtendedTooltip" id="5"/>
+			<ChildItems>
+				<Button name="ТЦВыполнить" id="1">
+					<Type>CommandBarButton</Type>
+					<SkipOnInput>false</SkipOnInput>
+					<CommandName>Form.Command.Выполнить</CommandName>
+					<ExtendedTooltip name="ТЦВыполнитьExtendedTooltip" id="6"/>
+				</Button>
+				<Button name="ТЦОК" id="4">
+					<Type>CommandBarButton</Type>
+					<DefaultButton>true</DefaultButton>
+					<SkipOnInput>false</SkipOnInput>
+					<CommandName>Form.Command.ОК</CommandName>
+					<ExtendedTooltip name="ТЦОКExtendedTooltip" id="7"/>
+				</Button>
+				<Button name="ТЦЗакрыть" id="3">
+					<Type>CommandBarButton</Type>
+					<Representation>PictureAndText</Representation>
+					<SkipOnInput>false</SkipOnInput>
+					<CommandName>Form.StandardCommand.Close</CommandName>
+					<ExtendedTooltip name="ТЦЗакрытьExtendedTooltip" id="8"/>
+				</Button>
+			</ChildItems>
+		</CommandBar>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="ТЦОбъект" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>ТЦОбъект</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:DataProcessorObject.ТЦОбработкаРоли</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+		</Attribute>
+		<Attribute name="ВремяНачалаТеста" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Время начала теста</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:dateTime</v8:Type>
+				<v8:DateQualifiers>
+					<v8:DateFractions>DateTime</v8:DateFractions>
+				</v8:DateQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ВремяОкончанияТеста" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Время окончания теста</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:dateTime</v8:Type>
+				<v8:DateQualifiers>
+					<v8:DateFractions>DateTime</v8:DateFractions>
+				</v8:DateQualifiers>
+			</Type>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="Выполнить" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выполнить</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выполнить</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.GenerateReport</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>ВыполнитьДействие</Action>
+			<Representation>TextPicture</Representation>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ОК" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>ОК</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>ОК</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.EndEdit</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>ТЦОК</Action>
+			<Representation>TextPicture</Representation>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+	</Commands>
+	<Parameters>
+		<Parameter name="ТЦСценарий">
+			<Type>
+				<v8:Type>cfg:CatalogRef.ТЦСценарии</v8:Type>
+			</Type>
+			<KeyParameter>true</KeyParameter>
+		</Parameter>
+		<Parameter name="ТЦРоль">
+			<Type>
+				<v8:Type>cfg:CatalogRef.ТЦРоли</v8:Type>
+			</Type>
+			<KeyParameter>true</KeyParameter>
+		</Parameter>
+	</Parameters>
+</Form>

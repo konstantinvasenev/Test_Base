@@ -1,0 +1,561 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.7">
+	<SaveDataInSettings>UseList</SaveDataInSettings>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<Events>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<UsualGroup name="НастройкиПодключения" id="53">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Настройки подключения</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Настройки подключения</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>Vertical</Group>
+			<ExtendedTooltip name="НастройкиПодключенияРасширеннаяПодсказка" id="54"/>
+			<ChildItems>
+				<InputField name="Путь" id="44">
+					<DataPath>Объект.WSDL</DataPath>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>http://&lt;ИмяСервера&gt;/&lt;ИмяПубликации&gt;/ws/RemoteManagment?WSDL</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ContextMenu name="ПутьКонтекстноеМеню" id="45"/>
+					<ExtendedTooltip name="ПутьРасширеннаяПодсказка" id="46"/>
+				</InputField>
+				<InputField name="Пользователь" id="47">
+					<DataPath>Объект.Пользователь</DataPath>
+					<ContextMenu name="ПользовательКонтекстноеМеню" id="48"/>
+					<ExtendedTooltip name="ПользовательРасширеннаяПодсказка" id="49"/>
+				</InputField>
+				<InputField name="Пароль" id="50">
+					<DataPath>Объект.Пароль</DataPath>
+					<PasswordMode>true</PasswordMode>
+					<ContextMenu name="ПарольКонтекстноеМеню" id="51"/>
+					<ExtendedTooltip name="ПарольРасширеннаяПодсказка" id="52"/>
+				</InputField>
+				<Button name="Подключиться" id="55">
+					<Type>UsualButton</Type>
+					<CommandName>Form.Command.Подключиться</CommandName>
+					<ExtendedTooltip name="ПодключитьсяРасширеннаяПодсказка" id="56"/>
+				</Button>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="ТЦУправлениеТестом" id="11">
+			<ReadOnly>true</ReadOnly>
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>ТЦУправление тестом</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>ТЦУправление тестом</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>Vertical</Group>
+			<ExtendedTooltip name="ТЦУправлениеТестомРасширеннаяПодсказка" id="12"/>
+		</UsualGroup>
+		<Table name="УправлениеТестом" id="13">
+			<CommandBarLocation>Bottom</CommandBarLocation>
+			<Enabled>false</Enabled>
+			<ReadOnly>true</ReadOnly>
+			<AutoInsertNewRow>true</AutoInsertNewRow>
+			<EnableStartDrag>true</EnableStartDrag>
+			<EnableDrag>true</EnableDrag>
+			<FileDragMode>AsFile</FileDragMode>
+			<DataPath>Объект.УправлениеТестом</DataPath>
+			<SearchStringLocation>None</SearchStringLocation>
+			<ViewStatusLocation>None</ViewStatusLocation>
+			<SearchControlLocation>None</SearchControlLocation>
+			<RowFilter xsi:nil="true"/>
+			<ContextMenu name="УправлениеТестомКонтекстноеМеню" id="14"/>
+			<AutoCommandBar name="УправлениеТестомКоманднаяПанель" id="15">
+				<Autofill>false</Autofill>
+				<ChildItems>
+					<Button name="УправлениеТестомОбновить" id="103">
+						<Type>CommandBarButton</Type>
+						<Representation>PictureAndText</Representation>
+						<CommandName>Form.Command.ОбновитьСписок</CommandName>
+						<Picture>
+							<xr:Ref>StdPicture.Refresh</xr:Ref>
+							<xr:LoadTransparent>true</xr:LoadTransparent>
+						</Picture>
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Обновить</v8:content>
+							</v8:item>
+						</Title>
+						<ExtendedTooltip name="УправлениеТестомОбновитьРасширеннаяПодсказка" id="104"/>
+					</Button>
+				</ChildItems>
+			</AutoCommandBar>
+			<ExtendedTooltip name="УправлениеТестомРасширеннаяПодсказка" id="16"/>
+			<SearchStringAddition name="УправлениеТестомСтрокаПоиска" id="119">
+				<AdditionSource>
+					<Item>УправлениеТестом</Item>
+					<Type>SearchStringRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="УправлениеТестомСтрокаПоискаКонтекстноеМеню" id="120"/>
+				<ExtendedTooltip name="УправлениеТестомСтрокаПоискаРасширеннаяПодсказка" id="121"/>
+			</SearchStringAddition>
+			<ViewStatusAddition name="УправлениеТестомСостояниеПросмотра" id="122">
+				<AdditionSource>
+					<Item>УправлениеТестом</Item>
+					<Type>ViewStatusRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="УправлениеТестомСостояниеПросмотраКонтекстноеМеню" id="123"/>
+				<ExtendedTooltip name="УправлениеТестомСостояниеПросмотраРасширеннаяПодсказка" id="124"/>
+			</ViewStatusAddition>
+			<SearchControlAddition name="УправлениеТестомУправлениеПоиском" id="125">
+				<AdditionSource>
+					<Item>УправлениеТестом</Item>
+					<Type>SearchControl</Type>
+				</AdditionSource>
+				<ContextMenu name="УправлениеТестомУправлениеПоискомКонтекстноеМеню" id="126"/>
+				<ExtendedTooltip name="УправлениеТестомУправлениеПоискомРасширеннаяПодсказка" id="127"/>
+			</SearchControlAddition>
+			<Events>
+				<Event name="Selection">УправлениеТестомВыбор</Event>
+			</Events>
+			<ChildItems>
+				<LabelField name="УправлениеТестомНомерСтроки" id="17">
+					<DataPath>Объект.УправлениеТестом.LineNumber</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="УправлениеТестомНомерСтрокиКонтекстноеМеню" id="18"/>
+					<ExtendedTooltip name="УправлениеТестомНомерСтрокиРасширеннаяПодсказка" id="19"/>
+				</LabelField>
+				<InputField name="УправлениеТестомНаименование" id="20">
+					<DataPath>Объект.УправлениеТестом.Наименование</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="УправлениеТестомНаименованиеКонтекстноеМеню" id="21"/>
+					<ExtendedTooltip name="УправлениеТестомНаименованиеРасширеннаяПодсказка" id="22"/>
+				</InputField>
+				<InputField name="УправлениеТестомХост" id="23">
+					<DataPath>Объект.УправлениеТестом.Хост</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="УправлениеТестомХостКонтекстноеМеню" id="24"/>
+					<ExtendedTooltip name="УправлениеТестомХостРасширеннаяПодсказка" id="25"/>
+				</InputField>
+				<InputField name="УправлениеТестомТипКлиента" id="26">
+					<DataPath>Объект.УправлениеТестом.ТипКлиента</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="УправлениеТестомТипКлиентаКонтекстноеМеню" id="27"/>
+					<ExtendedTooltip name="УправлениеТестомТипКлиентаРасширеннаяПодсказка" id="28"/>
+				</InputField>
+				<InputField name="УправлениеТестомТипПриложения" id="29">
+					<DataPath>Объект.УправлениеТестом.ТипПриложения</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="УправлениеТестомТипПриложенияКонтекстноеМеню" id="30"/>
+					<ExtendedTooltip name="УправлениеТестомТипПриложенияРасширеннаяПодсказка" id="31"/>
+				</InputField>
+				<InputField name="УправлениеТестомДатаНачала" id="32">
+					<DataPath>Объект.УправлениеТестом.ДатаНачала</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="УправлениеТестомДатаНачалаКонтекстноеМеню" id="33"/>
+					<ExtendedTooltip name="УправлениеТестомДатаНачалаРасширеннаяПодсказка" id="34"/>
+				</InputField>
+				<InputField name="УправлениеТестомДатаОкончания" id="35">
+					<DataPath>Объект.УправлениеТестом.ДатаОкончания</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="УправлениеТестомДатаОкончанияКонтекстноеМеню" id="36"/>
+					<ExtendedTooltip name="УправлениеТестомДатаОкончанияРасширеннаяПодсказка" id="37"/>
+				</InputField>
+				<InputField name="УправлениеТестомСценарий" id="38">
+					<DataPath>Объект.УправлениеТестом.Сценарий</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="УправлениеТестомСценарийКонтекстноеМеню" id="39"/>
+					<ExtendedTooltip name="УправлениеТестомСценарийРасширеннаяПодсказка" id="40"/>
+				</InputField>
+				<CheckBoxField name="УправлениеТестомВыполнение" id="41">
+					<DataPath>Объект.УправлениеТестом.Выполнение</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="УправлениеТестомВыполнениеКонтекстноеМеню" id="42"/>
+					<ExtendedTooltip name="УправлениеТестомВыполнениеРасширеннаяПодсказка" id="43"/>
+				</CheckBoxField>
+				<InputField name="УправлениеТестомРезультат" id="116">
+					<DataPath>Объект.УправлениеТестом.Результат</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="УправлениеТестомРезультатКонтекстноеМеню" id="117"/>
+					<ExtendedTooltip name="УправлениеТестомРезультатРасширеннаяПодсказка" id="118"/>
+				</InputField>
+			</ChildItems>
+		</Table>
+		<UsualGroup name="ВыборАгентаТЦ" id="57">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>1. Настройте агентов ТЦ</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выбор агента ТЦ</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>Vertical</Group>
+			<ExtendedTooltip name="ВыборАгентаТЦРасширеннаяПодсказка" id="58"/>
+			<ChildItems>
+				<InputField name="Агент" id="79">
+					<DataPath>Агент</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Клиент</v8:content>
+						</v8:item>
+					</Title>
+					<ListChoiceMode>true</ListChoiceMode>
+					<ContextMenu name="АгентКонтекстноеМеню" id="80"/>
+					<ExtendedTooltip name="АгентРасширеннаяПодсказка" id="81"/>
+				</InputField>
+				<InputField name="АгентДатаНачала" id="82">
+					<DataPath>АгентДатаНачала</DataPath>
+					<ContextMenu name="АгентДатаНачалаКонтекстноеМеню" id="83"/>
+					<ExtendedTooltip name="АгентДатаНачалаРасширеннаяПодсказка" id="84"/>
+				</InputField>
+				<InputField name="АгентДатаОкончания" id="85">
+					<DataPath>АгентДатаОкончания</DataPath>
+					<ContextMenu name="АгентДатаОкончанияКонтекстноеМеню" id="86"/>
+					<ExtendedTooltip name="АгентДатаОкончанияРасширеннаяПодсказка" id="87"/>
+				</InputField>
+				<Button name="ДобавитьАгента" id="67">
+					<Type>UsualButton</Type>
+					<CommandName>Form.Command.ДобавитьАгента</CommandName>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Добавить агента</v8:content>
+						</v8:item>
+					</Title>
+					<ExtendedTooltip name="ДобавитьАгентаРасширеннаяПодсказка" id="68"/>
+				</Button>
+				<Button name="ВыгрузитьАгентов" id="114">
+					<Type>UsualButton</Type>
+					<CommandName>Form.Command.ВыгрузитьАгентов</CommandName>
+					<ExtendedTooltip name="ВыгрузитьАгентовРасширеннаяПодсказка" id="115"/>
+				</Button>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="НастроитьЗапускСценария" id="69">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>2. Настройте запуск сценария</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Настроить запуск сценария</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>Vertical</Group>
+			<ExtendedTooltip name="НастроитьЗапускСценарияРасширеннаяПодсказка" id="70"/>
+			<ChildItems>
+				<InputField name="СценарийХост" id="97">
+					<DataPath>СценарийХост</DataPath>
+					<ListChoiceMode>true</ListChoiceMode>
+					<ContextMenu name="СценарийХостКонтекстноеМеню" id="98"/>
+					<ExtendedTooltip name="СценарийХостРасширеннаяПодсказка" id="99"/>
+				</InputField>
+				<InputField name="СценарийСценарий" id="100">
+					<DataPath>СценарийСценарий</DataPath>
+					<ListChoiceMode>true</ListChoiceMode>
+					<ContextMenu name="СценарийСценарийКонтекстноеМеню" id="101"/>
+					<ExtendedTooltip name="СценарийСценарийРасширеннаяПодсказка" id="102"/>
+				</InputField>
+				<InputField name="СценарийДатаНачала" id="88">
+					<DataPath>СценарийДатаНачала</DataPath>
+					<ContextMenu name="СценарийДатаНачалаКонтекстноеМеню" id="89"/>
+					<ExtendedTooltip name="СценарийДатаНачалаРасширеннаяПодсказка" id="90"/>
+				</InputField>
+				<InputField name="СценарийДатаОкончания" id="91">
+					<DataPath>СценарийДатаОкончания</DataPath>
+					<ContextMenu name="СценарийДатаОкончанияКонтекстноеМеню" id="92"/>
+					<ExtendedTooltip name="СценарийДатаОкончанияРасширеннаяПодсказка" id="93"/>
+				</InputField>
+				<Button name="ДобавитьСценарий" id="77">
+					<Type>UsualButton</Type>
+					<CommandName>Form.Command.ДобавитьСценарий</CommandName>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Назначить сценарий</v8:content>
+						</v8:item>
+					</Title>
+					<ExtendedTooltip name="ДобавитьСценарийРасширеннаяПодсказка" id="78"/>
+				</Button>
+			</ChildItems>
+		</UsualGroup>
+		<CommandBar name="ТЦКоманды" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>ТЦКоманды</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>ТЦКоманды</v8:content>
+				</v8:item>
+			</ToolTip>
+			<HorizontalLocation>Right</HorizontalLocation>
+			<ExtendedTooltip name="ТЦКомандыРасширеннаяПодсказка" id="2"/>
+			<ChildItems>
+				<Button name="Закрыть" id="3">
+					<Type>CommandBarButton</Type>
+					<Representation>PictureAndText</Representation>
+					<CommandName>Form.StandardCommand.Close</CommandName>
+					<ExtendedTooltip name="ЗакрытьРасширеннаяПодсказка" id="4"/>
+				</Button>
+			</ChildItems>
+		</CommandBar>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:DataProcessorObject.ТЦШаблонРаботыСВебСервисом</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<Save>
+				<Field>Объект.WSDL</Field>
+				<Field>Объект.Пароль</Field>
+				<Field>Объект.Пользователь</Field>
+			</Save>
+		</Attribute>
+		<Attribute name="Подключен" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Подключен</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ТипыКлиентскихПриложений" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Типы клиентских приложений</v8:content>
+				</v8:item>
+			</Title>
+			<Type/>
+		</Attribute>
+		<Attribute name="Агент" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Агент</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="АгентДатаНачала" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Дата начала</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:dateTime</v8:Type>
+				<v8:DateQualifiers>
+					<v8:DateFractions>DateTime</v8:DateFractions>
+				</v8:DateQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="АгентДатаОкончания" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Дата окончания</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:dateTime</v8:Type>
+				<v8:DateQualifiers>
+					<v8:DateFractions>DateTime</v8:DateFractions>
+				</v8:DateQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="СценарийСценарий" id="7">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сценарий</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="СценарийДатаНачала" id="8">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Дата начала</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:dateTime</v8:Type>
+				<v8:DateQualifiers>
+					<v8:DateFractions>DateTime</v8:DateFractions>
+				</v8:DateQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="СценарийДатаОкончания" id="9">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Дата окончания</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:dateTime</v8:Type>
+				<v8:DateQualifiers>
+					<v8:DateFractions>DateTime</v8:DateFractions>
+				</v8:DateQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="СценарийХост" id="10">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Клиент</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ПутьКФормам" id="11">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Путь к формам</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="ОбновитьСписок" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обновить</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обновить список</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ОбновитьСписок</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="Подключиться" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Подключиться</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Подключиться</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>Подключиться</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ДобавитьАгента" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Добавить агента</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Добавить агента</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ДобавитьАгента</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ДобавитьСценарий" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Добавить сценарий</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Добавить сценарий</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ДобавитьСценарий</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ВыгрузитьАгентов" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выгрузить всех агентов</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выгрузить агентов</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ВыгрузитьАгентов</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+	</Commands>
+</Form>

@@ -1,0 +1,739 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.7">
+	<AutoTitle>false</AutoTitle>
+	<VerticalScroll>useIfNecessary</VerticalScroll>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<Autofill>false</Autofill>
+		<ChildItems>
+			<Button name="Стоп" id="49">
+				<Type>CommandBarButton</Type>
+				<DefaultButton>true</DefaultButton>
+				<SkipOnInput>false</SkipOnInput>
+				<CommandName>Form.Command.Стоп</CommandName>
+				<ExtendedTooltip name="СтопExtendedTooltip" id="138"/>
+			</Button>
+		</ChildItems>
+	</AutoCommandBar>
+	<Events>
+		<Event name="OnOpen">ПриОткрытии</Event>
+		<Event name="BeforeClose">ПередЗакрытием</Event>
+		<Event name="OnReopen">ПриПовторномОткрытии</Event>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<UsualGroup name="Шаги" id="50">
+			<ReadOnly>true</ReadOnly>
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Шаги</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Шаги</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>Horizontal</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ШагиExtendedTooltip" id="139"/>
+			<ChildItems>
+				<UsualGroup name="ГруппаПодготовка" id="129">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа подготовка</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа подготовка</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Group>Vertical</Group>
+					<Representation>None</Representation>
+					<United>false</United>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаПодготовкаExtendedTooltip" id="140"/>
+					<ChildItems>
+						<PictureDecoration name="КартинкаПодготовка" id="119">
+							<Width>12</Width>
+							<Height>3</Height>
+							<HorizontalStretch>true</HorizontalStretch>
+							<SkipOnInput>false</SkipOnInput>
+							<Title formatted="false">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Картинка подготовка</v8:content>
+								</v8:item>
+							</Title>
+							<Picture>
+								<xr:Ref>CommonPicture.ТЦПодготовка1</xr:Ref>
+								<xr:LoadTransparent>false</xr:LoadTransparent>
+							</Picture>
+							<FileDragMode>AsFile</FileDragMode>
+							<ContextMenu name="КартинкаПодготовкаКонтекстноеМеню" id="120"/>
+							<ExtendedTooltip name="КартинкаПодготовкаExtendedTooltip" id="141"/>
+						</PictureDecoration>
+						<LabelDecoration name="Подготовка" id="108">
+							<HorizontalStretch>true</HorizontalStretch>
+							<SkipOnInput>false</SkipOnInput>
+							<Title formatted="false">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Подготовка</v8:content>
+								</v8:item>
+							</Title>
+							<HorizontalAlign>Center</HorizontalAlign>
+							<ContextMenu name="ПодготовкаКонтекстноеМеню" id="109"/>
+							<ExtendedTooltip name="ПодготовкаExtendedTooltip" id="142"/>
+						</LabelDecoration>
+					</ChildItems>
+				</UsualGroup>
+				<UsualGroup name="ГруппаИнициализация" id="130">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа инициализация</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа инициализация</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Group>Vertical</Group>
+					<Representation>None</Representation>
+					<United>false</United>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаИнициализацияExtendedTooltip" id="143"/>
+					<ChildItems>
+						<PictureDecoration name="КартинкаИнициализация" id="121">
+							<Width>12</Width>
+							<Height>3</Height>
+							<HorizontalStretch>true</HorizontalStretch>
+							<SkipOnInput>false</SkipOnInput>
+							<Title formatted="false">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Картинка инициализация</v8:content>
+								</v8:item>
+							</Title>
+							<Picture>
+								<xr:Ref>CommonPicture.ТЦИнициализация1</xr:Ref>
+								<xr:LoadTransparent>false</xr:LoadTransparent>
+							</Picture>
+							<FileDragMode>AsFile</FileDragMode>
+							<ContextMenu name="КартинкаИнициализацияКонтекстноеМеню" id="122"/>
+							<ExtendedTooltip name="КартинкаИнициализацияExtendedTooltip" id="144"/>
+						</PictureDecoration>
+						<LabelDecoration name="Инициализация" id="110">
+							<HorizontalStretch>true</HorizontalStretch>
+							<SkipOnInput>false</SkipOnInput>
+							<Title formatted="false">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Инициализация</v8:content>
+								</v8:item>
+							</Title>
+							<HorizontalAlign>Center</HorizontalAlign>
+							<ContextMenu name="ИнициализацияКонтекстноеМеню" id="111"/>
+							<ExtendedTooltip name="ИнициализацияExtendedTooltip" id="145"/>
+						</LabelDecoration>
+					</ChildItems>
+				</UsualGroup>
+				<UsualGroup name="ГруппаВыполнение" id="131">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа выполнение</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа выполнение</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Group>Vertical</Group>
+					<Representation>None</Representation>
+					<United>false</United>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаВыполнениеExtendedTooltip" id="146"/>
+					<ChildItems>
+						<PictureDecoration name="КартинкаВыполнение" id="123">
+							<Width>12</Width>
+							<Height>3</Height>
+							<HorizontalStretch>true</HorizontalStretch>
+							<SkipOnInput>false</SkipOnInput>
+							<Title formatted="false">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Картинка выполнение</v8:content>
+								</v8:item>
+							</Title>
+							<Picture>
+								<xr:Ref>CommonPicture.ТЦВыполнение1</xr:Ref>
+								<xr:LoadTransparent>false</xr:LoadTransparent>
+							</Picture>
+							<FileDragMode>AsFile</FileDragMode>
+							<ContextMenu name="КартинкаВыполнениеКонтекстноеМеню" id="124"/>
+							<ExtendedTooltip name="КартинкаВыполнениеExtendedTooltip" id="147"/>
+						</PictureDecoration>
+						<LabelDecoration name="Выполнение" id="112">
+							<HorizontalStretch>true</HorizontalStretch>
+							<SkipOnInput>false</SkipOnInput>
+							<Title formatted="false">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Выполнение</v8:content>
+								</v8:item>
+							</Title>
+							<HorizontalAlign>Center</HorizontalAlign>
+							<ContextMenu name="ВыполнениеКонтекстноеМеню" id="113"/>
+							<ExtendedTooltip name="ВыполнениеExtendedTooltip" id="148"/>
+						</LabelDecoration>
+					</ChildItems>
+				</UsualGroup>
+				<UsualGroup name="ГруппаЗаписьРезультатов" id="132">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа запись результатов</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа запись результатов</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Group>Vertical</Group>
+					<Representation>None</Representation>
+					<United>false</United>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаЗаписьРезультатовExtendedTooltip" id="149"/>
+					<ChildItems>
+						<PictureDecoration name="КартинкаЗаписьРезультатов" id="125">
+							<Width>12</Width>
+							<Height>3</Height>
+							<HorizontalStretch>true</HorizontalStretch>
+							<SkipOnInput>false</SkipOnInput>
+							<Title formatted="false">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Картинка запись результатов</v8:content>
+								</v8:item>
+							</Title>
+							<Picture>
+								<xr:Ref>CommonPicture.ТЦЗаписьРезультатов1</xr:Ref>
+								<xr:LoadTransparent>false</xr:LoadTransparent>
+							</Picture>
+							<FileDragMode>AsFile</FileDragMode>
+							<ContextMenu name="КартинкаЗаписьРезультатовКонтекстноеМеню" id="126"/>
+							<ExtendedTooltip name="КартинкаЗаписьРезультатовExtendedTooltip" id="150"/>
+						</PictureDecoration>
+						<LabelDecoration name="ЗаписьРезультатов" id="114">
+							<HorizontalStretch>true</HorizontalStretch>
+							<SkipOnInput>false</SkipOnInput>
+							<Title formatted="false">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Запись результатов</v8:content>
+								</v8:item>
+							</Title>
+							<HorizontalAlign>Center</HorizontalAlign>
+							<ContextMenu name="ЗаписьРезультатовКонтекстноеМеню" id="115"/>
+							<ExtendedTooltip name="ЗаписьРезультатовExtendedTooltip" id="151"/>
+						</LabelDecoration>
+					</ChildItems>
+				</UsualGroup>
+				<UsualGroup name="ГруппаУдалениеДанных" id="133">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа удаление данных</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа удаление данных</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Group>Vertical</Group>
+					<Representation>None</Representation>
+					<United>false</United>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаУдалениеДанныхExtendedTooltip" id="152"/>
+					<ChildItems>
+						<PictureDecoration name="КартинкаУдалениеДанных" id="127">
+							<Width>12</Width>
+							<Height>3</Height>
+							<HorizontalStretch>true</HorizontalStretch>
+							<SkipOnInput>false</SkipOnInput>
+							<Title formatted="false">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Картинка удаление данных</v8:content>
+								</v8:item>
+							</Title>
+							<Picture>
+								<xr:Ref>CommonPicture.ТЦУдалениеДанных1</xr:Ref>
+								<xr:LoadTransparent>false</xr:LoadTransparent>
+							</Picture>
+							<FileDragMode>AsFile</FileDragMode>
+							<ContextMenu name="КартинкаУдалениеДанныхКонтекстноеМеню" id="128"/>
+							<ExtendedTooltip name="КартинкаУдалениеДанныхExtendedTooltip" id="153"/>
+						</PictureDecoration>
+						<LabelDecoration name="УдалениеДанных" id="116">
+							<HorizontalStretch>true</HorizontalStretch>
+							<SkipOnInput>false</SkipOnInput>
+							<Title formatted="false">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Удаление данных</v8:content>
+								</v8:item>
+							</Title>
+							<HorizontalAlign>Center</HorizontalAlign>
+							<ContextMenu name="УдалениеДанныхКонтекстноеМеню" id="117"/>
+							<ExtendedTooltip name="УдалениеДанныхExtendedTooltip" id="154"/>
+						</LabelDecoration>
+					</ChildItems>
+				</UsualGroup>
+			</ChildItems>
+		</UsualGroup>
+		<ProgressBarField name="Прогресс" id="106">
+			<DataPath>Прогресс</DataPath>
+			<TitleLocation>None</TitleLocation>
+			<MaxValue>500</MaxValue>
+			<ContextMenu name="ПрогрессКонтекстноеМеню" id="107"/>
+			<ExtendedTooltip name="ПрогрессExtendedTooltip" id="155"/>
+		</ProgressBarField>
+		<LabelDecoration name="ДекорацияПробел" id="180">
+			<Height>1</Height>
+			<ContextMenu name="ДекорацияПробелКонтекстноеМеню" id="181"/>
+			<ExtendedTooltip name="ДекорацияПробелРасширеннаяПодсказка" id="182"/>
+		</LabelDecoration>
+		<LabelDecoration name="ДекорацияКлонированиеИРасчет" id="227">
+			<Visible>false</Visible>
+			<Width>45</Width>
+			<Font ref="sys:DefaultGUIFont" bold="true" italic="false" underline="false" strikeout="false" kind="WindowsFont"/>
+			<ContextMenu name="ДекорацияКлонированиеИРасчетКонтекстноеМеню" id="228"/>
+			<ExtendedTooltip name="ДекорацияКлонированиеИРасчетРасширеннаяПодсказка" id="229"/>
+		</LabelDecoration>
+		<UsualGroup name="КолонкиПоказателей" id="230">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Колонки показателей</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Колонки показателей</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>Horizontal</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="КолонкиПоказателейРасширеннаяПодсказка" id="231"/>
+			<ChildItems>
+				<UsualGroup name="Колонка1" id="232">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Колонка1</v8:content>
+						</v8:item>
+					</Title>
+					<Group>Vertical</Group>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="Колонка1РасширеннаяПодсказка" id="233"/>
+					<ChildItems>
+						<UsualGroup name="Запущено" id="178">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Запущено</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Запущено</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Group>Horizontal</Group>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ЗапущеноРасширеннаяПодсказка" id="179"/>
+							<ChildItems>
+								<LabelDecoration name="ДекорацияЗапущеноВРМ" id="200">
+									<Width>13</Width>
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Запущено ВРМ:</v8:content>
+										</v8:item>
+									</Title>
+									<ContextMenu name="ДекорацияЗапущеноВРМКонтекстноеМеню" id="201"/>
+									<ExtendedTooltip name="ДекорацияЗапущеноВРМРасширеннаяПодсказка" id="202"/>
+								</LabelDecoration>
+								<LabelDecoration name="ДекорацияЗапущеноВРМТекст" id="215">
+									<Font ref="sys:DefaultGUIFont" bold="true" italic="false" underline="false" strikeout="false" kind="WindowsFont"/>
+									<ContextMenu name="ДекорацияЗапущеноВРМТекстКонтекстноеМеню" id="216"/>
+									<ExtendedTooltip name="ДекорацияЗапущеноВРМТекстРасширеннаяПодсказка" id="217"/>
+								</LabelDecoration>
+								<ProgressBarField name="ВРМЗапущеноПрогресс" id="212">
+									<DataPath>ВРМЗапущеноПрогресс</DataPath>
+									<TitleLocation>None</TitleLocation>
+									<Width>25</Width>
+									<HorizontalStretch>false</HorizontalStretch>
+									<ShowPercent>true</ShowPercent>
+									<ContextMenu name="ВРМЗапущеноПрогрессКонтекстноеМеню" id="213"/>
+									<ExtendedTooltip name="ВРМЗапущеноПрогрессРасширеннаяПодсказка" id="214"/>
+								</ProgressBarField>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="ГруппаНомерИтерации" id="194">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа номер итерации</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа номер итерации</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Group>Horizontal</Group>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаНомерИтерацииРасширеннаяПодсказка" id="195"/>
+							<ChildItems>
+								<LabelDecoration name="ДекорацияТекущаяИтерация" id="203">
+									<Width>13</Width>
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Текущая итерация:</v8:content>
+										</v8:item>
+									</Title>
+									<ContextMenu name="ДекорацияТекущаяИтерацияКонтекстноеМеню" id="204"/>
+									<ExtendedTooltip name="ДекорацияТекущаяИтерацияРасширеннаяПодсказка" id="205"/>
+								</LabelDecoration>
+								<LabelDecoration name="ДекорацияТекущаяИтерацияТекст" id="218">
+									<Font ref="sys:DefaultGUIFont" bold="true" italic="false" underline="false" strikeout="false" kind="WindowsFont"/>
+									<ContextMenu name="ДекорацияТекущаяИтерацияТекстКонтекстноеМеню" id="219"/>
+									<ExtendedTooltip name="ДекорацияТекущаяИтерацияТекстРасширеннаяПодсказка" id="220"/>
+								</LabelDecoration>
+							</ChildItems>
+						</UsualGroup>
+					</ChildItems>
+				</UsualGroup>
+				<UsualGroup name="КолонкаРазделитель" id="244">
+					<Group>Vertical</Group>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="КолонкаРазделительРасширеннаяПодсказка" id="245"/>
+					<ChildItems>
+						<LabelDecoration name="ДекорацияПробел1" id="186">
+							<Height>1</Height>
+							<ContextMenu name="ДекорацияПробел1КонтекстноеМеню" id="187"/>
+							<ExtendedTooltip name="ДекорацияПробел1РасширеннаяПодсказка" id="188"/>
+						</LabelDecoration>
+					</ChildItems>
+				</UsualGroup>
+				<UsualGroup name="Колонка2" id="234">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Колонка2</v8:content>
+						</v8:item>
+					</Title>
+					<Group>Vertical</Group>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="Колонка2РасширеннаяПодсказка" id="235"/>
+					<ChildItems>
+						<UsualGroup name="ГруппаВсегоОшибок" id="236">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа всего ошибок</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа текущие ошибки</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Group>Horizontal</Group>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ThroughAlign>DontUse</ThroughAlign>
+							<ExtendedTooltip name="ГруппаВсегоОшибокРасширеннаяПодсказка" id="237"/>
+							<ChildItems>
+								<LabelDecoration name="ДекорацияВсегоОшибок" id="238">
+									<Width>20</Width>
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Ошибок на всех итерациях:</v8:content>
+										</v8:item>
+									</Title>
+									<ContextMenu name="ДекорацияВсегоОшибокКонтекстноеМеню" id="239"/>
+									<ExtendedTooltip name="ДекорацияВсегоОшибокРасширеннаяПодсказка" id="240"/>
+								</LabelDecoration>
+								<LabelDecoration name="ДекорацияВсегоОшибокТекст" id="241">
+									<Font ref="sys:DefaultGUIFont" bold="true" italic="false" underline="false" strikeout="false" kind="WindowsFont"/>
+									<ContextMenu name="ДекорацияВсегоОшибокТекстКонтекстноеМеню" id="242"/>
+									<ExtendedTooltip name="ДекорацияВсегоОшибокТекстРасширеннаяПодсказка" id="243"/>
+								</LabelDecoration>
+								<LabelDecoration name="ДекорацияВсегоОшибокПорог" id="249">
+									<ContextMenu name="ДекорацияВсегоОшибокПорогКонтекстноеМеню" id="250"/>
+									<ExtendedTooltip name="ДекорацияВсегоОшибокПорогРасширеннаяПодсказка" id="251"/>
+								</LabelDecoration>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="ГруппаТекущиеОшибки" id="198">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа текущие ошибки</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа текущие ошибки</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Group>Horizontal</Group>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ThroughAlign>DontUse</ThroughAlign>
+							<ExtendedTooltip name="ГруппаТекущиеОшибкиРасширеннаяПодсказка" id="199"/>
+							<ChildItems>
+								<LabelDecoration name="ДекорацияОшибкиТекущейИтерации" id="209">
+									<Width>20</Width>
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Ошибок на текущей итерации:</v8:content>
+										</v8:item>
+									</Title>
+									<ContextMenu name="ДекорацияОшибкиТекущейИтерацииКонтекстноеМеню" id="210"/>
+									<ExtendedTooltip name="ДекорацияОшибкиТекущейИтерацииРасширеннаяПодсказка" id="211"/>
+								</LabelDecoration>
+								<LabelDecoration name="ДекорацияОшибкиТекущейИтерацииТекст" id="224">
+									<Font ref="sys:DefaultGUIFont" bold="true" italic="false" underline="false" strikeout="false" kind="WindowsFont"/>
+									<ContextMenu name="ДекорацияОшибкиТекущейИтерацииТекстКонтекстноеМеню" id="225"/>
+									<ExtendedTooltip name="ДекорацияОшибкиТекущейИтерацииТекстРасширеннаяПодсказка" id="226"/>
+								</LabelDecoration>
+								<LabelDecoration name="ДекорацияОшибкиТекущейИтерацииПорог" id="246">
+									<ContextMenu name="ДекорацияОшибкиТекущейИтерацииПорогКонтекстноеМеню" id="247"/>
+									<ExtendedTooltip name="ДекорацияОшибкиТекущейИтерацииПорогРасширеннаяПодсказка" id="248"/>
+								</LabelDecoration>
+							</ChildItems>
+						</UsualGroup>
+					</ChildItems>
+				</UsualGroup>
+			</ChildItems>
+		</UsualGroup>
+		<ChartField name="ДиаграммаПроизводительности" id="183">
+			<DataPath>ДиаграммаПроизводительности</DataPath>
+			<Visible>false</Visible>
+			<TitleLocation>None</TitleLocation>
+			<ContextMenu name="ДиаграммаПроизводительностиКонтекстноеМеню" id="184"/>
+			<ExtendedTooltip name="ДиаграммаПроизводительностиРасширеннаяПодсказка" id="185"/>
+		</ChartField>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Прогресс" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Прогресс</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>10</v8:Digits>
+					<v8:FractionDigits>0</v8:FractionDigits>
+					<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ТекущаяИтерация" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Текущая итерация</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>4</v8:Digits>
+					<v8:FractionDigits>0</v8:FractionDigits>
+					<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="МаксимальноеКоличествоИтераций" id="7">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Максимум итераций</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>4</v8:Digits>
+					<v8:FractionDigits>0</v8:FractionDigits>
+					<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ВРМЗапущено" id="8">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>ВРМ запущено</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>10</v8:Digits>
+					<v8:FractionDigits>0</v8:FractionDigits>
+					<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ВРМОсталосьЗапустить" id="9">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>ВРМ осталось запустить</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>10</v8:Digits>
+					<v8:FractionDigits>0</v8:FractionDigits>
+					<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ВРМЗапущеноПрогресс" id="10">
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>10</v8:Digits>
+					<v8:FractionDigits>0</v8:FractionDigits>
+					<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ВРМЗапущеноСтрока" id="11">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>ВРМ запущено</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ДиаграммаПроизводительности" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Диаграмма производительности</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type xmlns:d5p1="http://v8.1c.ru/8.2/data/chart">d5p1:Chart</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ОценкаПроизводительностиИспользуется" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Оценка производительности используется</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="БылоОбновлениеПриЗаписи" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Было обновление при записи</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="КоличествоОшибокПоследнейИтерации" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Ошибок на предыдущей итерации</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="Стоп" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Прервать</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Стоп</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.Stop</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>Стоп</Action>
+			<Representation>TextPicture</Representation>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+	</Commands>
+</Form>

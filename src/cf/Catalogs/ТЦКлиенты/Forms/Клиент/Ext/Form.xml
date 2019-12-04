@@ -1,0 +1,4495 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.7">
+	<VerticalScroll>useIfNecessary</VerticalScroll>
+	<UseForFoldersAndItems>Items</UseForFoldersAndItems>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<Events>
+		<Event name="OnOpen">ПриОткрытии</Event>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+		<Event name="FillCheckProcessingAtServer">ОбработкаПроверкиЗаполненияНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<InputField name="Наименование" id="93">
+			<DataPath>Объект.Description</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="НаименованиеКонтекстноеМеню" id="94"/>
+			<ExtendedTooltip name="НаименованиеРасширеннаяПодсказка" id="120"/>
+		</InputField>
+		<InputField name="Компьютер" id="95">
+			<DataPath>Объект.Компьютер</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="КомпьютерКонтекстноеМеню" id="96"/>
+			<ExtendedTooltip name="КомпьютерРасширеннаяПодсказка" id="121"/>
+			<Events>
+				<Event name="OnChange">КомпьютерПриИзменении</Event>
+			</Events>
+		</InputField>
+		<Pages name="Категории" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Категории</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Категории</v8:content>
+				</v8:item>
+			</ToolTip>
+			<ExtendedTooltip name="КатегорииРасширеннаяПодсказка" id="122"/>
+			<ChildItems>
+				<Page name="Клиент" id="92">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Клиент</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Клиент</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="КлиентРасширеннаяПодсказка" id="123"/>
+				</Page>
+				<Page name="ЗакладкаОсновные" id="7">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Основные</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Закладка основные</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="ЗакладкаОсновныеРасширеннаяПодсказка" id="124"/>
+					<ChildItems>
+						<UsualGroup name="ГруппаПриложение" id="3">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Тип клиента:</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа приложение</v8:content>
+								</v8:item>
+							</ToolTip>
+							<HorizontalStretch>true</HorizontalStretch>
+							<Group>Horizontal</Group>
+							<Representation>StrongSeparation</Representation>
+							<ExtendedTooltip name="ГруппаПриложениеРасширеннаяПодсказка" id="125"/>
+							<ChildItems>
+								<RadioButtonField name="ТипКлиента" id="1">
+									<DataPath>Объект.ТипКлиента</DataPath>
+									<TitleLocation>None</TitleLocation>
+									<RadioButtonType>Auto</RadioButtonType>
+									<ColumnsCount>1</ColumnsCount>
+									<ChoiceList>
+										<xr:Item>
+											<xr:Presentation/>
+											<xr:CheckState>0</xr:CheckState>
+											<xr:Value xsi:type="FormChoiceListDesTimeValue">
+												<Presentation>
+													<v8:item>
+														<v8:lang>ru</v8:lang>
+														<v8:content>Веб</v8:content>
+													</v8:item>
+												</Presentation>
+												<Value xsi:type="xr:DesignTimeRef">Enum.ТЦТипКлиента.EnumValue.Веб</Value>
+											</xr:Value>
+										</xr:Item>
+										<xr:Item>
+											<xr:Presentation/>
+											<xr:CheckState>0</xr:CheckState>
+											<xr:Value xsi:type="FormChoiceListDesTimeValue">
+												<Presentation/>
+												<Value xsi:type="xr:DesignTimeRef">Enum.ТЦТипКлиента.EnumValue.ТонкийВеб</Value>
+											</xr:Value>
+										</xr:Item>
+										<xr:Item>
+											<xr:Presentation/>
+											<xr:CheckState>0</xr:CheckState>
+											<xr:Value xsi:type="FormChoiceListDesTimeValue">
+												<Presentation/>
+												<Value xsi:type="xr:DesignTimeRef">Enum.ТЦТипКлиента.EnumValue.Тонкий1С</Value>
+											</xr:Value>
+										</xr:Item>
+										<xr:Item>
+											<xr:Presentation/>
+											<xr:CheckState>0</xr:CheckState>
+											<xr:Value xsi:type="FormChoiceListDesTimeValue">
+												<Presentation/>
+												<Value xsi:type="xr:DesignTimeRef">Enum.ТЦТипКлиента.EnumValue.ТолстыйОбычный</Value>
+											</xr:Value>
+										</xr:Item>
+										<xr:Item>
+											<xr:Presentation/>
+											<xr:CheckState>0</xr:CheckState>
+											<xr:Value xsi:type="FormChoiceListDesTimeValue">
+												<Presentation/>
+												<Value xsi:type="xr:DesignTimeRef">Enum.ТЦТипКлиента.EnumValue.ТолстыйУправляемый</Value>
+											</xr:Value>
+										</xr:Item>
+									</ChoiceList>
+									<ContextMenu name="ТипКлиентаКонтекстноеМеню" id="2"/>
+									<ExtendedTooltip name="ТипКлиентаРасширеннаяПодсказка" id="126"/>
+									<Events>
+										<Event name="OnChange">ТипКлиентаПриИзменении</Event>
+									</Events>
+								</RadioButtonField>
+								<InputField name="ТипБраузера" id="12">
+									<DataPath>Объект.ТипБраузера</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>     Веб-браузер</v8:content>
+										</v8:item>
+									</Title>
+									<TitleLocation>None</TitleLocation>
+									<ContextMenu name="ТипБраузераКонтекстноеМеню" id="13"/>
+									<ExtendedTooltip name="ТипБраузераРасширеннаяПодсказка" id="127"/>
+									<Events>
+										<Event name="OnChange">ТипБраузераПриИзменении</Event>
+									</Events>
+								</InputField>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="ЗапускПриложения" id="51">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Запуск приложения:</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Запуск приложения</v8:content>
+								</v8:item>
+							</ToolTip>
+							<HorizontalStretch>true</HorizontalStretch>
+							<Group>Vertical</Group>
+							<Representation>StrongSeparation</Representation>
+							<ExtendedTooltip name="ЗапускПриложенияРасширеннаяПодсказка" id="128"/>
+							<ChildItems>
+								<CheckBoxField name="АвтоПуть" id="52">
+									<DataPath>Объект.АвтоПуть</DataPath>
+									<Enabled>false</Enabled>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Выяснить имя исполняемго файла клиента, во время запуска ВРМ, автоматически</v8:content>
+										</v8:item>
+									</Title>
+									<TitleLocation>Right</TitleLocation>
+									<CheckBoxType>Auto</CheckBoxType>
+									<ContextMenu name="АвтоПутьКонтекстноеМеню" id="53"/>
+									<ExtendedTooltip name="АвтоПутьРасширеннаяПодсказка" id="129"/>
+									<Events>
+										<Event name="OnChange">ПриИзмененииОбновитьСтрокуЗапускаИДоступность</Event>
+									</Events>
+								</CheckBoxField>
+								<InputField name="ИмяКаталога" id="54">
+									<DataPath>Объект.ИмяКаталога</DataPath>
+									<ChoiceButton>true</ChoiceButton>
+									<ContextMenu name="ИмяКаталогаКонтекстноеМеню" id="55"/>
+									<ExtendedTooltip name="ИмяКаталогаРасширеннаяПодсказка" id="130"/>
+									<Events>
+										<Event name="OnChange">ПриИзмененииОбновитьСтрокуЗапуска</Event>
+										<Event name="StartChoice">ИмяКаталогаНачалоВыбора</Event>
+									</Events>
+								</InputField>
+								<InputField name="ИмяФайла" id="56">
+									<DataPath>Объект.ИмяФайла</DataPath>
+									<ChoiceButton>true</ChoiceButton>
+									<ContextMenu name="ИмяФайлаКонтекстноеМеню" id="57"/>
+									<ExtendedTooltip name="ИмяФайлаРасширеннаяПодсказка" id="131"/>
+									<Events>
+										<Event name="OnChange">ПриИзмененииОбновитьСтрокуЗапуска</Event>
+										<Event name="StartChoice">ИмяФайлаНачалоВыбора</Event>
+									</Events>
+								</InputField>
+								<UsualGroup name="ГруппаДопПараметры" id="90">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа доп параметры</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа доп параметры</v8:content>
+										</v8:item>
+									</ToolTip>
+									<Group>Horizontal</Group>
+									<Representation>None</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="ГруппаДопПараметрыРасширеннаяПодсказка" id="132"/>
+									<ChildItems>
+										<InputField name="ДопПараметры" id="88">
+											<DataPath>Объект.ДополнительныеПараметры</DataPath>
+											<Enabled>false</Enabled>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Доп. параметры приложения</v8:content>
+												</v8:item>
+											</Title>
+											<ContextMenu name="ДопПараметрыКонтекстноеМеню" id="89"/>
+											<ExtendedTooltip name="ДопПараметрыРасширеннаяПодсказка" id="133"/>
+											<Events>
+												<Event name="OnChange">ПриИзмененииОбновитьСтрокуЗапуска</Event>
+											</Events>
+										</InputField>
+										<Button name="ИзменитьДопПараметры" id="91">
+											<Type>UsualButton</Type>
+											<SkipOnInput>false</SkipOnInput>
+											<CommandName>Form.Command.ИзменитьДопПараметры</CommandName>
+											<ExtendedTooltip name="ИзменитьДопПараметрыРасширеннаяПодсказка" id="134"/>
+										</Button>
+									</ChildItems>
+								</UsualGroup>
+								<InputField name="ДополнительныеПараметрыПрикладногоРешения" id="191">
+									<DataPath>Объект.ДополнительныеПараметрыПрикладногоРешения</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Доп. параметры прикладного решения</v8:content>
+										</v8:item>
+									</Title>
+									<ContextMenu name="ДополнительныеПараметрыПрикладногоРешенияКонтекстноеМеню" id="192"/>
+									<ExtendedTooltip name="ДополнительныеПараметрыПрикладногоРешенияРасширеннаяПодсказка" id="193"/>
+								</InputField>
+							</ChildItems>
+						</UsualGroup>
+					</ChildItems>
+				</Page>
+				<Page name="ЗакладкаВеб" id="105">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Веб</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Закладка веб</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="ЗакладкаВебРасширеннаяПодсказка" id="135"/>
+					<ChildItems>
+						<InputField name="АдресБраузера" id="49">
+							<DataPath>Объект.АдресБраузера</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Адрес (URL)</v8:content>
+								</v8:item>
+							</Title>
+							<ContextMenu name="АдресБраузераКонтекстноеМеню" id="50"/>
+							<ExtendedTooltip name="АдресБраузераРасширеннаяПодсказка" id="136"/>
+							<Events>
+								<Event name="OnChange">ПриИзмененииОбновитьСтрокуЗапуска</Event>
+							</Events>
+						</InputField>
+						<UsualGroup name="Прокси" id="64">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Вариант использования прокси:</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Прокси</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Group>Horizontal</Group>
+							<Representation>None</Representation>
+							<ExtendedTooltip name="ПроксиРасширеннаяПодсказка" id="137"/>
+							<ChildItems>
+								<LabelDecoration name="ОтступПрокси" id="68">
+									<Width>1</Width>
+									<SkipOnInput>false</SkipOnInput>
+									<TitleHeight>1</TitleHeight>
+									<ContextMenu name="ОтступПроксиКонтекстноеМеню" id="69"/>
+									<ExtendedTooltip name="ОтступПроксиРасширеннаяПодсказка" id="138"/>
+								</LabelDecoration>
+								<UsualGroup name="ГруппаПараметрыПрокси" id="67">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа параметры прокси</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа параметры прокси</v8:content>
+										</v8:item>
+									</ToolTip>
+									<Group>Vertical</Group>
+									<Representation>None</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="ГруппаПараметрыПроксиРасширеннаяПодсказка" id="139"/>
+									<ChildItems>
+										<RadioButtonField name="ТипПрокси" id="65">
+											<DataPath>Объект.ТипПрокси</DataPath>
+											<TitleLocation>None</TitleLocation>
+											<RadioButtonType>Auto</RadioButtonType>
+											<ColumnsCount>1</ColumnsCount>
+											<ChoiceList>
+												<xr:Item>
+													<xr:Presentation/>
+													<xr:CheckState>0</xr:CheckState>
+													<xr:Value xsi:type="FormChoiceListDesTimeValue">
+														<Presentation/>
+														<Value xsi:type="xr:DesignTimeRef">Enum.ТЦТипПрокси.EnumValue.НеИспользовать</Value>
+													</xr:Value>
+												</xr:Item>
+												<xr:Item>
+													<xr:Presentation/>
+													<xr:CheckState>0</xr:CheckState>
+													<xr:Value xsi:type="FormChoiceListDesTimeValue">
+														<Presentation/>
+														<Value xsi:type="xr:DesignTimeRef">Enum.ТЦТипПрокси.EnumValue.АвтоОпределение</Value>
+													</xr:Value>
+												</xr:Item>
+												<xr:Item>
+													<xr:Presentation/>
+													<xr:CheckState>0</xr:CheckState>
+													<xr:Value xsi:type="FormChoiceListDesTimeValue">
+														<Presentation>
+															<v8:item>
+																<v8:lang>ru</v8:lang>
+																<v8:content>Указать настройки:</v8:content>
+															</v8:item>
+														</Presentation>
+														<Value xsi:type="xr:DesignTimeRef">Enum.ТЦТипПрокси.EnumValue.УказатьНастройки</Value>
+													</xr:Value>
+												</xr:Item>
+											</ChoiceList>
+											<ContextMenu name="ТипПроксиКонтекстноеМеню" id="66"/>
+											<ExtendedTooltip name="ТипПроксиРасширеннаяПодсказка" id="140"/>
+											<Events>
+												<Event name="OnChange">ПриИзмененииОбновитьСтрокуЗапускаИДоступность</Event>
+											</Events>
+										</RadioButtonField>
+										<UsualGroup name="ГруппаДопПрокси" id="80">
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Группа доп прокси</v8:content>
+												</v8:item>
+											</Title>
+											<ToolTip>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Группа доп прокси</v8:content>
+												</v8:item>
+											</ToolTip>
+											<Group>Horizontal</Group>
+											<Representation>None</Representation>
+											<ShowTitle>false</ShowTitle>
+											<ExtendedTooltip name="ГруппаДопПроксиРасширеннаяПодсказка" id="141"/>
+											<ChildItems>
+												<LabelDecoration name="ОтступДопПрокси" id="81">
+													<Width>1</Width>
+													<SkipOnInput>false</SkipOnInput>
+													<ContextMenu name="ОтступДопПроксиКонтекстноеМеню" id="82"/>
+													<ExtendedTooltip name="ОтступДопПроксиРасширеннаяПодсказка" id="142"/>
+												</LabelDecoration>
+												<UsualGroup name="ГруппаАдресПользователь" id="71">
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Группа адрес пользователь</v8:content>
+														</v8:item>
+													</Title>
+													<ToolTip>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Группа адрес пользователь</v8:content>
+														</v8:item>
+													</ToolTip>
+													<Group>Vertical</Group>
+													<Representation>None</Representation>
+													<ShowTitle>false</ShowTitle>
+													<ExtendedTooltip name="ГруппаАдресПользовательРасширеннаяПодсказка" id="143"/>
+													<ChildItems>
+														<UsualGroup name="ГруппаАдрес" id="70">
+															<Title>
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Группа адрес</v8:content>
+																</v8:item>
+															</Title>
+															<ToolTip>
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Группа адрес</v8:content>
+																</v8:item>
+															</ToolTip>
+															<Group>Horizontal</Group>
+															<Representation>None</Representation>
+															<ShowTitle>false</ShowTitle>
+															<ExtendedTooltip name="ГруппаАдресРасширеннаяПодсказка" id="144"/>
+															<ChildItems>
+																<InputField name="АдресПрокси" id="72">
+																	<DataPath>Объект.АдресПрокси</DataPath>
+																	<Title>
+																		<v8:item>
+																			<v8:lang>ru</v8:lang>
+																			<v8:content>Адрес</v8:content>
+																		</v8:item>
+																	</Title>
+																	<HorizontalStretch>false</HorizontalStretch>
+																	<ContextMenu name="АдресПроксиКонтекстноеМеню" id="73"/>
+																	<ExtendedTooltip name="АдресПроксиРасширеннаяПодсказка" id="145"/>
+																	<Events>
+																		<Event name="OnChange">ПриИзмененииОбновитьСтрокуЗапуска</Event>
+																	</Events>
+																</InputField>
+																<InputField name="ПортПрокси" id="74">
+																	<DataPath>Объект.ПортПрокси</DataPath>
+																	<Title>
+																		<v8:item>
+																			<v8:lang>ru</v8:lang>
+																			<v8:content>Порт</v8:content>
+																		</v8:item>
+																	</Title>
+																	<SpinButton>true</SpinButton>
+																	<ContextMenu name="ПортПроксиКонтекстноеМеню" id="75"/>
+																	<ExtendedTooltip name="ПортПроксиРасширеннаяПодсказка" id="146"/>
+																	<Events>
+																		<Event name="OnChange">ПриИзмененииОбновитьСтрокуЗапуска</Event>
+																	</Events>
+																</InputField>
+															</ChildItems>
+														</UsualGroup>
+														<InputField name="ПользовательПрокси" id="76">
+															<DataPath>Объект.ПользовательПрокси</DataPath>
+															<Title>
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Пользователь</v8:content>
+																</v8:item>
+															</Title>
+															<HorizontalStretch>false</HorizontalStretch>
+															<ContextMenu name="ПользовательПроксиКонтекстноеМеню" id="77"/>
+															<ExtendedTooltip name="ПользовательПроксиРасширеннаяПодсказка" id="147"/>
+															<Events>
+																<Event name="OnChange">ПриИзмененииОбновитьСтрокуЗапуска</Event>
+															</Events>
+														</InputField>
+														<InputField name="ПарольПрокси" id="78">
+															<DataPath>Объект.ПарольПрокси</DataPath>
+															<Title>
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Пароль</v8:content>
+																</v8:item>
+															</Title>
+															<HorizontalStretch>false</HorizontalStretch>
+															<PasswordMode>true</PasswordMode>
+															<ContextMenu name="ПарольПроксиКонтекстноеМеню" id="79"/>
+															<ExtendedTooltip name="ПарольПроксиРасширеннаяПодсказка" id="148"/>
+															<Events>
+																<Event name="OnChange">ПриИзмененииОбновитьСтрокуЗапуска</Event>
+															</Events>
+														</InputField>
+													</ChildItems>
+												</UsualGroup>
+											</ChildItems>
+										</UsualGroup>
+									</ChildItems>
+								</UsualGroup>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="ГруппаАутентификацияВеб" id="85">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Способ аутентификации пользователя веб-сервера:</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа аутентификация веб</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Group>Horizontal</Group>
+							<Representation>None</Representation>
+							<ExtendedTooltip name="ГруппаАутентификацияВебРасширеннаяПодсказка" id="149"/>
+							<ChildItems>
+								<LabelDecoration name="ОтступАутентификацияВеб" id="86">
+									<Width>1</Width>
+									<SkipOnInput>false</SkipOnInput>
+									<ContextMenu name="ОтступАутентификацияВебКонтекстноеМеню" id="87"/>
+									<ExtendedTooltip name="ОтступАутентификацияВебРасширеннаяПодсказка" id="150"/>
+								</LabelDecoration>
+								<RadioButtonField name="ТипАутентификацииВеб" id="83">
+									<DataPath>Объект.ТипАутентификацииВеб</DataPath>
+									<TitleLocation>None</TitleLocation>
+									<RadioButtonType>Auto</RadioButtonType>
+									<ColumnsCount>1</ColumnsCount>
+									<ChoiceList>
+										<xr:Item>
+											<xr:Presentation/>
+											<xr:CheckState>0</xr:CheckState>
+											<xr:Value xsi:type="FormChoiceListDesTimeValue">
+												<Presentation/>
+												<Value xsi:type="xr:DesignTimeRef">Enum.ТЦТипАутентификацииВеб.EnumValue.Авто</Value>
+											</xr:Value>
+										</xr:Item>
+										<xr:Item>
+											<xr:Presentation/>
+											<xr:CheckState>0</xr:CheckState>
+											<xr:Value xsi:type="FormChoiceListDesTimeValue">
+												<Presentation/>
+												<Value xsi:type="xr:DesignTimeRef">Enum.ТЦТипАутентификацииВеб.EnumValue.ИмяПароль</Value>
+											</xr:Value>
+										</xr:Item>
+									</ChoiceList>
+									<ContextMenu name="ТипАутентификацииВебКонтекстноеМеню" id="84"/>
+									<ExtendedTooltip name="ТипАутентификацииВебРасширеннаяПодсказка" id="151"/>
+									<Events>
+										<Event name="OnChange">ПриИзмененииОбновитьСтрокуЗапуска</Event>
+									</Events>
+								</RadioButtonField>
+							</ChildItems>
+						</UsualGroup>
+					</ChildItems>
+				</Page>
+				<Page name="ЗакладкаОтладка" id="107">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Отладка</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Закладка отладка</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="ЗакладкаОтладкаРасширеннаяПодсказка" id="152"/>
+					<ChildItems>
+						<CheckBoxField name="ОтображатьПоказатели" id="41">
+							<DataPath>Объект.ОтображатьПоказатели</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Отображать показатели производительности</v8:content>
+								</v8:item>
+							</Title>
+							<TitleLocation>Right</TitleLocation>
+							<CheckBoxType>Auto</CheckBoxType>
+							<ContextMenu name="ОтображатьПоказателиКонтекстноеМеню" id="42"/>
+							<ExtendedTooltip name="ОтображатьПоказателиРасширеннаяПодсказка" id="153"/>
+							<Events>
+								<Event name="OnChange">ПриИзмененииОбновитьСтрокуЗапуска</Event>
+							</Events>
+						</CheckBoxField>
+						<CheckBoxField name="РазрешатьОтладку" id="37">
+							<DataPath>Объект.РазрешатьОтладку</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Установить режим разрешения отладки</v8:content>
+								</v8:item>
+							</Title>
+							<TitleLocation>Right</TitleLocation>
+							<CheckBoxType>Auto</CheckBoxType>
+							<ContextMenu name="РазрешатьОтладкуКонтекстноеМеню" id="38"/>
+							<ExtendedTooltip name="РазрешатьОтладкуРасширеннаяПодсказка" id="154"/>
+							<Events>
+								<Event name="OnChange">ПриИзмененииОбновитьСтрокуЗапускаИДоступность</Event>
+							</Events>
+						</CheckBoxField>
+						<CheckBoxField name="НачинатьОтладку" id="39">
+							<DataPath>Объект.НачинатьОтладку</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Начинать отладку при запуске</v8:content>
+								</v8:item>
+							</Title>
+							<TitleLocation>Right</TitleLocation>
+							<CheckBoxType>Auto</CheckBoxType>
+							<ContextMenu name="НачинатьОтладкуКонтекстноеМеню" id="40"/>
+							<ExtendedTooltip name="НачинатьОтладкуРасширеннаяПодсказка" id="155"/>
+							<Events>
+								<Event name="OnChange">ПриИзмененииОбновитьСтрокуЗапускаИДоступность</Event>
+							</Events>
+						</CheckBoxField>
+						<UsualGroup name="ГруппаАдресОтладчика" id="60">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа адрес отладчика</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа адрес отладчика</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Group>Horizontal</Group>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаАдресОтладчикаРасширеннаяПодсказка" id="156"/>
+							<ChildItems>
+								<LabelDecoration name="ОтступОтладчика" id="61">
+									<Width>1</Width>
+									<SkipOnInput>false</SkipOnInput>
+									<ContextMenu name="ОтступОтладчикаКонтекстноеМеню" id="62"/>
+									<ExtendedTooltip name="ОтступОтладчикаРасширеннаяПодсказка" id="157"/>
+								</LabelDecoration>
+								<InputField name="АдресОтладчика" id="58">
+									<DataPath>Объект.АдресОтладчика</DataPath>
+									<ContextMenu name="АдресОтладчикаКонтекстноеМеню" id="59"/>
+									<ExtendedTooltip name="АдресОтладчикаРасширеннаяПодсказка" id="158"/>
+									<Events>
+										<Event name="OnChange">ПриИзмененииОбновитьСтрокуЗапуска</Event>
+									</Events>
+								</InputField>
+							</ChildItems>
+						</UsualGroup>
+					</ChildItems>
+				</Page>
+				<Page name="Сеть" id="106">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Сеть</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Сеть</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="СетьРасширеннаяПодсказка" id="159"/>
+					<ChildItems>
+						<CheckBoxField name="НизкаяСкоростьСоединения" id="16">
+							<DataPath>Объект.НизкаяСкоростьСоединения</DataPath>
+							<TitleLocation>Right</TitleLocation>
+							<CheckBoxType>Auto</CheckBoxType>
+							<ContextMenu name="НизкаяСкоростьСоединенияКонтекстноеМеню" id="17"/>
+							<ExtendedTooltip name="НизкаяСкоростьСоединенияРасширеннаяПодсказка" id="160"/>
+							<Events>
+								<Event name="OnChange">ПриИзмененииОбновитьСтрокуЗапуска</Event>
+							</Events>
+						</CheckBoxField>
+						<CheckBoxField name="ИмитироватьЗадержку" id="18">
+							<DataPath>Объект.ИмитироватьЗадержку</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Имитировать задержку при вызовах сервера</v8:content>
+								</v8:item>
+							</Title>
+							<TitleLocation>Right</TitleLocation>
+							<CheckBoxType>Auto</CheckBoxType>
+							<ContextMenu name="ИмитироватьЗадержкуКонтекстноеМеню" id="19"/>
+							<ExtendedTooltip name="ИмитироватьЗадержкуРасширеннаяПодсказка" id="161"/>
+							<Events>
+								<Event name="OnChange">ПриИзмененииОбновитьСтрокуЗапускаИДоступность</Event>
+							</Events>
+						</CheckBoxField>
+						<UsualGroup name="ГруппаЗадержка" id="102">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа задержка</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа задержка</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Group>Horizontal</Group>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаЗадержкаРасширеннаяПодсказка" id="162"/>
+							<ChildItems>
+								<LabelDecoration name="ОтступЗадержек" id="103">
+									<Width>1</Width>
+									<SkipOnInput>false</SkipOnInput>
+									<ContextMenu name="ОтступЗадержекКонтекстноеМеню" id="104"/>
+									<ExtendedTooltip name="ОтступЗадержекРасширеннаяПодсказка" id="163"/>
+								</LabelDecoration>
+								<UsualGroup name="ГруппаЗадержки" id="101">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа задержки</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа задержки</v8:content>
+										</v8:item>
+									</ToolTip>
+									<Group>Vertical</Group>
+									<Representation>None</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="ГруппаЗадержкиРасширеннаяПодсказка" id="164"/>
+									<ChildItems>
+										<InputField name="ЗадержкаВызова" id="20">
+											<DataPath>Объект.ЗадержкаВызова</DataPath>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Задержка при вызове (с)</v8:content>
+												</v8:item>
+											</Title>
+											<ChoiceButton>false</ChoiceButton>
+											<SpinButton>true</SpinButton>
+											<ContextMenu name="ЗадержкаВызоваКонтекстноеМеню" id="21"/>
+											<ExtendedTooltip name="ЗадержкаВызоваРасширеннаяПодсказка" id="165"/>
+											<Events>
+												<Event name="OnChange">ПриИзмененииОбновитьСтрокуЗапуска</Event>
+											</Events>
+										</InputField>
+										<InputField name="ЗадержкаПередачи" id="22">
+											<DataPath>Объект.ЗадержкаПередачи</DataPath>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Задержка при передаче данных (с/КБайт)</v8:content>
+												</v8:item>
+											</Title>
+											<ChoiceButton>false</ChoiceButton>
+											<SpinButton>true</SpinButton>
+											<ContextMenu name="ЗадержкаПередачиКонтекстноеМеню" id="23"/>
+											<ExtendedTooltip name="ЗадержкаПередачиРасширеннаяПодсказка" id="166"/>
+											<Events>
+												<Event name="OnChange">ПриИзмененииОбновитьСтрокуЗапуска</Event>
+											</Events>
+										</InputField>
+										<InputField name="ЗадержкаПолучения" id="24">
+											<DataPath>Объект.ЗадержкаПолучения</DataPath>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Задержка при получении данных (с/КБайт)</v8:content>
+												</v8:item>
+											</Title>
+											<ChoiceButton>false</ChoiceButton>
+											<SpinButton>true</SpinButton>
+											<ContextMenu name="ЗадержкаПолученияКонтекстноеМеню" id="25"/>
+											<ExtendedTooltip name="ЗадержкаПолученияРасширеннаяПодсказка" id="167"/>
+											<Events>
+												<Event name="OnChange">ПриИзмененииОбновитьСтрокуЗапуска</Event>
+											</Events>
+										</InputField>
+									</ChildItems>
+								</UsualGroup>
+							</ChildItems>
+						</UsualGroup>
+					</ChildItems>
+				</Page>
+				<Page name="ЗакладкаДополнительные" id="8">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Дополнительные</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Закладка дополнительные</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="ЗакладкаДополнительныеРасширеннаяПодсказка" id="168"/>
+					<ChildItems>
+						<CheckBoxField name="НеПредупреждать" id="35">
+							<DataPath>Объект.НеПредупреждать</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Не выдавать предупреждения при запуске</v8:content>
+								</v8:item>
+							</Title>
+							<TitleLocation>Right</TitleLocation>
+							<CheckBoxType>Auto</CheckBoxType>
+							<ContextMenu name="НеПредупреждатьКонтекстноеМеню" id="36"/>
+							<ExtendedTooltip name="НеПредупреждатьРасширеннаяПодсказка" id="169"/>
+							<Events>
+								<Event name="OnChange">ПриИзмененииОбновитьСтрокуЗапуска</Event>
+							</Events>
+						</CheckBoxField>
+						<CheckBoxField name="ОтображатьВсеФункции" id="43">
+							<DataPath>Объект.ОтображатьВсеФункции</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Отображать команду «Все функции»</v8:content>
+								</v8:item>
+							</Title>
+							<TitleLocation>Right</TitleLocation>
+							<CheckBoxType>Auto</CheckBoxType>
+							<ContextMenu name="ОтображатьВсеФункцииКонтекстноеМеню" id="44"/>
+							<ExtendedTooltip name="ОтображатьВсеФункцииРасширеннаяПодсказка" id="170"/>
+							<Events>
+								<Event name="OnChange">ПриИзмененииОбновитьСтрокуЗапуска</Event>
+							</Events>
+						</CheckBoxField>
+						<InputField name="Язык" id="31">
+							<DataPath>Объект.Язык</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Язык интерфейса системы</v8:content>
+								</v8:item>
+							</Title>
+							<HorizontalStretch>true</HorizontalStretch>
+							<ChoiceButton>false</ChoiceButton>
+							<ClearButton>true</ClearButton>
+							<ListChoiceMode>true</ListChoiceMode>
+							<ChoiceList>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Английский</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">en</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Болгарский</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">bg</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Вьетнамский</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">vi</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Грузинский</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">ka</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Казахский</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">kk</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Латышский</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">lv</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Литовский</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">lt</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Немецкий</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">de</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Польский</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">pl</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Румынский</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">ro</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Русский</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">ru</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Украинский</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">uk</Value>
+									</xr:Value>
+								</xr:Item>
+							</ChoiceList>
+							<ChoiceListButton>true</ChoiceListButton>
+							<ContextMenu name="ЯзыкКонтекстноеМеню" id="32"/>
+							<ExtendedTooltip name="ЯзыкРасширеннаяПодсказка" id="171"/>
+							<Events>
+								<Event name="OnChange">ПриИзмененииОбновитьСтрокуЗапуска</Event>
+							</Events>
+						</InputField>
+						<InputField name="КодЛокализации" id="33">
+							<DataPath>Объект.КодЛокализации</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Код локализации сеанса</v8:content>
+								</v8:item>
+							</Title>
+							<HorizontalStretch>true</HorizontalStretch>
+							<ChoiceButton>false</ChoiceButton>
+							<ClearButton>true</ClearButton>
+							<ListChoiceMode>true</ListChoiceMode>
+							<ChoiceList>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Азербайджанский</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">az</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Азербайджанский (Азербайджан)</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">az_AZ</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Азербайджанский (Кириллица)</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">az_Cyrl</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Азербайджанский (Кириллица, Азербайджан)</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">az_Cyrl_AZ</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Азербайджанский (Латиница)</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">az_Latn</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Азербайджанский (Латиница, Азербайджан)</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">az_Latn_AZ</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Албанский</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">sq</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Албанский (Албания)</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">sq_AL</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Амхарский</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">am</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Амхарский (Эфиопия)</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">am_ET</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Английский</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">en</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Английский (Австралия)</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">en_AU</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Английский (Американские Виргинские Острова)</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">en_VI</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Английский (Бельгия)</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">en_BE</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Английский (Ботсвана)</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">en_BW</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Английский (Великобритания)</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">en_GB</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Английский (Гонконг, (Область с Особым Административным Управлением, Китай))</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">en_HK</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Английский (Зимбабве)</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">en_ZW</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Английский (Индия)</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">en_IN</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Английский (Ирландия)</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">en_IE</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Английский (Канада)</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">en_CA</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Английский (Мальта)</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">en_MT</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Английский (Новая Зеландия)</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">en_NZ</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Английский (Пакистан)</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">en_PK</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Английский (Сингапур)</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">en_SG</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Английский (Соединенные Штаты Америки)</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">en_US</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Английский (Филиппины)</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">en_PH</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Английский (Южная Африка)</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">en_ZA</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Арабский</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">ar</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Арабский (Алжир)</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">ar_DZ</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Арабский (Бахрейн)</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">ar_BH</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Арабский (Египет)</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">ar_EG</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Арабский (Иордания)</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">ar_JO</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Арабский (Ирак)</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">ar_IQ</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Арабский (Йемен)</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">ar_YE</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Арабский (Катар)</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">ar_QA</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Арабский (Кувейт)</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">ar_KW</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Арабский (Ливан)</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">ar_LB</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Арабский (Ливия)</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">ar_LY</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Арабский (Марокко)</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">ar_MA</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Арабский (Объединенные Арабские Эмираты)</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">ar_AE</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Арабский (Оман)</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">ar_OM</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Арабский (Саудовская Аравия)</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">ar_SA</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Арабский (Сирия)</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">ar_SY</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Арабский (Судан)</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">ar_SD</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Арабский (Тунис)</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">ar_TN</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Армянский</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">hy</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Армянский (Армения)</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">hy_AM</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Армянский (Армения, REVISED)</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">hy_AM_REVISED</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Ассамский</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">as</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Ассамский (Индия)</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">as_IN</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Африкаанс</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">af</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Африкаанс (Южная Африка)</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">af_ZA</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Баскский</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">eu</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Баскский (Испания)</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">eu_ES</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Белорусский</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">be</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Белорусский (Беларусь)</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">be_BY</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Бенгальский</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">bn</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Бенгальский (Индия)</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">bn_IN</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Болгарский</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">bg</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Болгарский (Болгария)</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">bg_BG</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Валлийский</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">cy</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Валлийский (Великобритания)</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">cy_GB</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Венгерский</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">hu</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Венгерский (Венгрия)</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">hu_HU</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Вьетнамский</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">vi</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Вьетнамский (Вьетнам)</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">vi_VN</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Галисийский</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">gl</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Галисийский (Испания)</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">gl_ES</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Голландский</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">nl</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Голландский (Бельгия)</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">nl_BE</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Голландский (Нидерланды)</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">nl_NL</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Гренландский</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">kl</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Гренландский (Гренландия)</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">kl_GL</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Греческий</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">el</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Греческий (Греция)</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">el_GR</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Грузинский</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">ka</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Грузинский (Грузия)</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">ka_GE</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Гуярати</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">gu</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Гуярати (Индия)</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">gu_IN</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Датский</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">da</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Датский (Дания)</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">da_DK</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Иврит</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">he</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Иврит (Израиль)</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">he_IL</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Индонезийский</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">id</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Индонезийский (Индонезия)</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">id_ID</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Ирландский</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">ga</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Ирландский (Ирландия)</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">ga_IE</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Исландский</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">is</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Исландский (Исландия)</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">is_IS</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Испанский</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">es</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Испанский (Аргентина)</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">es_AR</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Испанский (Боливия)</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">es_BO</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Испанский (Венесуэлла)</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">es_VE</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Испанский (Гватемала)</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">es_GT</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Испанский (Гондурас)</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">es_HN</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Испанский (Доминиканская Республика )</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">es_DO</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Испанский (Испания)</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">es_ES</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Испанский (Колумбия)</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">es_CO</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Испанский (Коста-Рика)</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">es_CR</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Испанский (Мексика)</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">es_MX</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Испанский (Никарагуа)</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">es_NI</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Испанский (Панама)</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">es_PA</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Испанский (Парагвай)</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">es_PY</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Испанский (Перу)</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">es_PE</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Испанский (Пуэрто-Рико)</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">es_PR</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Испанский (Сальвадор)</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">es_SV</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Испанский (Соединенные Штаты Америки)</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">es_US</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Испанский (Уругвай)</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">es_UY</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Испанский (Чили)</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">es_CL</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Испанский (Эквадор)</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">es_EC</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Итальянский</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">it</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Итальянский (Италия)</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">it_IT</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Итальянский (Швейцария)</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">it_CH</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Казахский</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">kk</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Казахский (Казахстан)</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">kk_KZ</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Каннада</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">kn</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Каннада (Индия)</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">kn_IN</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Каталанский</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">ca</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Каталанский (Испания)</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">ca_ES</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Китайский</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">zh</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Китайский (Hans)</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">zh_Hans</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Китайский (Hans, Китай)</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">zh_Hans_CN</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Китайский (Hans, Сингапур)</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">zh_Hans_SG</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Китайский (Hant)</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">zh_Hant</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Китайский (Hant, Гонконг (Область с Особым Административным Управлением, Китай))</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">zh_Hant_HK</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Китайский (Hant, Макао (Область с Особым Административным Управлением, Китай))</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">zh_Hant_MO</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Китайский (Hant, Тайвань)</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">zh_Hant_TW</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Китайский (Гонконг (Область с Особым Административным Управлением, Китай))</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">zh_HK</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Китайский (Китай)</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">zh_CN</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Китайский (Макао (Область с Особым Административным Управлением, Китай))</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">zh_MO</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Китайский (Сингапур)</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">zh_SG</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Китайский (Тайвань)</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">zh_TW</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Конкани</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">kok</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Конкани (Индия)</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">kok_IN</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Корейский</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">ko</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Корейский (Южная Корея)</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">ko_KR</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Латышский</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">lv</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Латышский (Латвия)</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">lv_LV</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Литовский</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">lt</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Литовский (Литва)</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">lt_LT</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Македонский</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">mk</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Македонский (Македония)</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">mk_MK</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Малайский</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">ms</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Малайский (Бруней)</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">ms_BN</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Малайский (Малайзия)</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">ms_MY</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Малаялам</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">ml</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Малаялам (Индия)</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">ml_IN</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Мальтийский</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">mt</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Мальтийский (Мальта)</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">mt_MT</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Маратийский</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">mr</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Маратийский (Индия)</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">mr_IN</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Немецкий</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">de</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Немецкий (Австрия)</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">de_AT</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Немецкий (Бельгия)</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">de_BE</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Немецкий (Германия)</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">de_DE</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Немецкий (Люксембург)</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">de_LU</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Немецкий (Швейцария)</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">de_CH</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Норвежский букмол</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">nb</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Норвежский букмол (Норвегия)</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">nb_NO</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Норвежский нюнорск</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">nn</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Норвежский нюнорск (Норвегия)</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">nn_NO</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Ория</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">or</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Ория (Индия)</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">or_IN</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Оромо (Афан)</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">om</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Оромо (Афан) (Кения)</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">om_KE</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Оромо (Афан) (Эфиопия)</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">om_ET</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Панджабский</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">pa</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Панджабский (Индия)</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">pa_IN</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Пашто (Пушто)</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">ps</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Пашто (Пушто) (Афганистан)</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">ps_AF</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Персидский</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">fa</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Персидский (Афганистан)</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">fa_AF</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Персидский (Иран)</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">fa_IR</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Польский</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">pl</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Польский (Польша)</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">pl_PL</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Португальский</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">pt</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Португальский (Бразилия)</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">pt_BR</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Португальский (Португалия)</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">pt_PT</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Румынский</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">ro</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Румынский (Румыния)</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">ro_RO</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Русский</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">ru</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Русский (Россия)</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">ru_RU</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Русский (Украина)</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">ru_UA</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Сербский</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">sr</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Сербский (Кириллица)</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">sr_Cyrl</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Сербский (Кириллица, Сербия и Черногория)</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">sr_Cyrl_CS</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Сербский (Кириллица, Югославия)</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">sr_Cyrl_YU</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Сербский (Латиница)</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">sr_Latn</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Сербский (Латиница, Сербия и Черногория)</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">sr_Latn_CS</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Сербский (Латиница, Югославия)</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">sr_Latn_YU</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Сербский (Сербия и Черногория)</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">sr_CS</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Сербский (Югославия)</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">sr_YU</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Словацкий</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">sk</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Словацкий (Словакия)</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">sk_SK</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Словенский</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">sl</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Словенский (Словения)</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">sl_SI</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Сомали</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">so</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Сомали (Джибути)</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">so_DJ</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Сомали (Кения)</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">so_KE</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Сомали (Сомали)</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">so_SO</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Сомали (Эфиопия)</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">so_ET</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Суахили</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">sw</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Суахили (Суахили)</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">sw_KE</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Суахили (Танзания)</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">sw_TZ</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Тайский</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">th</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Тайский (Таиланд)</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">th_TH</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Тамильский</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">ta</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Тамильский (Индия)</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">ta_IN</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Телугу</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">te</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Телугу (Индия)</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">te_IN</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Тигриниа</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">ti</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Тигриниа (Эритрея)</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">ti_ER</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Тигриниа (Эфиопия)</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">ti_ET</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Турецкий</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">tr</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Турецкий (Турция)</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">tr_TR</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Узбекский</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">uz</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Узбекский (Кириллица)</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">uz_Cyrl</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Узбекский (Кириллица, Узбекистан)</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">uz_Cyrl_UZ</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Узбекский (Латиница)</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">uz_Latn</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Узбекский (Латиница, Узбекистан)</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">uz_Latn_UZ</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Узбекский (Узбекистан)</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">uz_UZ</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Украинский</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">uk</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Украинский (Украина)</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">uk_UA</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Урду</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">ur</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Урду (Пакистан)</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">ur_PK</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Фарерский</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">fo</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Фарерский (Фарерские острова)</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">fo_FO</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Финский</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">fi</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Финский (Финляндия)</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">fi_FI</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Французский</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">fr</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Французский (Бельгия)</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">fr_BE</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Французский (Канада)</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">fr_CA</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Французский (Люксембург)</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">fr_LU</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Французский (Франция)</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">fr_FR</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Французский (Швейцария)</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">fr_CH</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Хинди</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">hi</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Хинди (Индия)</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">hi_IN</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Хорватский</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">hr</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Хорватский (Хорватия)</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">hr_HR</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Чешский</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">cs</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Чешский (Чешская Республика)</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">cs_CZ</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Шведский</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">sv</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Шведский (Финляндия)</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">sv_FI</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Шведский (Швеция)</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">sv_SE</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Эстонский</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">et</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Эстонский (Эстония)</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">et_EE</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Японский</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">ja</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Японский (Япония)</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">ja_JP</Value>
+									</xr:Value>
+								</xr:Item>
+							</ChoiceList>
+							<ChoiceListButton>true</ChoiceListButton>
+							<ContextMenu name="КодЛокализацииКонтекстноеМеню" id="34"/>
+							<ExtendedTooltip name="КодЛокализацииРасширеннаяПодсказка" id="172"/>
+							<Events>
+								<Event name="OnChange">ПриИзмененииОбновитьСтрокуЗапуска</Event>
+							</Events>
+						</InputField>
+						<UsualGroup name="ГруппаФайлСообщений" id="28">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Файл служебных сообщений</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа файл сообщений</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Group>Vertical</Group>
+							<Representation>StrongSeparation</Representation>
+							<ExtendedTooltip name="ГруппаФайлСообщенийРасширеннаяПодсказка" id="173"/>
+							<ChildItems>
+								<InputField name="ФайлСообщений" id="26">
+									<DataPath>Объект.ФайлСообщений</DataPath>
+									<TitleLocation>None</TitleLocation>
+									<ChoiceButton>true</ChoiceButton>
+									<ChooseType>false</ChooseType>
+									<ContextMenu name="ФайлСообщенийКонтекстноеМеню" id="27"/>
+									<ExtendedTooltip name="ФайлСообщенийРасширеннаяПодсказка" id="174"/>
+									<Events>
+										<Event name="OnChange">ПриИзмененииОбновитьСтрокуЗапускаИДоступность</Event>
+										<Event name="StartChoice">ФайлСообщенийНачалоВыбора</Event>
+									</Events>
+								</InputField>
+								<CheckBoxField name="НеОчищатьСлужебныеСообщения" id="29">
+									<DataPath>Объект.НеОчищатьСлужебныеСообщения</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Не очищать файл перед запуском</v8:content>
+										</v8:item>
+									</Title>
+									<TitleLocation>Right</TitleLocation>
+									<CheckBoxType>Auto</CheckBoxType>
+									<ContextMenu name="НеОчищатьСлужебныеСообщенияКонтекстноеМеню" id="30"/>
+									<ExtendedTooltip name="НеОчищатьСлужебныеСообщенияРасширеннаяПодсказка" id="175"/>
+									<Events>
+										<Event name="OnChange">ПриИзмененииОбновитьСтрокуЗапуска</Event>
+									</Events>
+								</CheckBoxField>
+							</ChildItems>
+						</UsualGroup>
+					</ChildItems>
+				</Page>
+				<Page name="ЗакладкаРазделение" id="108">
+					<Visible>false</Visible>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Разделение данных</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Закладка разделение</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="ЗакладкаРазделениеРасширеннаяПодсказка" id="176"/>
+					<ChildItems>
+						<Table name="Разделители" id="109">
+							<Representation>List</Representation>
+							<ChangeRowSet>false</ChangeRowSet>
+							<ChangeRowOrder>false</ChangeRowOrder>
+							<RowSelectionMode>Row</RowSelectionMode>
+							<AutoInsertNewRow>true</AutoInsertNewRow>
+							<EnableStartDrag>true</EnableStartDrag>
+							<EnableDrag>true</EnableDrag>
+							<FileDragMode>AsFile</FileDragMode>
+							<DataPath>Объект.Разделители</DataPath>
+							<SearchStringLocation>None</SearchStringLocation>
+							<ViewStatusLocation>None</ViewStatusLocation>
+							<SearchControlLocation>None</SearchControlLocation>
+							<RowFilter xsi:nil="true"/>
+							<ContextMenu name="РазделителиКонтекстноеМеню" id="110"/>
+							<AutoCommandBar name="РазделителиКоманднаяПанель" id="111">
+								<Autofill>false</Autofill>
+							</AutoCommandBar>
+							<ExtendedTooltip name="РазделителиРасширеннаяПодсказка" id="177"/>
+							<SearchStringAddition name="РазделителиСтрокаПоиска" id="178">
+								<AdditionSource>
+									<Item>Разделители</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="РазделителиСтрокаПоискаКонтекстноеМеню" id="179"/>
+								<ExtendedTooltip name="РазделителиСтрокаПоискаРасширеннаяПодсказка" id="180"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="РазделителиСостояниеПросмотра" id="181">
+								<AdditionSource>
+									<Item>Разделители</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="РазделителиСостояниеПросмотраКонтекстноеМеню" id="182"/>
+								<ExtendedTooltip name="РазделителиСостояниеПросмотраРасширеннаяПодсказка" id="183"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="РазделителиУправлениеПоиском" id="184">
+								<AdditionSource>
+									<Item>Разделители</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="РазделителиУправлениеПоискомКонтекстноеМеню" id="185"/>
+								<ExtendedTooltip name="РазделителиУправлениеПоискомРасширеннаяПодсказка" id="186"/>
+							</SearchControlAddition>
+							<ChildItems>
+								<CheckBoxField name="РазделителиИспользуется" id="114">
+									<DataPath>Объект.Разделители.Используется</DataPath>
+									<TitleLocation>None</TitleLocation>
+									<EditMode>EnterOnInput</EditMode>
+									<CheckBoxType>Auto</CheckBoxType>
+									<ContextMenu name="РазделителиИспользуетсяКонтекстноеМеню" id="115"/>
+									<ExtendedTooltip name="РазделителиИспользуетсяРасширеннаяПодсказка" id="187"/>
+									<Events>
+										<Event name="OnChange">ПриИзмененииОбновитьСтрокуЗапуска</Event>
+									</Events>
+								</CheckBoxField>
+								<InputField name="РазделителиИмя" id="116">
+									<DataPath>Объект.Разделители.Имя</DataPath>
+									<ReadOnly>true</ReadOnly>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="РазделителиИмяКонтекстноеМеню" id="117"/>
+									<ExtendedTooltip name="РазделителиИмяРасширеннаяПодсказка" id="188"/>
+								</InputField>
+								<InputField name="РазделителиЗначение" id="118">
+									<DataPath>Объект.Разделители.Значение</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ChooseType>false</ChooseType>
+									<ContextMenu name="РазделителиЗначениеКонтекстноеМеню" id="119"/>
+									<ExtendedTooltip name="РазделителиЗначениеРасширеннаяПодсказка" id="189"/>
+									<Events>
+										<Event name="OnChange">ПриИзмененииОбновитьСтрокуЗапуска</Event>
+									</Events>
+								</InputField>
+							</ChildItems>
+						</Table>
+					</ChildItems>
+				</Page>
+			</ChildItems>
+		</Pages>
+		<InputField name="СтрокаЗапуска" id="99">
+			<DataPath>Объект.СтрокаЗапуска</DataPath>
+			<ReadOnly>true</ReadOnly>
+			<TitleLocation>None</TitleLocation>
+			<AutoMaxWidth>false</AutoMaxWidth>
+			<Height>3</Height>
+			<VerticalStretch>false</VerticalStretch>
+			<MultiLine>true</MultiLine>
+			<ContextMenu name="СтрокаЗапускаКонтекстноеМеню" id="100"/>
+			<ExtendedTooltip name="СтрокаЗапускаРасширеннаяПодсказка" id="190"/>
+		</InputField>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="32">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Объект</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:CatalogObject.ТЦКлиенты</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="ИзменитьДопПараметры" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Изменить доп. параметры</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Изменить дополнительные параметры командной строки клиента 1С:Предприятия</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.Change</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>ИзменитьДопПараметры</Action>
+			<Representation>Picture</Representation>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+	</Commands>
+	<Parameters>
+		<Parameter name="ЛокальныйКомпьютер">
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+			<KeyParameter>true</KeyParameter>
+		</Parameter>
+	</Parameters>
+</Form>
