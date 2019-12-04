@@ -472,6 +472,7 @@
 			<CommonModule>УдалениеПомеченныхОбъектовПереопределяемый</CommonModule>
 			<CommonModule>УдалениеПомеченныхОбъектовСлужебный</CommonModule>
 			<CommonModule>ОбновлениеИнформационнойБазыКаркаснаяКонфигурация</CommonModule>
+			<CommonModule>ОбщийМодульБлаБлаБла</CommonModule>
 			<ExchangePlan>ОбновлениеИнформационнойБазы</ExchangePlan>
 			<XDTOPackage>ДанныеУправленияТестом</XDTOPackage>
 			<XDTOPackage>ApdexExport_1_0_0_3</XDTOPackage>
