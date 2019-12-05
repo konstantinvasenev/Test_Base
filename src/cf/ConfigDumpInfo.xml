@@ -496,6 +496,7 @@
 		<Metadata name="Catalog.ПрофилиКлючевыхОпераций.ManagerModule" id="0d89036c-af6e-4709-847c-0dab74a33d72.3" configVersion="7a9b03f95287104c80dd082ca0a236c400000000"/>
 		<Metadata name="Catalog.ПрофилиКлючевыхОпераций.ObjectModule" id="0d89036c-af6e-4709-847c-0dab74a33d72.0" configVersion="086cea2e27f4f44cb3d05a7af1eeafcd00000000"/>
 		<Metadata name="Catalog.Склады" id="ead71dac-0435-4ccc-87cd-8b2c22aca091" configVersion="be11de125c4e274987bbc92f1bd2565a00000000"/>
+		<Metadata name="Catalog.Справочник1" id="2e9ffc10-09c3-43d0-9518-73de67944aff" configVersion="16a32435dbdc1643ace4ef47ef60e8c500000000"/>
 		<Metadata name="Catalog.ТЦАгенты" id="e4e0da24-2225-4b7b-9427-68bf0b2db582" configVersion="98c857d08a1db744b10b59adbba3dbd600000000">
 			<Metadata name="Catalog.ТЦАгенты.Attribute.НомерСессии" id="1ba35dcf-466f-43c6-8537-d9e05000f61d"/>
 			<Metadata name="Catalog.ТЦАгенты.Attribute.Порт" id="5948740e-3ae1-4b75-b7be-94d8bea342c7"/>
@@ -1324,7 +1325,7 @@
 		<Metadata name="CommonTemplate.ТЦПротокол.Template" id="3a917ca8-ba9d-434b-8064-6b9e2efb1cfd.0" configVersion="028bafaa5e8a38428458fc25d541842600000000"/>
 		<Metadata name="CommonTemplate.ТЦСКДОшибкиТеста" id="4eac2803-6c95-4ed3-9c63-341fb12b69bc" configVersion="c8c3ffce32bd634da12dfeafa7a2818b00000000"/>
 		<Metadata name="CommonTemplate.ТЦСКДОшибкиТеста.Template" id="4eac2803-6c95-4ed3-9c63-341fb12b69bc.0" configVersion="63f5992cc9d33a4e9fca84efc7806b6b00000000"/>
-		<Metadata name="Configuration.КаркаснаяКонфигурация" id="a92cebe9-4e30-4901-842c-b1cc1d0adc9a" configVersion="6a7771e7b6cd5f4a844e2040c5ed8adb00000000"/>
+		<Metadata name="Configuration.КаркаснаяКонфигурация" id="a92cebe9-4e30-4901-842c-b1cc1d0adc9a" configVersion="dd6c48368a2406499c77b7db0e25c6ac00000000"/>
 		<Metadata name="Configuration.КаркаснаяКонфигурация.ManagedApplicationModule" id="a0068262-10a0-4841-82b6-f6e35a7fc312.6" configVersion="511040493f6e1149a02a6c9f37abaf9000000000"/>
 		<Metadata name="Configuration.КаркаснаяКонфигурация.SessionModule" id="a0068262-10a0-4841-82b6-f6e35a7fc312.7" configVersion="dd35cc2a0cf9c5409947cc1918902e1d00000000"/>
 		<Metadata name="Constant.АвтоматическиНастраиватьРазрешенияВПрофиляхБезопасности" id="9893e2d6-f3f8-4d73-bb06-19bf26d216ab" configVersion="1ea8ae9d23c4ce4ebf15db995e3e6f5300000000"/>
@@ -3366,7 +3367,7 @@
 		<Metadata name="Subsystem.БухгалтерскийУчет" id="ceedd8ea-a910-451e-8f9d-778221acbd5e" configVersion="c4ef162f6ca478409c6006ab1b6c088500000000"/>
 		<Metadata name="Subsystem.БухгалтерскийУчет.CommandInterface" id="ceedd8ea-a910-451e-8f9d-778221acbd5e.1" configVersion="5ff4a6f95716054fb076025a59cea26500000000"/>
 		<Metadata name="Subsystem.ИнструментыВстраиванияТестЦентра" id="492f4981-a6e7-448b-b775-48754b510f26" configVersion="97ca2192ebf47a40b05e44e1faa2ad9900000000"/>
-		<Metadata name="Subsystem.ОперативыйУчет" id="9a76a4d5-263f-439f-917b-dee3e6b39bfc" configVersion="1542842a5b8dcd4492fa8899e9dd3a2500000000"/>
+		<Metadata name="Subsystem.ОперативыйУчет" id="9a76a4d5-263f-439f-917b-dee3e6b39bfc" configVersion="e6d6203b65bf474d8654cad56e56843400000000"/>
 		<Metadata name="Subsystem.ОперативыйУчет.CommandInterface" id="9a76a4d5-263f-439f-917b-dee3e6b39bfc.1" configVersion="7eea3ca3bfc1ae46b703e5c3db52c26e00000000"/>
 		<Metadata name="Subsystem.ПериодическиеРасчеты" id="327adb52-86b4-4412-8ee2-7edbc32e56fa" configVersion="a4e0ce3acfd6944c993db314f1cec4b200000000"/>
 		<Metadata name="Subsystem.ПериодическиеРасчеты.CommandInterface" id="327adb52-86b4-4412-8ee2-7edbc32e56fa.1" configVersion="44eb4a2596ab594a8575f58cdf45c00a00000000"/>
