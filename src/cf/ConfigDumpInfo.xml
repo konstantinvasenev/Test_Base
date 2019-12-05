@@ -948,8 +948,8 @@
 		<Metadata name="CommonModule.ОбщегоНазначенияПовтИсп.Module" id="cafc86e1-d7f1-4cd2-ac20-04fa0917556a.0" configVersion="9e2e0ecb9d0c2641ac047a6dc4c2965900000000"/>
 		<Metadata name="CommonModule.ОбщегоНазначенияСлужебныйКлиент" id="514e95b8-2fdd-46f7-89bf-7d1a3d9d6e1b" configVersion="a82cef4f64434e4aad38f91b278f723600000000"/>
 		<Metadata name="CommonModule.ОбщегоНазначенияСлужебныйКлиент.Module" id="514e95b8-2fdd-46f7-89bf-7d1a3d9d6e1b.0" configVersion="ed5d982b2aec0a44a634b657b04775c200000000"/>
-		<Metadata name="CommonModule.ОбщийМодуль1" id="00fbe0ad-fcd7-4e04-b016-25646d8f4431" configVersion="476e61a924473e4eafde577195d3422400000000"/>
-		<Metadata name="CommonModule.ОбщийМодуль1.Module" id="00fbe0ad-fcd7-4e04-b016-25646d8f4431.0" configVersion="39dfbe5783fbc7418622c3b5b971402800000000"/>
+		<Metadata name="CommonModule.ОбщийМодуль1" id="00fbe0ad-fcd7-4e04-b016-25646d8f4431" configVersion="8bc515381b9d6c4da2bc98f7d47b7f0f00000000"/>
+		<Metadata name="CommonModule.ОбщийМодуль1.Module" id="00fbe0ad-fcd7-4e04-b016-25646d8f4431.0" configVersion="d59403e5e67deb468b3adaba6400dda000000000"/>
 		<Metadata name="CommonModule.ОбщийМодульБлаБлаБла" id="2b32b459-e342-4c55-9c88-670d2f986871" configVersion="28f85fc2c43eb6438ec9e68e89a4efdc00000000"/>
 		<Metadata name="CommonModule.ОбщийМодульБлаБлаБла.Module" id="2b32b459-e342-4c55-9c88-670d2f986871.0" configVersion="a42bf1530b60414fa4c56ebef7172a7700000000"/>
 		<Metadata name="CommonModule.ОценкаПроизводительности" id="8b83324c-e10e-49d1-99d7-5bc468c25975" configVersion="798f77ffa6c6eb4781580d8b654e5c2300000000"/>
