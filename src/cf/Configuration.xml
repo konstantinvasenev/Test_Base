@@ -474,6 +474,7 @@
 			<CommonModule>ОбновлениеИнформационнойБазыКаркаснаяКонфигурация</CommonModule>
 			<CommonModule>ОбщийМодульБлаБлаБла</CommonModule>
 			<CommonModule>ОбщийМодуль1</CommonModule>
+			<CommonModule>ОбщийМодуль2</CommonModule>
 			<ExchangePlan>ОбновлениеИнформационнойБазы</ExchangePlan>
 			<XDTOPackage>ДанныеУправленияТестом</XDTOPackage>
 			<XDTOPackage>ApdexExport_1_0_0_3</XDTOPackage>
