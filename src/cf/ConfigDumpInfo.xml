@@ -953,6 +953,8 @@
 		<Metadata name="CommonModule.ОбщийМодуль1.Module" id="00fbe0ad-fcd7-4e04-b016-25646d8f4431.0" configVersion="d59403e5e67deb468b3adaba6400dda000000000"/>
 		<Metadata name="CommonModule.ОбщийМодуль2" id="e4d44052-be40-457e-9705-ce3884a304e8" configVersion="30501986bcb1ff4e9a11ac09e018811d00000000"/>
 		<Metadata name="CommonModule.ОбщийМодуль2.Module" id="e4d44052-be40-457e-9705-ce3884a304e8.0" configVersion="0108ef0612d3b34b88571fb8d4e7d02600000000"/>
+		<Metadata name="CommonModule.ОбщийМодуль3" id="39de2c04-5704-402a-828c-a04cf0838223" configVersion="0b4dedac506a1b4f9fd66e1580894a9300000000"/>
+		<Metadata name="CommonModule.ОбщийМодуль3.Module" id="39de2c04-5704-402a-828c-a04cf0838223.0" configVersion="0c2729e5b226ee44b4f1de6c2f18634200000000"/>
 		<Metadata name="CommonModule.ОбщийМодульБлаБлаБла" id="2b32b459-e342-4c55-9c88-670d2f986871" configVersion="28f85fc2c43eb6438ec9e68e89a4efdc00000000"/>
 		<Metadata name="CommonModule.ОбщийМодульБлаБлаБла.Module" id="2b32b459-e342-4c55-9c88-670d2f986871.0" configVersion="a42bf1530b60414fa4c56ebef7172a7700000000"/>
 		<Metadata name="CommonModule.ОценкаПроизводительности" id="8b83324c-e10e-49d1-99d7-5bc468c25975" configVersion="798f77ffa6c6eb4781580d8b654e5c2300000000"/>
@@ -1327,7 +1329,7 @@
 		<Metadata name="CommonTemplate.ТЦПротокол.Template" id="3a917ca8-ba9d-434b-8064-6b9e2efb1cfd.0" configVersion="028bafaa5e8a38428458fc25d541842600000000"/>
 		<Metadata name="CommonTemplate.ТЦСКДОшибкиТеста" id="4eac2803-6c95-4ed3-9c63-341fb12b69bc" configVersion="c8c3ffce32bd634da12dfeafa7a2818b00000000"/>
 		<Metadata name="CommonTemplate.ТЦСКДОшибкиТеста.Template" id="4eac2803-6c95-4ed3-9c63-341fb12b69bc.0" configVersion="63f5992cc9d33a4e9fca84efc7806b6b00000000"/>
-		<Metadata name="Configuration.КаркаснаяКонфигурация" id="a92cebe9-4e30-4901-842c-b1cc1d0adc9a" configVersion="e19627c8b81db14abee787c29dea7c5700000000"/>
+		<Metadata name="Configuration.КаркаснаяКонфигурация" id="a92cebe9-4e30-4901-842c-b1cc1d0adc9a" configVersion="e4cd97bc2965e3438d3f7b83837c0eea00000000"/>
 		<Metadata name="Configuration.КаркаснаяКонфигурация.ManagedApplicationModule" id="a0068262-10a0-4841-82b6-f6e35a7fc312.6" configVersion="511040493f6e1149a02a6c9f37abaf9000000000"/>
 		<Metadata name="Configuration.КаркаснаяКонфигурация.SessionModule" id="a0068262-10a0-4841-82b6-f6e35a7fc312.7" configVersion="dd35cc2a0cf9c5409947cc1918902e1d00000000"/>
 		<Metadata name="Constant.АвтоматическиНастраиватьРазрешенияВПрофиляхБезопасности" id="9893e2d6-f3f8-4d73-bb06-19bf26d216ab" configVersion="1ea8ae9d23c4ce4ebf15db995e3e6f5300000000"/>
