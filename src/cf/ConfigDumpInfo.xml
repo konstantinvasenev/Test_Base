@@ -498,6 +498,7 @@
 		<Metadata name="Catalog.Склады" id="ead71dac-0435-4ccc-87cd-8b2c22aca091" configVersion="be11de125c4e274987bbc92f1bd2565a00000000"/>
 		<Metadata name="Catalog.Справочник2" id="ee57cfc2-8852-4cb7-a674-d0913902d503" configVersion="4c63f1a1da0fe24e96eedfd31e71944000000000"/>
 		<Metadata name="Catalog.Справочник3" id="58f13435-3477-472e-9b6e-dc6db675a38d" configVersion="5204ffa0a221b342ab7c74c3260a521600000000"/>
+		<Metadata name="Catalog.Справочник4" id="09457de1-0a24-431b-860b-137070b48582" configVersion="759e96e80c4ef54cacd4b27f9d14c70800000000"/>
 		<Metadata name="Catalog.ТЦАгенты" id="e4e0da24-2225-4b7b-9427-68bf0b2db582" configVersion="98c857d08a1db744b10b59adbba3dbd600000000">
 			<Metadata name="Catalog.ТЦАгенты.Attribute.НомерСессии" id="1ba35dcf-466f-43c6-8537-d9e05000f61d"/>
 			<Metadata name="Catalog.ТЦАгенты.Attribute.Порт" id="5948740e-3ae1-4b75-b7be-94d8bea342c7"/>
@@ -1324,7 +1325,7 @@
 		<Metadata name="CommonTemplate.ТЦПротокол.Template" id="3a917ca8-ba9d-434b-8064-6b9e2efb1cfd.0" configVersion="028bafaa5e8a38428458fc25d541842600000000"/>
 		<Metadata name="CommonTemplate.ТЦСКДОшибкиТеста" id="4eac2803-6c95-4ed3-9c63-341fb12b69bc" configVersion="c8c3ffce32bd634da12dfeafa7a2818b00000000"/>
 		<Metadata name="CommonTemplate.ТЦСКДОшибкиТеста.Template" id="4eac2803-6c95-4ed3-9c63-341fb12b69bc.0" configVersion="63f5992cc9d33a4e9fca84efc7806b6b00000000"/>
-		<Metadata name="Configuration.КаркаснаяКонфигурация" id="a92cebe9-4e30-4901-842c-b1cc1d0adc9a" configVersion="c1dbe843f302fb4ca6245f61591665e400000000"/>
+		<Metadata name="Configuration.КаркаснаяКонфигурация" id="a92cebe9-4e30-4901-842c-b1cc1d0adc9a" configVersion="f69244228be2254e86fd73ac7f79ff4800000000"/>
 		<Metadata name="Configuration.КаркаснаяКонфигурация.ManagedApplicationModule" id="a0068262-10a0-4841-82b6-f6e35a7fc312.6" configVersion="511040493f6e1149a02a6c9f37abaf9000000000"/>
 		<Metadata name="Configuration.КаркаснаяКонфигурация.SessionModule" id="a0068262-10a0-4841-82b6-f6e35a7fc312.7" configVersion="dd35cc2a0cf9c5409947cc1918902e1d00000000"/>
 		<Metadata name="Constant.АвтоматическиНастраиватьРазрешенияВПрофиляхБезопасности" id="9893e2d6-f3f8-4d73-bb06-19bf26d216ab" configVersion="1ea8ae9d23c4ce4ebf15db995e3e6f5300000000"/>
