@@ -1,30 +1,30 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.7">
-	<Catalog uuid="2e9ffc10-09c3-43d0-9518-73de67944aff">
+	<Catalog uuid="ee57cfc2-8852-4cb7-a674-d0913902d503">
 		<InternalInfo>
-			<xr:GeneratedType name="CatalogObject.Справочник1" category="Object">
-				<xr:TypeId>45b8264a-a62c-46a6-bcfb-158ff2788c6a</xr:TypeId>
-				<xr:ValueId>7760cdf7-d5c8-4fdf-bd7a-f120e194045b</xr:ValueId>
+			<xr:GeneratedType name="CatalogObject.Справочник2" category="Object">
+				<xr:TypeId>ffbcf92f-881d-4116-aa4c-1dfd2e2fd28b</xr:TypeId>
+				<xr:ValueId>f5068669-b532-429c-b80b-2d356ca96c7e</xr:ValueId>
 			</xr:GeneratedType>
-			<xr:GeneratedType name="CatalogRef.Справочник1" category="Ref">
-				<xr:TypeId>484296a5-e6e0-4e80-99b9-8c8cbc2abe70</xr:TypeId>
-				<xr:ValueId>d95e667f-26c5-4e8d-b235-5f3b137ac449</xr:ValueId>
+			<xr:GeneratedType name="CatalogRef.Справочник2" category="Ref">
+				<xr:TypeId>7d1615c0-fa79-425a-b989-c8400ede8ad8</xr:TypeId>
+				<xr:ValueId>dd883b48-0671-42db-bcd7-dcba9268d6b2</xr:ValueId>
 			</xr:GeneratedType>
-			<xr:GeneratedType name="CatalogSelection.Справочник1" category="Selection">
-				<xr:TypeId>dfa4e35c-b422-4cad-b5f9-1285572b930a</xr:TypeId>
-				<xr:ValueId>e6b153c6-f60b-4251-902c-6b88acf53123</xr:ValueId>
+			<xr:GeneratedType name="CatalogSelection.Справочник2" category="Selection">
+				<xr:TypeId>ebe3d69e-fc98-435a-a615-f3929ca212c2</xr:TypeId>
+				<xr:ValueId>7babc7d4-c5b1-4640-9bd2-ef40cfeb76ce</xr:ValueId>
 			</xr:GeneratedType>
-			<xr:GeneratedType name="CatalogList.Справочник1" category="List">
-				<xr:TypeId>7cb99238-d937-4f31-a75b-86a4beec9541</xr:TypeId>
-				<xr:ValueId>c5ed4b43-5a63-475e-b5a9-2a2f7e0c8409</xr:ValueId>
+			<xr:GeneratedType name="CatalogList.Справочник2" category="List">
+				<xr:TypeId>89079ada-90cf-4465-9346-fb12ac67543d</xr:TypeId>
+				<xr:ValueId>b539d03a-8198-494f-9f4c-1d70114dec49</xr:ValueId>
 			</xr:GeneratedType>
-			<xr:GeneratedType name="CatalogManager.Справочник1" category="Manager">
-				<xr:TypeId>19b0031f-4705-4cc5-a3d4-4ac08a2e2d0f</xr:TypeId>
-				<xr:ValueId>5da901f8-df29-480d-83db-04a93df70fe1</xr:ValueId>
+			<xr:GeneratedType name="CatalogManager.Справочник2" category="Manager">
+				<xr:TypeId>31626ece-64e9-4e53-b771-45906fe4c1e4</xr:TypeId>
+				<xr:ValueId>cc142f1a-b998-4975-af84-66d79669bab7</xr:ValueId>
 			</xr:GeneratedType>
 		</InternalInfo>
 		<Properties>
-			<Name>Справочник1</Name>
+			<Name>Справочник2</Name>
 			<Synonym/>
 			<Comment/>
 			<Hierarchical>false</Hierarchical>
@@ -49,8 +49,8 @@
 			<QuickChoice>false</QuickChoice>
 			<ChoiceMode>BothWays</ChoiceMode>
 			<InputByString>
-				<xr:Field>Catalog.Справочник1.StandardAttribute.Description</xr:Field>
-				<xr:Field>Catalog.Справочник1.StandardAttribute.Code</xr:Field>
+				<xr:Field>Catalog.Справочник2.StandardAttribute.Description</xr:Field>
+				<xr:Field>Catalog.Справочник2.StandardAttribute.Code</xr:Field>
 			</InputByString>
 			<SearchStringModeOnInputByString>Begin</SearchStringModeOnInputByString>
 			<FullTextSearchOnInputByString>DontUse</FullTextSearchOnInputByString>

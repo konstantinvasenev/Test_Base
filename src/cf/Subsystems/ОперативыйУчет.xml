@@ -25,7 +25,7 @@
 				<xr:Item xsi:type="xr:MDObjectRef">Catalog.Склады</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.ПриоритетыСкладов</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Report.ДвижениеТоваров</xr:Item>
-				<xr:Item xsi:type="xr:MDObjectRef">Catalog.Справочник1</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">2e9ffc10-09c3-43d0-9518-73de67944aff</xr:Item>
 			</Content>
 		</Properties>
 		<ChildObjects/>
