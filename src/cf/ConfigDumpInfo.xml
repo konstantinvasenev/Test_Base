@@ -685,8 +685,8 @@
 		<Metadata name="Catalog.ТомаХраненияФайлов.Form.УдалениеЛишнихФайловИзТома.Form" id="df81cc63-26f2-4e66-bf0b-fd083a6a7d7b.0" configVersion="38be5992b207b94ab9c0d9781517f75a00000000"/>
 		<Metadata name="Catalog.ТомаХраненияФайлов.Form.ФормаСписка" id="59064eb2-2770-4f1c-96bd-801926fe68ef" configVersion="472cc6befda7114f9126df036f04892600000000"/>
 		<Metadata name="Catalog.ТомаХраненияФайлов.Form.ФормаСписка.Form" id="59064eb2-2770-4f1c-96bd-801926fe68ef.0" configVersion="a74398e585eac149aabf3fa71069fb3100000000"/>
-		<Metadata name="Catalog.ТомаХраненияФайлов.Form.ФормаЭлемента" id="db15f8eb-4736-4b47-9cee-3e6883f0888c" configVersion="9f1a982bf382044495b8bf9e561bd8ea00000000"/>
-		<Metadata name="Catalog.ТомаХраненияФайлов.Form.ФормаЭлемента.Form" id="db15f8eb-4736-4b47-9cee-3e6883f0888c.0" configVersion="8ec3458592f2f9469cfe6751ef38655c00000000"/>
+		<Metadata name="Catalog.ТомаХраненияФайлов.Form.ФормаЭлемента" id="db15f8eb-4736-4b47-9cee-3e6883f0888c" configVersion="b3c929dda43a294c838ed0ffa882150d00000000"/>
+		<Metadata name="Catalog.ТомаХраненияФайлов.Form.ФормаЭлемента.Form" id="db15f8eb-4736-4b47-9cee-3e6883f0888c.0" configVersion="08f0ee9e6f3fd446bff4edeee205274300000000"/>
 		<Metadata name="Catalog.ТомаХраненияФайлов.Form.ФормаЭлемента.Help" id="db15f8eb-4736-4b47-9cee-3e6883f0888c.1" configVersion="0156fb26c5f9fe4cb39f8fbf06f7b49400000000"/>
 		<Metadata name="Catalog.ТомаХраненияФайлов.Help" id="d912e472-9553-4b96-8b16-7aaff6c14239.1" configVersion="68ad50603caf514186021272227dbfff00000000"/>
 		<Metadata name="Catalog.ТомаХраненияФайлов.ManagerModule" id="d912e472-9553-4b96-8b16-7aaff6c14239.3" configVersion="f0f49f33a4cc3a4aa5abf3671f32e47400000000"/>
