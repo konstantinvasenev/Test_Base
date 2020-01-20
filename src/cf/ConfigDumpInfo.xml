@@ -1322,7 +1322,7 @@
 		<Metadata name="CommonTemplate.ТЦПротокол.Template" id="3a917ca8-ba9d-434b-8064-6b9e2efb1cfd.0" configVersion="028bafaa5e8a38428458fc25d541842600000000"/>
 		<Metadata name="CommonTemplate.ТЦСКДОшибкиТеста" id="4eac2803-6c95-4ed3-9c63-341fb12b69bc" configVersion="c8c3ffce32bd634da12dfeafa7a2818b00000000"/>
 		<Metadata name="CommonTemplate.ТЦСКДОшибкиТеста.Template" id="4eac2803-6c95-4ed3-9c63-341fb12b69bc.0" configVersion="63f5992cc9d33a4e9fca84efc7806b6b00000000"/>
-		<Metadata name="Configuration.КаркаснаяКонфигурация" id="a92cebe9-4e30-4901-842c-b1cc1d0adc9a" configVersion="fa571d6ed5258f479866619b6c9e940c00000000"/>
+		<Metadata name="Configuration.КаркаснаяКонфигурация" id="a92cebe9-4e30-4901-842c-b1cc1d0adc9a" configVersion="832ca98ce753d742b1d20108cc21190300000000"/>
 		<Metadata name="Configuration.КаркаснаяКонфигурация.ManagedApplicationModule" id="a0068262-10a0-4841-82b6-f6e35a7fc312.6" configVersion="511040493f6e1149a02a6c9f37abaf9000000000"/>
 		<Metadata name="Configuration.КаркаснаяКонфигурация.SessionModule" id="a0068262-10a0-4841-82b6-f6e35a7fc312.7" configVersion="dd35cc2a0cf9c5409947cc1918902e1d00000000"/>
 		<Metadata name="Constant.АвтоматическиНастраиватьРазрешенияВПрофиляхБезопасности" id="9893e2d6-f3f8-4d73-bb06-19bf26d216ab" configVersion="1ea8ae9d23c4ce4ebf15db995e3e6f5300000000"/>
@@ -1689,6 +1689,7 @@
 		<Metadata name="DataProcessor.НерекомендуемаяВерсияПлатформы.Template.ПорядокОбновленияДляКлиентСервернойБазы.Template" id="a8c09e65-6e10-4772-b264-6ead83d52fe3.0" configVersion="24701f980ff1594db91a78a9153079a200000000"/>
 		<Metadata name="DataProcessor.НерекомендуемаяВерсияПлатформы.Template.ПорядокОбновленияДляФайловойБазы" id="5c4ecf15-b92d-4610-b2bb-f2331c5c7528" configVersion="84ae24413824b44fb610de2e6d03f58a00000000"/>
 		<Metadata name="DataProcessor.НерекомендуемаяВерсияПлатформы.Template.ПорядокОбновленияДляФайловойБазы.Template" id="5c4ecf15-b92d-4610-b2bb-f2331c5c7528.0" configVersion="b118ba8afb53e7459db0881006f3fe5400000000"/>
+		<Metadata name="DataProcessor.Обработка1" id="1d6cd843-8a82-401e-ae32-2b1c0252dbd3" configVersion="b3d821594f092a4f920b87f944cae87500000000"/>
 		<Metadata name="DataProcessor.ОценкаПроизводительности" id="256618cc-0956-4cda-9691-e4ced68a791f" configVersion="8c32393ce955f54da47077b562530ff100000000">
 			<Metadata name="DataProcessor.ОценкаПроизводительности.Attribute.Комментарий" id="2e459a7c-c448-4db4-ae21-e59646527030"/>
 			<Metadata name="DataProcessor.ОценкаПроизводительности.TabularSection.Производительность.Attribute.КлючеваяОперация" id="470e37fe-d149-4007-b397-12fc84f93041"/>

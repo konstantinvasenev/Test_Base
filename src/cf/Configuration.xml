@@ -758,6 +758,7 @@
 			<DataProcessor>УниверсальныйОбменДаннымиXML</DataProcessor>
 			<DataProcessor>УправлениеИтогамиИАгрегатами</DataProcessor>
 			<DataProcessor>УстановкаОбновлений</DataProcessor>
+			<DataProcessor>Обработка1</DataProcessor>
 			<InformationRegister>РегистрАдресации</InformationRegister>
 			<InformationRegister>КурсыВалют</InformationRegister>
 			<InformationRegister>ГрафикиРаботы</InformationRegister>
