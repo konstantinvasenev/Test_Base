@@ -682,6 +682,7 @@
 			<Document>НачислениеЗарплаты</Document>
 			<Document>КупляПродажа</Document>
 			<Document>ТЦТест</Document>
+			<Document>Документ1</Document>
 			<Enum>УчетнаяПолитика</Enum>
 			<Enum>ВидыНоменклатуры</Enum>
 			<Enum>ТЦСообщение</Enum>

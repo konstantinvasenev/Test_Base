@@ -1322,7 +1322,7 @@
 		<Metadata name="CommonTemplate.ТЦПротокол.Template" id="3a917ca8-ba9d-434b-8064-6b9e2efb1cfd.0" configVersion="028bafaa5e8a38428458fc25d541842600000000"/>
 		<Metadata name="CommonTemplate.ТЦСКДОшибкиТеста" id="4eac2803-6c95-4ed3-9c63-341fb12b69bc" configVersion="c8c3ffce32bd634da12dfeafa7a2818b00000000"/>
 		<Metadata name="CommonTemplate.ТЦСКДОшибкиТеста.Template" id="4eac2803-6c95-4ed3-9c63-341fb12b69bc.0" configVersion="63f5992cc9d33a4e9fca84efc7806b6b00000000"/>
-		<Metadata name="Configuration.КаркаснаяКонфигурация" id="a92cebe9-4e30-4901-842c-b1cc1d0adc9a" configVersion="6175f684de25124b8fbc51f632380aec00000000"/>
+		<Metadata name="Configuration.КаркаснаяКонфигурация" id="a92cebe9-4e30-4901-842c-b1cc1d0adc9a" configVersion="fa571d6ed5258f479866619b6c9e940c00000000"/>
 		<Metadata name="Configuration.КаркаснаяКонфигурация.ManagedApplicationModule" id="a0068262-10a0-4841-82b6-f6e35a7fc312.6" configVersion="511040493f6e1149a02a6c9f37abaf9000000000"/>
 		<Metadata name="Configuration.КаркаснаяКонфигурация.SessionModule" id="a0068262-10a0-4841-82b6-f6e35a7fc312.7" configVersion="dd35cc2a0cf9c5409947cc1918902e1d00000000"/>
 		<Metadata name="Constant.АвтоматическиНастраиватьРазрешенияВПрофиляхБезопасности" id="9893e2d6-f3f8-4d73-bb06-19bf26d216ab" configVersion="1ea8ae9d23c4ce4ebf15db995e3e6f5300000000"/>
@@ -2135,6 +2135,9 @@
 		<Metadata name="DefinedType.ПолеРегистраКлючейДоступаКРегистрам" id="89cb31da-a980-4207-a537-85cd47f08d32" configVersion="58755355c7fc4647a6d303c61404656400000000"/>
 		<Metadata name="DefinedType.Пользователь" id="a72517c3-8c91-4e40-81ac-83c762789e87" configVersion="1bf764ba17c2fb4fa228ac8dd95f9aad00000000"/>
 		<Metadata name="DefinedType.ФизическоеЛицо" id="46b0a5b3-1fa7-44ff-a941-c6de47d36e77" configVersion="7301ef8e3ec77f4e93258655d6a9f90500000000"/>
+		<Metadata name="Document.Документ1" id="ed65c455-263c-4cbe-89d9-429a7e3cf21e" configVersion="866de8244e895c49a1d6e991fefba22a00000000">
+			<Metadata name="Document.Документ1.Attribute.Реквизит1" id="1c381143-69e6-4f66-a7ec-ef8cf343f383"/>
+		</Metadata>
 		<Metadata name="Document.КупляПродажа" id="82aa0c33-ca4a-4dad-914e-995445168d29" configVersion="612c24c36f638d468ec7cc2bb32e58b900000000">
 			<Metadata name="Document.КупляПродажа.Attribute.СкладПокупателя" id="232d13f9-9126-46c8-b4fe-5e21547f3644"/>
 			<Metadata name="Document.КупляПродажа.TabularSection.СписокНоменклатуры.Attribute.Сумма" id="30208057-e0af-4e9d-a6cb-249e58f1f649"/>
