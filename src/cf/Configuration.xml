@@ -151,6 +151,7 @@
 		</Properties>
 		<ChildObjects>
 			<Language>Русский</Language>
+			<Language>English</Language>
 			<Subsystem>ОперативыйУчет</Subsystem>
 			<Subsystem>БухгалтерскийУчет</Subsystem>
 			<Subsystem>ПериодическиеРасчеты</Subsystem>
@@ -676,9 +677,6 @@
 			<Catalog>ДополнительныеОтчетыИОбработки</Catalog>
 			<Catalog>КлассификаторБанков</Catalog>
 			<Catalog>ТомаХраненияФайлов</Catalog>
-			<Catalog>Справочник2</Catalog>
-			<Catalog>Справочник3</Catalog>
-			<Catalog>Справочник4</Catalog>
 			<Document>ПриходнаяНакладная</Document>
 			<Document>РасходнаяНакладная</Document>
 			<Document>НачислениеЗарплаты</Document>
