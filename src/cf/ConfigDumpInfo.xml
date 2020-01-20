@@ -2135,9 +2135,10 @@
 		<Metadata name="DefinedType.ПолеРегистраКлючейДоступаКРегистрам" id="89cb31da-a980-4207-a537-85cd47f08d32" configVersion="58755355c7fc4647a6d303c61404656400000000"/>
 		<Metadata name="DefinedType.Пользователь" id="a72517c3-8c91-4e40-81ac-83c762789e87" configVersion="1bf764ba17c2fb4fa228ac8dd95f9aad00000000"/>
 		<Metadata name="DefinedType.ФизическоеЛицо" id="46b0a5b3-1fa7-44ff-a941-c6de47d36e77" configVersion="7301ef8e3ec77f4e93258655d6a9f90500000000"/>
-		<Metadata name="Document.Документ1" id="ed65c455-263c-4cbe-89d9-429a7e3cf21e" configVersion="5904a4177504664fa0d2fe11ae66ca3900000000">
+		<Metadata name="Document.Документ1" id="ed65c455-263c-4cbe-89d9-429a7e3cf21e" configVersion="6a7b343697b451458c12a6e45852ea7300000000">
 			<Metadata name="Document.Документ1.Attribute.Реквизит2" id="000b78ab-3e96-4b06-961d-1ff48dd08376"/>
 			<Metadata name="Document.Документ1.Attribute.Реквизит1" id="1c381143-69e6-4f66-a7ec-ef8cf343f383"/>
+			<Metadata name="Document.Документ1.Attribute.Реквизит5" id="4107fbf1-f6f3-4fab-bd31-fa18aeafb296"/>
 			<Metadata name="Document.Документ1.Attribute.Реквизит3" id="69ccb900-e45e-4f60-ab22-a59202901127"/>
 			<Metadata name="Document.Документ1.Attribute.Реквизит4" id="ab579cf2-d106-42cf-99a9-22534fe411de"/>
 		</Metadata>
